@@ -117,6 +117,15 @@ ol {
   --border-radius-size-4: 16px;
   --border-radius-size-5: 20px;
   --border-radius-size-6: 999px;
+
+}
+
+/*! component */
+
+.shadow {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 }
 
 /*! button */
@@ -255,7 +264,7 @@ ol {
 .primary__dropdown--content {
   position: absolute;
   left: 0;
-  display: none;
+  /* display: none; */
   background-color: var(--color-background-6);
   padding: 20px;
   margin-top: 10px;
