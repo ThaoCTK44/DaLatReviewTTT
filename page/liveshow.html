@@ -1,58 +1,332 @@
+<!-- Phuong Thao
+/* ==============================================
+    Name: Liveshow Sticket
+    Creact by: Nguyen Phuong Thao
+    Creact at: 9AM 29/01/2024
+    Update at: 3PM 29/01/2024
+============================================== */ -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LiveShow</title>
-    <link rel="stylesheet" href="/page/liveshow/liveshow.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/liveshow.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
     <section class="liveshow">
-        <div class="liveshow__banner">
-            <div class="liveshow__banner--content">
-                <div class="liveshow__banner--content__title">
-
-                </div>
-                <div class="liveshow__banner--content__des">
-                    
-                </div>
-            </div>
-            <div class="liveshow__container">
-                <div class="liveshow__container--link">
-
-                </div>
-                <div class="liveshow__container--body">
-                    <div class="liveshow__container--body__menu">
-                        <ul>
-                            <li>
-                                <a href=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="liveshow__container--body__product">
-                        <div class="liveshow__container--body__product--filter">
-
-                        </div>
-                        <div class="liveshow__container--body__product--list">
-                            <div class="liveshow__container--body__product--list__item">
-
-                            </div>
-                            <div class="liveshow__container--body__product--list__item">
-                                
-                            </div>
-                            <div class="liveshow__container--body__product--list__item">
-                                
-                            </div>
-                        </div>
-                        <div class="liveshow__container--body__product--list__page">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="liveshow__banner">
+        <div class="liveshow__banner--img">
+          <img src="/assets/img/liveshow_img.jpg" alt="" />
         </div>
+        <div class="liveshow__banner--content">
+          <div class="liveshow__banner--content__title">Vé liveshow</div>
+          <div class="liveshow__banner--content__des">
+            Trải nghiệm nhiều buổi biểu diễn âm nhạc vui nhộn cùng các ca sĩ nổi
+            tiếng
+          </div>
+        </div>
+      </div>
+      <div class="liveshow__container">
+        <div class="liveshow__container--link">
+          <a class="liveshow__container--link__return1" href="">Trang chủ> </a>
+          <a class="liveshow__container--link__return2" href=""
+            >Vé LiveShow>
+          </a>
+          <a class="liveshow__container--link__return3" href=""
+            >Lịch diễn liveshow Đà Lạt</a
+          >
+        </div>
+        <!--  -->
+        <!-- Category -->
+        <!--  -->
+        <div class="liveshow__container--body">
+          <div class="liveshow__container--body__menu">
+            <ul class="liveshow__container--body__menu--list">
+              Danh mục
+              <!--  -->
+              <!-- Category item 1 -->
+              <!--  -->
+              <li class="liveshow__container--body__menu--list__item">
+                <input
+                  class="liveshow__container--body__menu--list__item--checkbox"
+                  type="checkbox"
+                />
+                <a
+                  class="liveshow__container--body__menu--list__item--link"
+                  href=""
+                  >SPRING music FESTIVAL IN DALAT</a
+                >
+              </li>
+              <!--  -->
+              <!-- Category item 2 -->
+              <!--  -->
+              <li class="liveshow__container--body__menu--list__item">
+                <form
+                  class="liveshow__container--body__menu--list__item--form"
+                  action="/action_page.php"
+                >
+                  <input
+                    class="liveshow__container--body__menu--list__item--form__checkbox"
+                    type="checkbox"
+                  />
+                  <a
+                    class="liveshow__container--body__menu--list__item--form__name"
+                    href=""
+                    >Lịch diễn liveshow Đà Lạt</a
+                  >
+                  <select name="show" id="show">
+                    <option value="show1"></option>
+                    <option value="show2">
+                      <a href="">Trịnh Thăng Bình show</a>
+                    </option>
+                    <option value="show3"><a href="">Hà Nhi show</a></option>
+                    <option value="show4">
+                      <a href="">Văn Mai Hương show</a>
+                    </option>
+                  </select>
+                </form>
+              </li>
+              <!--  -->
+              <!-- Category item 3 -->
+              <!--  -->
+              <li class="liveshow__container--body__menu--list__item">
+                <form
+                  class="liveshow__container--body__menu--list__item--form"
+                  action="/action_page.php"
+                >
+                  <input
+                    class="liveshow__container--body__menu--list__item--form__checkbox"
+                    type="checkbox"
+                  />
+                  <a
+                    class="liveshow__container--body__menu--list__item--form__name"
+                    href=""
+                    >Mây Lang Thang Show</a
+                  >
+                  <select name="show" id="show">
+                    <option value="show1"></option>
+                    <option value="show2">
+                      <a href="">Mây Lang Thang Show tháng 1</a>
+                    </option>
+                    <option value="show3">
+                      <a href="">Mây Lang Thang Show tháng 2</a>
+                    </option>
+                    <option value="show4">
+                      <a href="">Mây Lang Thang Show tháng 3</a>
+                    </option>
+                  </select>
+                </form>
+              </li>
+              <!--  -->
+              <!-- Category item 4 -->
+              <!--  -->
+              <li class="liveshow__container--body__menu--list__item">
+                <form
+                  class="liveshow__container--body__menu--list__item--form"
+                  action="/action_page.php"
+                >
+                  <input
+                    class="liveshow__container--body__menu--list__item--form__checkbox"
+                    type="checkbox"
+                  />
+                  <a
+                    class="liveshow__container--body__menu--list__item--form__name"
+                    href=""
+                    >Lululola Show</a
+                  >
+                  <select name="show" id="show">
+                    <option value="show1"></option>
+                    <option value="show2">
+                      <a href="">Lululola Show tháng 1</a>
+                    </option>
+                    <option value="show3">
+                      <a href="">Lululola Show tháng 2</a>
+                    </option>
+                    <option value="show4">
+                      <a href="">Lululola Show tháng 3</a>
+                    </option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <!-- Third Product List -->
+          <!--  -->
+          <div class="liveshow__container--body__product">
+            <div class="liveshow__container--body__product--filter">
+              <p class="liveshow__container--body__product--filter__find">
+                Tìm thấy 50 kết quả
+              </p>
+              <div class="liveshow__container--body__product--filter__price">
+                <label
+                  class="liveshow__container--body__product--filter__price--title"
+                  for=""
+                  >Mức giá</label
+                >
+                <select name="price" id="price">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <!--  -->
+            <!-- Produclist -->
+            <!--  -->
+            <div class="liveshow__container--body__product--list">
+              <div class="liveshow__container--body__product--list__item">
+                <img
+                  class="liveshow__container--body__product--list__item--img"
+                  src="https://dalatreview.vn/wp-content/uploads/2024/01/z4980306140145_5d80ad94a3e61f02731a8fda7e3a021c.jpg"
+                  alt=""
+                />
+                <div
+                  class="liveshow__container--body__product--list__item--content"
+                >
+                  <p
+                    class="liveshow__container--body__product--list__item--content__title"
+                  >
+                    LỊCH DIỄN THÁNG 2/2024 MÂY LANG THANG
+                  </p>
+                  <ul
+                    class="liveshow__container--body__product--list__item--content__list"
+                  >
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      <ion-icon class="liveshow__rate" name="star"></ion-icon>
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--number"
+                    >
+                      7/10
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      8 bình chọn
+                    </li>
+                  </ul>
+                  <div
+                    class="liveshow__container--body__product--list__item--content__address"
+                  >
+                    Đường 3/4, Đồi Ca Ri Dê, Đà Lạt
+                  </div>
+                  <button
+                    class="liveshow__container--body__product--list__item--content__btn"
+                  >
+                    Liên hệ về giá
+                  </button>
+                </div>
+              </div>
+              <div class="liveshow__container--body__product--list__item">
+                <img
+                  class="liveshow__container--body__product--list__item--img"
+                  src="https://dalatreview.vn/wp-content/uploads/2024/01/z4980306140145_5d80ad94a3e61f02731a8fda7e3a021c.jpg"
+                  alt=""
+                />
+                <div
+                  class="liveshow__container--body__product--list__item--content"
+                >
+                  <p
+                    class="liveshow__container--body__product--list__item--content__title"
+                  >
+                    LỊCH DIỄN THÁNG 2/2024 MÂY LANG THANG
+                  </p>
+                  <ul
+                    class="liveshow__container--body__product--list__item--content__list"
+                  >
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      <ion-icon class="liveshow__rate" name="star"></ion-icon>
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--number"
+                    >
+                      7/10
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      8 bình chọn
+                    </li>
+                  </ul>
+                  <div
+                    class="liveshow__container--body__product--list__item--content__address"
+                  >
+                    Đường 3/4, Đồi Ca Ri Dê, Đà Lạt
+                  </div>
+                  <button
+                    class="liveshow__container--body__product--list__item--content__btn"
+                  >
+                    Liên hệ về giá
+                  </button>
+                </div>
+              </div>
+              <div class="liveshow__container--body__product--list__item">
+                <img
+                  class="liveshow__container--body__product--list__item--img"
+                  src="https://dalatreview.vn/wp-content/uploads/2024/01/z4980306140145_5d80ad94a3e61f02731a8fda7e3a021c.jpg"
+                  alt=""
+                />
+                <div
+                  class="liveshow__container--body__product--list__item--content"
+                >
+                  <p
+                    class="liveshow__container--body__product--list__item--content__title"
+                  >
+                    LỊCH DIỄN THÁNG 2/2024 MÂY LANG THANG
+                  </p>
+                  <ul
+                    class="liveshow__container--body__product--list__item--content__list"
+                  >
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      <ion-icon class="liveshow__rate" name="star"></ion-icon>
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--number"
+                    >
+                      7/10
+                    </li>
+                    <li
+                      class="liveshow__container--body__product--list__item--content__list--item"
+                    >
+                      8 bình chọn
+                    </li>
+                  </ul>
+                  <div
+                    class="liveshow__container--body__product--list__item--content__address"
+                  >
+                    Đường 3/4, Đồi Ca Ri Dê, Đà Lạt
+                  </div>
+                  <button
+                    class="liveshow__container--body__product--list__item--content__btn"
+                  >
+                    Liên hệ về giá
+                  </button>
+                </div>
+              </div>
+           
+          </div>
+
+        </div>
+        <div class="liveshow__container--body__product--list__page"></div>
+      </div>
     </section>
 
     <script src="/page/liveshow/liveshow.js"></script>
-</body>
+  </body>
 </html>
