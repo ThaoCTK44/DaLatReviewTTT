@@ -300,6 +300,38 @@
     display: none;
 }
 
+/* dropdown */
+.hotel__fitter--search__suggest{
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+    background-color: var(--color-background-6);
+    border-radius: 10px;
+    padding: 20px;
+}
+.hotel__fitter--search__suggest--title{
+    font-weight: 600;
+    font-size: var(--size-text-5);
+}
+.hotel__fitter--search__listlink {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotel__fitter--search__listlink p {
+    background-color: var(--color-background-12);
+    margin-top: 12px;
+    margin-left: 10px;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: var(--border-radius-size-3);
+}
+.hotel__search:focus.hotel__fitter--search__suggest{
+    display: none;
+}
+.hotel__search{
+    position: relative;
+}
 /* tablet */
 @media  (max-width: 1400px) {
     .hotel__body--left{
