@@ -1,15 +1,17 @@
-@import "../../assets/components/root.css";
-@import "../../style.css";
-
 
 
 /* CSS */
+
 .section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .hotel__fitter{
+    position: fixed;
+    left: 0;
+    top: 61px;
+    z-index: 100;
     width: 100%;
     padding: 10px 60px;
     background-color: var(--color-background-15);
@@ -39,10 +41,14 @@
     font-size: var(--size-text-5);
 }
 .hotel__body{
-    margin-top: 20px;
+    top: 150px;
+    left: 50%;
+    position: fixed;
     display: flex;
     max-width: 1160px;
     width: 100%;
+    height: calc(100vh - 150px);
+    transform: translateX(-50%);
 }
 .hotel__body--left{
     flex: 30%;
@@ -62,11 +68,11 @@
     border-bottom: 1.5px solid var(--color-background-3);
 }
 .hotel__left--item__title{
-    padding-bottom: 10px;
     font-weight:530;
 }
 .hotel__left--content{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
     border-bottom: 1.5px solid var(--color-background-3);
@@ -98,7 +104,12 @@
 }
 .hotel__body--right{
     flex: 70%;
+    overflow-y: scroll;
     
+    
+}
+.hotel__body--right::-webkit-scrollbar{
+    display: none;
 }
 .hotel__right--fitter{
     display: flex;
@@ -106,7 +117,6 @@
     align-items: center;
     border: 1px solid var(--color-background-3);
     border-radius: 16px;
-    margin-bottom: 20px;
     overflow: hidden;
 }
 .hotel__right--fitter__tag{
@@ -118,7 +128,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 12px;
     box-sizing: border-box;
     flex-grow: 1;
     cursor: pointer;
@@ -130,11 +139,17 @@
 }
 .hotel__right--fitter__tag:hover{
     background-color: #ebebeb;
-    
+
 }
-.hotel__right--fitter__title {
-    padding-right: 32px;
-    
+.hotel__right--fitter__title:target {
+    background-color: var(--color-background-18);
+    color: var(--color-text-17);
+    font-weight: 500;
+}
+.hotel__right--fitter__title{
+    padding: 12px;
+    font-weight: 400;
+    width: 100%;
 }
 .hotel__right--fitter__tag span{
     font-weight: 400;
@@ -329,6 +344,7 @@
 @media  (max-width: 450px) {
     .hotel__body{
         display: block;
+
     }
     .hotel__fitter{
         display: none;
