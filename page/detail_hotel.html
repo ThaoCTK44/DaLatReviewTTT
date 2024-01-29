@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/secondDropdown.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/detail_hotel.css">
 </head>
 <body>
     <header>
@@ -76,17 +79,6 @@
         <div class="hotel__fitter--wrapper">
             <div class="hotel__fitter--search">
                 <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
-                <div class="hotel__fitter--search__suggest shadow">
-                    <div class="hotel__fitter--search__suggest--title">
-                        Tên điểm đến hot
-                    </div>
-                        <div class="hotel__fitter--search__listlink">
-                            <p><a href="#">Nha Trang</a></p>
-                            <p><a href="#">Đà Lạt</a></p>
-                            <p><a href="#">Đà nẵng</a></p>
-                            <p><a href="#">Quy Nhơn</a></p>
-                        </div>
-                </div>
         </div>
         <div class="hotel__fitter--search">
             <input type="search" placeholder="Chọn ngày" class="hotel__search">
@@ -101,5 +93,44 @@
         </a>
         </div>
     </div>
+    <section class="detailHotel">
+        <div class="detailHotel__top--link">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+            <a href="#">Tìm thêm khách sạn tại Đà Lạt</a>
+        </div>
+        <div class="detailHotel__img">
+            <div class="detailHotel__img--left">
+                <img src="/assets/img/hotel1.jpg" alt="">
+            </div>
+            <div class="detailHotel__img--right">
+                <img src="/assets/img/hotel2.jpg" alt="">
+                <img src="/assets/img/hotel3.jpg" alt="">
+                <img src="/assets/img/hotel2.jpg" alt="">
+                <img src="/assets/img/hotel5.jpg" alt="">
+            </div>
+        </div>
+        <div class="detailHotel__info">
+            <div class="detailHotel__info--header">
+                <div class="detailHotel__info--header__left">
+                    <h1>Rose Milano Villa</h1>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <div class="detailHotel__info--header__right">
+                    <p class="detailHotel__info--header__right--name">
+                        <span class="detailHotel__info--header__right--1">đ</span>
+                        <span class="detailHotel__info--header__right--price">20XXXXX</span>
+                        <span class="detailHotel__info--header__right--unit">Mỗi đêm</span>
+                    </p>
+                    <p class="detailHotel__info--header__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
+                    <div class="detailHotel__info--header__btn firstBtn">Chọn phòng</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
