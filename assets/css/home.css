@@ -1,5 +1,4 @@
-@import "/assets/css/style.css";
-@import "/assets/css/header.css";
+
 /* ==============================================
     Name: Home page css
     Creact by: Dang Phuong Tay
@@ -418,18 +417,22 @@
 }
 
 /* home sale/info/product banner */
+.home__contact--banner,
 .home__product--banner,
 .home__info--banner,
 .home__sale--banner{
     margin-top: 79px;
     width: 100%;
 }
+
+.home__contact--banner__container,
 .home__sale--banner__container,
 .home__info--banner__container{
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
 }
+.home__contact--banner__container--header p,
 .home__info--banner__container--header p{
     font-size: var(--size-text-10);
     margin-bottom: 29px;
@@ -482,6 +485,7 @@
     .home__sale--banner__container--header p{
         font-size: var(--size-text-7);
     }
+    .home__contact--banner,
     .home__product--banner,
     .home__info--banner,
     .home__sale--banner{
@@ -619,6 +623,7 @@
         min-width: 150px;
 
     }
+    .home__contact--banner__container--header p,
     .home__product--banner__container--header p,
     .home__info--banner__container--header p,
     .home__sale--banner__container--header p{
@@ -663,6 +668,7 @@
     .home__banner--mobile__bottom span{
         font-size: var(--size-text-4);
     }
+    .home__contact--banner__container--header p,
     .home__product--banner__container--header p,
     .home__info--banner__container--header p,
     .home__sale--banner__container--header p{
