@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   color: black;
@@ -119,35 +119,44 @@ ol {
   --border-radius-size-6: 999px;
 }
 
+/*! component */
+
+.shadow {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
 /*! button */
 
-.btn__one {
+.firstBtn {
   border-radius: var(--border-radius-size-2);
   background-color: var(--color-background-7);
-  width: 127.95px;
-  height: 44.49px;
+  width: fit-content;
+  /* height: 44.49px; */
   border: 1px solid var(--color-background-7);
   color: var(--color-text-6);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--size-text-5);
-  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 0.6px;
+  padding: 12px 20px;
+
 }
-.btn__one:hover {
+.firstBtn:hover {
   background-color: var(--color-background-17);
 }
-.btn__two {
+.secondBtn {
   border: 1px solid var(--color-background-7);
   background-color: var(--color-background-6);
-  width: 90.66px;
-  height: 36px;
+  width: fit-content;
   color: var(--color-text-7);
   border-radius: var(--border-radius-size-0);
   font-size: var(--size-text-4);
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  padding: 8px 12px;
+  padding: 10px 15px;
 }
-.btn__two:hover {
+.SecondBtn:hover {
   cursor: pointer;
 }
 /* gap */
