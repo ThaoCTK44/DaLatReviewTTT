@@ -32,7 +32,7 @@
     display: flex;
     width:32%;
     flex-direction: column;
-    top: 15s%;
+    top: 15%;
     left:20%;
     color: var(--color-text-6);
 }

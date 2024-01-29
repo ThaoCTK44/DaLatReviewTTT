@@ -113,6 +113,17 @@ header{
 .header__top--left__namewebsite{
     display: none;
 }
+.header__background--blur{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 61px;
+    left: 0;
+    background: var(--color-background-1);
+    z-index: 888;
+    opacity: .8;
+}
 /* ==============================================
     Name: Header list mobile css
     Creact by: Dang Phuong Tay
@@ -230,7 +241,9 @@ header{
     body.active .header__mobile{
         opacity: 1;
     }
-    
+    body.active .header__background--blur{
+        display: block;
+    }
     .header__top--left__hamburger--box {
         position: absolute;
         top: 50%;
