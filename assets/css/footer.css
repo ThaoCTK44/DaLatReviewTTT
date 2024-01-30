@@ -8,6 +8,9 @@
 /* phần footer  */
 @import url(../css/style.css);
 
+
+
+
 .footer__layout--mobile {
        
     display: none;
@@ -19,19 +22,39 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1220px) {
+    
+    
+    .layout__footerBanner--wrapper {
+        flex-flow: column;
+        padding: 0 60px 0 60px !important;
+    }
+    
+    .footer__map {
+        width: 400px !important;
+        height: 260px !important;
+        border-radius: var(--border-radius-size-4);
+        min-width: 158px;
+    }
+}
 
 
 @media only screen and (max-width: 1100px) {
-    .layout__footerBanner--wrapper {}
-}
-
-@media only screen and (min-width: 701px) {
-    .footer__layout--desktop {
-
-        display: block;
+    
+    .layout__footerBanner--wrapper {
+        padding: 0 60px 0 60px;
     }
+    
+}
+@media only screen and (max-width: 900px) {
+   
+    .footer__trans{
+        display: none;
+    }
+    .layout__footerBanner--wrapper {
 
+      flex-direction: row;
+    }
     
 }
 
@@ -42,21 +65,34 @@ body {
     }
 
     .footer__layout--mobile{
+        display: block;
         position: fixed;
         bottom: 0;
         width: 100%;
         margin: 0 auto;
-
     }
-.footer__thongBao--info a img{
+    .footer__internal--wrap{
+        margin: 20px;
+    }
+    .layout__footer--devider{
+        margin-bottom: 26px;
+    }
+    .footer__thongBao--info a img{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     border-style: none;
-}
+    }
 }
 
-
+@media only screen and (max-width: 770px) {
+    .footer__map{
+        width: 300px !important;
+        height: 200px !important;
+        border-radius: var(--border-radius-size-4);
+        min-width: 158px;
+    }
+}
 
 .footer__layout--desktop {
     position: fixed;
@@ -69,10 +105,10 @@ body {
     background-color: black;
     opacity: .07;
     height: 1.5px;
+    margin-bottom: 25px;
 }
 
 .layout__footer--wrapper {
-    padding: 0 50px 0 50px;
     box-sizing: border-box;
 }
 
@@ -117,7 +153,7 @@ body {
     width: 100%;
 }
 
-.footer__banner-left {
+.footer__banner--left {
     display: flex;
 }
 
