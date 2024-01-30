@@ -1,0 +1,94 @@
+.detailHotel{
+    margin: 0 auto;
+    margin-top: 140px;
+    max-width: 1160px;
+    width: 100%;
+}
+.detailHotel__top--link{
+    display: flex;
+    align-items: center;
+    color: var(--color-text-19);
+    margin: 12px 0 24px;
+}
+.detailHotel__top--link a {
+    color: var(--color-text-19);
+    font-size: var(--size-text-4);
+}
+.detailHotel__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 375px;
+    overflow: hidden;
+    border-radius: var(--border-radius-size-4);
+}
+.detailHotel__img img {
+    object-fit: cover;
+}
+.detailHotel__img--left img{
+    width: 100%;    
+}
+.detailHotel__img--left{
+    flex: 50%;
+}
+.detailHotel__img--right{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 5px;
+    flex: 50%;
+
+}
+.detailHotel__img--right img {
+    width: calc(50% - 5px);
+    height: 50%;
+}
+
+.detailHotel__info{
+    margin-top: 20px;
+}
+.detailHotel__info--header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.detailHotel__info--header__left{
+
+}
+.detailHotel__info--header__left h1{
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 1.32;
+    font-weight: 500;
+}
+.detailHotel__info--header__left ion-icon{
+    color: var(--color-background-5);
+    margin-right: 4px;
+    font-size: var(--size-text-6);
+}
+.detailHotel__info--header__right{
+    text-align: right;
+}
+.detailHotel__info--header__right--name{
+    margin-bottom: 10px;
+}
+.detailHotel__info--header__right--1{
+    text-decoration: underline;
+    margin-right: 10px;
+    font-size: var(--size-text-6);
+    font-weight: 600;
+}
+.detailHotel__info--header__right--price{
+    font-size: var(--size-text-8);
+    margin-right: 10px;
+}
+.detailHotel__info--header__right--unit, .detailHotel__info--header__right--tip{
+    color: var(--color-text-11);
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-size: var(--size-text-4);
+}
+.detailHotel__info--header__btn{
+    width: 100%;
+}
