@@ -1,62 +1,15 @@
-@import "../../assets/components/root.css";
-@import "../../assets/components/header.css";
- /*! RESET STYLE */
- *,
- *::before,
- *::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- html {
-    font-family: Roboto, sans-serif; 
-   font-size: 16px;
-   text-rendering: optimizeLegibility;
-   color: black;
-   scroll-behavior: smooth;
- }
- img {
-   width: 100%;
-   display: block;
- }
- a {
-   -webkit-tap-highlight-color: transparent;
-   text-decoration: none;
-   color: var(--color-text-2);
- }
- button,
- input {
-   outline: none;
-   border: none;
-   -webkit-tap-highlight-color: transparent;
- }
- ul,
- ol {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
- }
 
- .row-max-width {
-   width: 100%;
-   max-width: 1920px;
-   margin: auto;
- }
+/* ==============================================
+    Name: Home page css
+    Creact by: Dang Phuong Tay
+    Creact at: 8AM 21/2/2024
+    Update at: 12AM 29/2/2024
+============================================== */
 
-
-
-
-
-
-
-
-
-
-/* home */
 .home{
     margin-top: 61px;
+   
 }
-/* header home */
 .header__content--bottom{
     background: var(--color-background-6);
     top: 61px;
@@ -404,6 +357,9 @@
     width: 100%;
 
 }
+.home__product--banner__container--list{
+    height: 50vh;
+}
 .home__banner--mobile{
     padding: 15px;
     background: var(--color-background-6);
@@ -461,36 +417,33 @@
 }
 
 /* home sale/info/product banner */
+.home__contact--banner,
 .home__product--banner,
 .home__info--banner,
 .home__sale--banner{
     margin-top: 79px;
     width: 100%;
 }
+.home__contact--banner__container,
 .home__product--banner__container,
-.home__info--banner__container,
-.home__sale--banner__container{
+.home__sale--banner__container,
+.home__info--banner__container{
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
 }
+.home__sale--banner__container--header p,
 .home__product--banner__container--header p,
-.home__info--banner__container--header p,
-.home__sale--banner__container--header p{
+.home__contact--banner__container--header p,
+.home__info--banner__container--header p{
     font-size: var(--size-text-10);
     margin-bottom: 29px;
 }
-.home__info--banner__container--list,
-.home__sale--banner__container--list{
+.home__info--banner__container--list{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
-}
-.home__product--banner__container--list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, .5fr));
-    grid-gap:20px;
 }
 .home__info--banner__container--list__item img{
     width: 25%;
@@ -508,62 +461,9 @@
 .home__info--banner__container--list__item{
     width: 23%;
 }
-.home__sale--banner__container--list__item{
-    width: 30.8%;
+.home__product--banner{
+    height: 50vh;
 }
-.home__product--banner__container--list__item img,
-.home__sale--banner__container--list__item img{
-   width: 100%;
-   border-radius: var(--border-radius-size-3);
-}
-.home__product--banner__container--list__item img{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.home__sale--banner__container--list__item.more{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3%;
-}
-.home__sale--banner__container--list__item.more a ion-icon{
-    font-size: var(--size-text-9);
-    color: var(--color-text-11);
-}
-.home__product--banner__container--list__item--content{
-    padding: 15px 20px;
-    border: 1px solid var(--color-background-3);
-}
-.home__product--banner__item--content__title{
-    font-size: var(--size-text-5);
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-.home__product--banner__item--content__star span,
-.home__product--banner__item--content__star ion-icon{
-    color: var(--color-background-5);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1400px) {
     .home__slider--btns{
         display: none;
@@ -583,6 +483,19 @@
     .header__bottom--listlink__allcategory--list{
        width: 1100px; 
     }
+    .home__info--banner__container--header p,
+    .home__sale--banner__container--header p{
+        font-size: var(--size-text-7);
+    }
+    .home__contact--banner,
+    .home__product--banner,
+    .home__info--banner,
+    .home__sale--banner{
+        margin-top: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+    
 }
 @media only screen and (max-width: 1111px) {
     .header__top--left__hamburger{
@@ -603,6 +516,11 @@
     }
     .header__top--left__hamburger.active .header__top--left__hamburger--box {
        background: transparent;
+    }
+    .home__product--banner__container--header p,
+    .home__info--banner__container--header p,
+    .home__sale--banner__container--header p{
+        font-size: var(--size-text-4);
     }
     .header__top--left__hamburger.active::before{
         position: absolute;
@@ -666,8 +584,54 @@
     .header__top--right__mobile{
         display: flex;
     }
+
+    .home__info--banner__container--list__item p{
+        font-size: var(--size-text-5);
+        margin-bottom:10px;
+        font-weight: 500;
+    }
+    .home__info--banner__container--list__item span{
+        font-size: var(--size-text-3);
+        color: var(--color-text-2);
+    }
+    .home__info--banner__container--list__item img{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+  
  }
  @media only screen and (max-width: 850px) {
+    .home__info--banner__container--list__item p{
+        font-size: var(--size-text-4);
+        margin-bottom:5px;
+        font-weight: 600;
+    }
+    .home__info--banner__container--list__item span{
+        font-size: var(--size-text-3);
+        margin-bottom:5px;
+        text-align: start;
+    }
+    .home__info--banner__container--list__item img{
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    .home__info--banner__container--list{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: scroll;
+    }
+    .home__info--banner__container--list__item{
+        min-width: 150px;
+
+    }
+    .home__contact--banner__container--header p,
+    .home__product--banner__container--header p,
+    .home__info--banner__container--header p,
+    .home__sale--banner__container--header p{
+        font-size: var(--size-text-6);
+        margin-bottom: 15px;
+    }
     .home__slider{
         display: none;
     }
@@ -705,6 +669,14 @@
     }
     .home__banner--mobile__bottom span{
         font-size: var(--size-text-4);
+    }
+    .home__contact--banner__container--header p,
+    .home__product--banner__container--header p,
+    .home__info--banner__container--header p,
+    .home__sale--banner__container--header p{
+        font-size: var(--size-text-5);
+        margin-bottom: 10px;
+        font-weight: 600;
     }
  }
 
