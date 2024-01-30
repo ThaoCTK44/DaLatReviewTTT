@@ -12,9 +12,10 @@
 
 @media only screen and (max-width: 1280px) {
   
-  
+    
     .firstTag__internal--desktop {
       display: block;
+      padding: 30px;
     }
   }
   
@@ -56,7 +57,7 @@
   .firstTag__internal--desktop {
     max-width: 1160px;
     margin: 0 auto;
-  
+   
   }
   
   .firstTag__internal--mobile {
