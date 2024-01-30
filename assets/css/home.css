@@ -424,14 +424,15 @@
     margin-top: 79px;
     width: 100%;
 }
-
 .home__contact--banner__container,
+.home__product--banner__container,
 .home__sale--banner__container,
 .home__info--banner__container{
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
 }
+.home__product--banner__container--header p,
 .home__contact--banner__container--header p,
 .home__info--banner__container--header p{
     font-size: var(--size-text-10);
