@@ -1,5 +1,12 @@
-
-/* header */
+/* ==============================================
+    Name: Header css
+    Creact by: Dang Phuong Tay
+    Creact at: 8AM 29/2/2024
+    Update at: 12AM 29/2/2024
+============================================== */
+body{
+    width: 100%;
+}
 header{
     position: fixed;
     width: 100%;
@@ -106,8 +113,82 @@ header{
 .header__top--left__namewebsite{
     display: none;
 }
+.header__background--blur{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 61px;
+    left: 0;
+    background: var(--color-background-1);
+    z-index: 888;
+    opacity: .8;
+}
+/* ==============================================
+    Name: Header list mobile css
+    Creact by: Dang Phuong Tay
+    Creact at: 8AM 29/2/2024
+    Update at: 8AM 29/2/2024
+============================================== */
+.header__mobile{
+    position: fixed;
+    background: var(--color-background-6);
+    z-index: 1000;
+    top: 200vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    padding-top: 30px;
+    opacity: 0;
+    border-top-right-radius: var(--border-radius-size-5);
+    border-top-left-radius: var(--border-radius-size-5);
+    transition: all ease-in-out .25s;
+}
+.header__mobile--box{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.header__mobile--box ul{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: calc(100% + 170px);
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.header__mobile--box ul li{
+    width: 100%;
+}
+.header__mobile--box ul li:first-child a{
+    border-top: 1px solid var(--color-text-10);
+}
+.header__mobile--box ul li a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--color-text-10);
+}
+.header__mobile--box ul li a img{
+    width: 24px;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+/* ==============================================
+    Name: Reponsive Header css
+    Creact by: Dang Phuong Tay
+    Creact at: 8AM 29/2/2024
+    Update at: 12AM 29/2/2024
+============================================== */
  @media only screen and (max-width: 1400px) {
-    
     header{
         padding-left: 30px;
         padding-right: 30px;
@@ -122,21 +203,10 @@ header{
         width: 28px;
         height: 25px;
         margin-right: 10px;
+        cursor: pointer;
     }
-    .header__top--left__hamburger--box {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 28px;
-        height: 3.5px;
-        border-radius: var(--border-radius-size-6);
-        background: var(--color-background-10);
-    }
-    .header__top--left__hamburger.active .header__top--left__hamburger--box {
-       background: transparent;
-    }
-    .header__top--left__hamburger.active::before{
+
+    body.active .header__top--left__hamburger::before{
         position: absolute;
         top: 50%;
         left: 0;
@@ -147,7 +217,7 @@ header{
         background: var(--color-background-10);
         transform: rotate(45deg);
     }
-    .header__top--left__hamburger.active::after{
+    body.active .header__top--left__hamburger::after{
         position: absolute;
         top: 50%;
         left: 0;
@@ -157,6 +227,32 @@ header{
         border-radius: var(--border-radius-size-6);
         background: var(--color-background-10);
         transform: rotate(-45deg);
+    }
+    body.active .header__top--left__hamburger .header__top--left__hamburger--box {
+        background: transparent;
+     }
+    body.active .header__mobile{
+       top: 115px;
+    }
+    body.active{
+        overflow: hidden;
+     
+    }
+    body.active .header__mobile{
+        opacity: 1;
+    }
+    body.active .header__background--blur{
+        display: block;
+    }
+    .header__top--left__hamburger--box {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 3.5px;
+        border-radius: var(--border-radius-size-6);
+        background: var(--color-background-10);
     }
     .header__top--left__hamburger::before{
         content: '';
@@ -192,6 +288,7 @@ header{
     .header__top--right__mobile{
         display: flex;
     }
+
  }
  @media only screen and (max-width: 850px) {
 
@@ -201,11 +298,16 @@ header{
         font-size: var(--size-text-3);
         font-weight: 600;
     }
+    .header__top--left__hamburger{
+        width: 25px;
+        height: 24px;
+    }
+
  }
  @media only screen and (max-width: 450px) {
     header{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
     .header__top--right__mobile{
         gap: 10px;
