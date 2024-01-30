@@ -79,6 +79,7 @@ ol {
   --color-background-18: #fef1e5;
   --color-background-19: #2073f9;
   --color-background-20: #4d40cc;
+  --color-background-21: #8a8a8a;
 
 
   /* List color text */
@@ -103,6 +104,7 @@ ol {
   --color-text-18: #fef1e5;
   --color-text-19: #2073f9;  
   --color-text-20: #4d40cc;  
+  --color-text-21: #8a8a8a;
 
   /* List text size */
   --size-text-0: 6px;
@@ -485,12 +487,17 @@ margin-top: 50px;
   font-weight: 600;
   margin-bottom: 32px;
 }
-.firstReview__card{
+.firstReview__card{  
+
 }
 .firstReview__card--item{
-  width: 100%;
+  width: 10 0%;
   border: 1px solid var(--color-background-16);
   border-radius: var(--border-radius-size-4);
+  padding: 20px;
+  margin-right: 20px;
+  font-size: var(--size-text-4);
+  min-height: 250px;
 }
 .scoreStar{
   color: var(--color-text-5);
@@ -498,13 +505,19 @@ margin-top: 50px;
   align-items: center;
   font-size: var(--size-text-4);
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .firstReview__for{
+  margin-bottom: 5px;
+  color: var(--color-text-21);
 
 }
 .firstReview__time{
+  margin-bottom: 5px;
+  color: var(--color-text-21);
 
 }
 .firstReview__content{
+  margin-bottom: 5px;
 
 }
