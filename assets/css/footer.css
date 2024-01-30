@@ -8,6 +8,11 @@
 /* phần footer  */
 @import url(../css/style.css);
 
+.footer__layout--mobile {
+       
+    display: none;
+
+}
 body {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -23,12 +28,11 @@ body {
 
 @media only screen and (min-width: 701px) {
     .footer__layout--desktop {
+
         display: block;
     }
 
-    .footer__layout--mobile {
-        display: none;
-    }
+    
 }
 
 @media only screen and (max-width: 700px) {
@@ -37,6 +41,19 @@ body {
         display: none;
     }
 
+    .footer__layout--mobile{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+.footer__thongBao--info a img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
 }
 
 
