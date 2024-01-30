@@ -8,11 +8,17 @@
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 10px;
     gap: 20px;
     overflow: hidden;
 }
+.home__sale--banner__container--list__item:hover{
+    transform: translateY(-2%);
+}
 .home__sale--banner__container--list__item{
     width: 370px;
+    border-radius: var(--border-radius-size-3);
+    transition: all ease .1s;
 }
 .home__sale--banner__container--list__item a img{
     width: 370px;
