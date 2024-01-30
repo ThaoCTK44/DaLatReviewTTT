@@ -432,6 +432,7 @@
     max-width: 1160px;
     margin: 0 auto;
 }
+.home__sale--banner__container--header p,
 .home__product--banner__container--header p,
 .home__contact--banner__container--header p,
 .home__info--banner__container--header p{
