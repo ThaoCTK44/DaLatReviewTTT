@@ -164,7 +164,7 @@
     border-bottom: 1.5px solid var(--color-background-3);
     
 }
-.hotel__right--item{
+.hotel__right--item a{
     width: 100%;
     display: flex;
     padding-top: 25px;
@@ -300,7 +300,11 @@
     display: none;
 }
 
-/* dropdown */
+ /* ==============================================
+    Name: drodownFitter
+    Creact by: Tien Dat
+    Creact at: 11AM 28/1/2024
+============================================== */
 .hotel__fitter--search__suggest{
     display: none;
     margin-top: 5px;
@@ -332,7 +336,139 @@
 .hotel__search{
     position: relative;
 }
-/* tablet */
+body.listHotelMobileLocation .hotelMobie__fitter--box{
+    top: 25%;
+}
+body.listHotelMobileFitter .hotelMobie__fitter--box__1{
+    top: 25%;
+}
+body.hotelBlur .hotel__backgroup--blur {
+    display: block;
+}
+.hotelMobie__fitter--box,.hotelMobie__fitter--box__1{
+    position: fixed;
+    top: 100vh;
+    left: 25%;
+    max-height: 700px;
+    z-index: 100;
+    display: block;
+    overflow: hidden;
+    background-color: var(--color-background-6);
+}
+.hotelMobie__fitter--box__header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 48px;
+    border-bottom: 1px solid var(--color-background-12);
+}
+.hotelMobie__fitter--box__header ion-icon{
+    left: 9px;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    color: var(--color-text-11);
+}
+.hotelMobie__fitter--box__header span{
+    margin: 0 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: var(--size-text-5);
+    padding-top: 10px;
+}
+.hotelMobie__fitter--box__body{
+    display: flex;
+    width: 100%;
+    min-height: 391px;
+}
+.hotelMobie__fitter--box__body--left{
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+    background-color: var(--color-background-12);
+}
+.hotelMobie__fitter--box__body--left__target{
+    padding: 18px 16px 18px 20px;
+    line-height: 21px;
+    font-weight: 300;
+    font-size: var(--size-text-4);
+}
+.hotelMobie__fitter--box__body--left__target:target {
+    background-color: var(--color-background-6);
+}
+.hotelMobie__fitter--box__body--right{
+    flex: 75%;
+    padding: 0 20px 40px;
+    height: calc(700px - 110px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.hotelMobie__fitter--box__body--right__section{
+    
+    padding: 20px 0;
+    font-size: var(--size-text-4);
+    border-bottom: 1px solid var(--color-background-12);
+}
+.hotelMobie__fitter--box--right__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotelMobie__fitter--box__body--right__title{
+    line-height: 1.5;
+    font-weight: 600;
+}
+.hotelMobie__fitter--box__body--right__content{
+    font-weight: 300;
+    line-height: 21px;
+    padding: 7px 15px;
+    margin: 12px 10px 0 0;
+    background-color: var(--color-background-12);
+    border: 1px solid var(--color-background-12);
+    border-radius: var(--border-radius-size-5);
+}
+.hotelMobie__fitter--box__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    width: 100%;
+    border-top: 1px solid var(--color-background-12);
+    position: absolute;
+    bottom: 0;
+}
+.hotelMobie__fitter--box__footer button:first-child{
+    padding: 10px 16px;
+    color: var(--color-text-11);
+    background-color: var(--color-background-6);
+}
+
+.hotelMobie__fitter--box__body--right__title--text{
+    opacity: 0.5;
+    margin-top: 15px;
+}
+.content__stars{
+    display: flex;
+    align-items: center;
+}
+.hotel__backgroup--blur{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: var(--color-background-1);
+    z-index: 1001;
+    opacity: .5;
+
+}
+
+ /* ==============================================
+    Name: Table
+    Creact by: Tien Dat
+    Creact at: 11AM 28/1/2024
+============================================== */
 @media  (max-width: 1400px) {
     .hotel__body--left{
         display: none;
@@ -372,7 +508,11 @@
         padding: 0 30px;
     }
 }
-/* mobie */
+ /* ==============================================
+    Name: Mobie
+    Creact by: Tien Dat
+    Creact at: 11AM 28/1/2024
+============================================== */
 @media  (max-width: 450px) {
     .hotel__body{
         display: block;
@@ -395,9 +535,10 @@
         display: none;
     }
     .hotelMobie__fitter--iner{
-        position: relative;
+        position: fixed;
         z-index: 3;
         top: 61px;
+        width: 100%;
     }
     .hotelMobie__fitter{
         position: relative;
@@ -408,7 +549,7 @@
     .hotelMobie__fitter--wraper{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 12px 20px;
         height: 40px;
@@ -449,7 +590,7 @@
     }
     .hotel__body--right{
         flex: none;
-        padding: 30px 8px;
+        padding: 0 8px;
     }
     .hotel__right--item {
         padding-top: 0;
@@ -486,5 +627,160 @@
         display: flex;
         flex-wrap: wrap;
     }
-   
+    /* ==============================================
+    Name: fitter--box
+    Creact by: Tien Dat
+    Creact at: 11AM 31/1/2024
+============================================== */
+    body.listHotelMobileLocation .hotelMobie__fitter--box{
+        top: 0;
+    }
+    body.listHotelMobileFitter .hotelMobie__fitter--box__1{
+        top: 0;
+    }
+    .hotelMobie__fitter--box, .hotelMobie__fitter--box__1{
+        background-color: var(--color-background-6);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 100vh;
+        display: block;
+        left: 0;
+        transition: all ease-in-out .3s;
+    }
+    .hotelMobie__fitter--box__header{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        min-height: 48px;
+        border-bottom: 1px solid var(--color-background-12);
+    }
+    .hotelMobie__fitter--box__header ion-icon{
+        left: 9px;
+        position: absolute;
+        top: 10px;
+        width: 24px;
+        height: 24px;
+        color: var(--color-text-11);
+    }
+    .hotelMobie__fitter--box__header span{
+        margin: 0 16px;
+        line-height: 1.5;
+        text-align: center;
+        font-size: var(--size-text-5);
+        padding-top: 10px;
+    }
+    .hotelMobie__fitter--box__body{
+        display: flex;
+        width: 100%;
+    }
+    .hotelMobie__fitter--box__body--left{
+        display: flex;
+        flex: 25%;
+        flex-direction: column;
+        background-color: var(--color-background-12);
+    }
+    .hotelMobie__fitter--box__body--left__target{
+        padding: 18px 16px 18px 20px;
+        line-height: 21px;
+        font-weight: 300;
+        font-size: var(--size-text-4);
+    }
+    .hotelMobie__fitter--box__body--left__target:target {
+        background-color: var(--color-background-6);
+    }
+    .hotelMobie__fitter--box__body--right{
+        flex: 75%;
+        padding: 0 20px 40px;
+        height: calc(100vh - 110px);
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .hotelMobie__fitter--box__body--right__section{
+        
+        padding: 20px 0;
+        font-size: var(--size-text-4);
+        border-bottom: 1px solid var(--color-background-12);
+    }
+    .hotelMobie__fitter--box--right__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hotelMobie__fitter--box__body--right__title{
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .hotelMobie__fitter--box__body--right__content{
+        font-weight: 300;
+        line-height: 21px;
+        padding: 7px 15px;
+        margin: 12px 10px 0 0;
+        background-color: var(--color-background-12);
+        border: 1px solid var(--color-background-12);
+        border-radius: var(--border-radius-size-5);
+    }
+    .hotelMobie__fitter--box__footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+        width: 100%;
+        border-top: 1px solid var(--color-background-12);
+        position: absolute;
+        bottom: 0;
+    }
+    .hotelMobie__fitter--box__footer button:first-child{
+        padding: 10px 16px;
+        color: var(--color-text-11);
+        background-color: var(--color-background-6);
+    }
+
+    .hotelMobie__fitter--box__body--right__title--text{
+        opacity: 0.5;
+        margin-top: 15px;
+    }
+    .content__stars{
+        display: flex;
+        align-items: center;
+    }
+    /* dropdown */
+    body.listHotelMobileRange .hotel__right--fitter {
+        top: 0;
+    }
+    body.hotelBlur .hotel__backgroup--blur {
+        display: block;
+    }
+    .hotel__right--fitter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: -180px;
+        left: 0;
+        z-index: 500;
+        border-radius: 0px;
+        border: none;
+        background-color: var(--color-background-6);
+    }
+    .hotel__right--fitter__tag{
+        border-right: none;
+        width: 100%;
+        text-align: start;
+    }
+    .hotel__right--fitter__title:target{
+        background-color: var(--color-background-6); 
+    }
+    .hotel__backgroup--blur{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 352px;
+        left: 0;
+        background-color: var(--color-background-1);
+        z-index: 100;
+        opacity: .5;
+        
+    }
 }

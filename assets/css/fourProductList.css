@@ -6,7 +6,6 @@
 }
 .fourProductList__wrapper--item {
     width: 100%;
-    margin-top: 10px;
 }
 .fourProductList__wrapper--item img{
     width: 100%;
@@ -101,13 +100,9 @@
     font-size: var(--size-text-6);
 }
 
-@media  (max-width: 1120px) {
-    .fourProductList__wrapper{
-        margin: 0 20px;
-    }
-}
 
 @media  (max-width: 550px) {
+
     .fourProductList__wrapper--info__ellipsis{
         display: none;
     }
@@ -126,7 +121,7 @@
         overflow-x: scroll;
     }
     .fourProductList__wrapper--img img {
-        width: 160px;
+        width: 200px;
     }
     .fourProductList__wrapper--info__title{
         display: block;

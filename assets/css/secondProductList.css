@@ -29,7 +29,7 @@
     border-bottom: 1.5px solid var(--color-background-3);
     
 }
-.hotel__right--item{
+.hotel__right--item a{
     width: 100%;
     display: flex;
     padding-top: 25px;
