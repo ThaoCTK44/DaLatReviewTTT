@@ -5,14 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/components/reuse.css">
-    <link rel="stylesheet" href="./hotel.css">
+    <link rel="stylesheet" href="/assets/css/hotel.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
     
 </head>
 <body>
+    <header>
+        <div class="header__content--top">
+            <div class="header__top">
+                <div class="header__top--left">
+                    <div class="header__top--left__hamburger">
+                        <div class="header__top--left__hamburger--box">
+                        </div>
+                    </div>
+                    <img src="/assets/img/home-logo.png" alt="" class="header__top--left__logo">
+                    <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
+                    <div class="header__top--left__search">
+                        <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="header__top--right">
+                    <ul>
+                        <li>
+                            <a href="#" class="header__top--right__item">
+                                <img src="/assets/img/home-flag-vi.png" alt="" class="local">
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__top--right__item">
+                                VND
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__top--right__item">
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__top--right__item">
+                                Xem gần đây
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__top--right__item">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__top--right__itemlast">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__top--right__mobile">
+                    <div class="header__top--right__mobile--item">
+                        <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                    </div>
+                    <div class="header__top--right__mobile--item">
+                        <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+                    </div>
+                    <div class="header__top--right__mobile--item">
+                        <a href=""><ion-icon name="person-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="hotel__fitter">
         <div class="hotel__fitter--wrapper">
             <div class="hotel__fitter--search">
-            <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
+                <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
+                <div class="hotel__fitter--search__suggest shadow">
+                    <div class="hotel__fitter--search__suggest--title">
+                        Tên điểm đến hot
+                    </div>
+                        <div class="hotel__fitter--search__listlink">
+                            <p><a href="#">Nha Trang</a></p>
+                            <p><a href="#">Đà Lạt</a></p>
+                            <p><a href="#">Đà nẵng</a></p>
+                            <p><a href="#">Quy Nhơn</a></p>
+                        </div>
+                </div>
         </div>
         <div class="hotel__fitter--search">
             <input type="search" placeholder="Chọn ngày" class="hotel__search">
@@ -20,39 +98,43 @@
         <div class="hotel__fitter--search">
             <input type="search" placeholder="Chọn phòng" class="hotel__search">
         </div>
-        <button class="hotel__fitter--btn btn__one">
-            Tìm kiếm
-        </button>
+        <a href="#">
+            <div class="hotel__fitter--btn firstBtn">
+                Tìm kiếm
+            </div>
+        </a>
         </div>
     </div>
-    <div class="hotelMobie__fitter">
-        <div class="hotelMobie__fitter--wraper">
-            <div class="hotelMobie__fitter--date">
-                Chọn ngày
+    <div class="hotelMobie__fitter--iner">
+        <div class="hotelMobie__fitter">
+            <div class="hotelMobie__fitter--wraper">
+                <div class="hotelMobie__fitter--date">
+                    Chọn ngày
+                </div>
+                <span>|</span>
+                <div class="hotelMobie__fitter--location">
+                    <ion-icon name="search-outline"></ion-icon>
+                    Khám phá những điểm gần đây
+                </div>
             </div>
-            <span>|</span>
-            <div class="hotelMobie__fitter--location">
-                <ion-icon name="search-outline"></ion-icon>
-                Khám phá những điểm gần đây
+        </div>
+        <div class="hotelMobie__header--filter">
+            <div class="hotelMobie__header--filter__item">
+                <span>Khu vực</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
             </div>
-        </div>
-    </div>
-    <div class="hotelMobie__header--filter">
-        <div class="hotelMobie__header--filter__item">
-            <span>Khu vực</span>
-            <ion-icon name="caret-down-outline"></ion-icon>
-        </div>
-        <div class="hotelMobie__header--filter__item">
-            <span>Bộ lọc</span>
-            <ion-icon name="caret-down-outline"></ion-icon>
-        </div>
-        <div class="hotelMobie__header--filter__item">
-            <span>Sắp xếp</span>
-            <ion-icon name="caret-down-outline"></ion-icon>
-        </div>
-        <div class="hotelMobie__header--filter__item">
-            <span>Bản đồ</span>
-            <ion-icon name="map-outline"></ion-icon>
+            <div class="hotelMobie__header--filter__item">
+                <span>Bộ lọc</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </div>
+            <div class="hotelMobie__header--filter__item">
+                <span>Sắp xếp</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </div>
+            <div class="hotelMobie__header--filter__item">
+                <span>Bản đồ</span>
+                <ion-icon name="map-outline"></ion-icon>
+            </div>
         </div>
     </div>
     <div class="section">
@@ -123,235 +205,92 @@
             <div class="hotel__body--right">
                 <div class="hotel__right--fitter">
                     <div class="hotel__right--fitter__tag">
-                        <span class="hotel__right--fitter__title">Đề cử </span>
+                        <a href="#hotel__right--fitter__title" id="hotel__right--fitter__title"  class="hotel__right--fitter__title">Đề cử </a>
                     </div>
                     <div class="hotel__right--fitter__tag">
-                        <span class="hotel__right--fitter__title">Độ phổ biến (Cao đến Thấp)</span>
+                        <a href="#hotel__right--fitter__title--1" id="hotel__right--fitter__title--1"  class="hotel__right--fitter__title">Độ phổ biến (Cao đến Thấp)</a>
                     </div>
                     <div class="hotel__right--fitter__tag">
-                        <span class="hotel__right--fitter__title">Điểm đánh giá (Cao đến Thấp)</span>
+                        <a href="#hotel__right--fitter__title--2" id="hotel__right--fitter__title--2"  class="hotel__right--fitter__title">Điểm đánh giá (Cao đến Thấp)</a>
                     </div>
                     <div class="hotel__right--fitter__tag">
-                        <span>Khoảng cách (Gần đến Xa) </span>
+                        <a href="#hotel__right--fitter__title--3" id="hotel__right--fitter__title--3" class="hotel__right--fitter__title">Khoảng cách (Gần đến Xa) </a>
                     </div>
                 </div>
-                <div class="hotel__right--item">
-                    <div class="hotel__right--img">
-                        <div class="hotel__right--img__icon">
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg" alt="">
+                    <div class="hotel__right--item">
+                        <a href="#">
+                            <div class="hotel__right--img">
+                                <div class="hotel__right--img__icon">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </div>
+                                <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg" alt="">
+                            </div>
+                            <div class="hotel__right--main">
+                                <div class="hotel__right--section">
+                                    <div class="hotel__right--info">
+                                        <div class="hotel__right--info__name">
+                                            <span class="hotel__right--title">Khánh sạn Golf Valley</span>
+                                            <span class="hotel__right--text">Golf Valley Hotel</span>
+                                            <span>
+                                                <span class="hotel__right--stars">
+                                                    <ion-icon name="star" class="icon__star"></ion-icon>
+                                                    <ion-icon name="star" class="icon__star"></ion-icon>
+                                                    <ion-icon name="star" class="icon__star"></ion-icon>
+                                                    <ion-icon name="star" class="icon__star"></ion-icon>
+                                                </span>
+                                            </span>
+            
+                                        </div>
+                                        <div class="hotel__right--review">
+                                            <div class="hotel__right--review__score">
+                                                <span>4.4</span> 
+                                                <span class="slash">/</span> 
+                                                <span>5</span>
+                                            </div> 
+                                            <div class="hotel__right--review__desc">Rất tốt</div>
+                                            <div class="hotel__right--review__count">47 Bình luận</div>
+                                        </div>
+                                        <div class="hotel__right--ellipsis">
+                                            <ion-icon name="location-outline"></ion-icon>
+                                            <span class="hotel__right--location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
+                                            <span class="hotel__right--view__map">Xem bản đồ</span>
+            
+                                        </div>
+                                    </div>
+                                    <div class="hotel__right--tag">
+                                        <div class="hotel__right--tag__wrap">
+                                            <div class="hotel__right--card__tag">
+                                                <span>Phòng Gym</span>
+                                            </div>
+                                            <div class="hotel__right--card__tag">
+                                                <span>Lễ tân 24/24</span>
+                                            </div>
+                                            <div class="hotel__right--card__tag">
+                                                <span>Trung tâm thành phố</span>
+                                            </div>
+                                        </div>
+                                        <div class="hotel__right--booking">
+                                            <div class="hotel__right--booking__tag">
+                                                <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
+                                                <span>700+ Khách đã đặt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__right--price">
+                                    <div class="hotel__right--price__info">
+                                        <span>đ</span>
+                                        <span>1,444,527</span>
+                                    </div>
+                                    <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
+                                    <div class="hotel__right--price__btn firstBtn">
+                                        Xem chi tiết
+                                    </div>
+                                    <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="hotel__right--main">
-                        <div class="hotel__right--section">
-                            <div class="hotel__right--info">
-                                <div class="hotel__right--info__name">
-                                    <span class="hotel__right--title">Khánh sạn Golf Valley</span>
-                                    <span class="hotel__right--text">Golf Valley Hotel</span>
-                                    <span>
-                                        <span class="hotel__right--stars">
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                        </span>
-                                    </span>
-    
-                                </div>
-                                <div class="hotel__right--review">
-                                    <div class="hotel__right--review__score">
-                                        <span>4.4</span> 
-                                        <span class="slash">/</span> 
-                                        <span>5</span>
-                                    </div> 
-                                    <div class="hotel__right--review__desc">Rất tốt</div>
-                                    <div class="hotel__right--review__count">47 Bình luận</div>
-                                </div>
-                                <div class="hotel__right--ellipsis">
-                                    <ion-icon name="location-sharp"></ion-icon>
-                                    <span class="hotel__right--location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                    <span class="hotel__right--view__map">Xem bản đồ</span>
-    
-                                </div>
-                            </div>
-                            <div class="hotel__right--tag">
-                                <div class="hotel__right--tag__wrap">
-                                    <div class="hotel__right--card__tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                                <div class="hotel__right--booking">
-                                    <div class="hotel__right--booking__tag">
-                                        <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
-                                        <span>700+ Khách đã đặt</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__right--price">
-                            <div class="hotel__right--price__info">
-                                <span>đ</span>
-                                <span>1,444,527</span>
-                            </div>
-                            <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
-                            <button class="hotel__right--price__btn btn__one">
-                                Xem chi tiết
-                            </button>
-                            <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__right--item">
-                    <div class="hotel__right--img">
-                        <div class="hotel__right--img__icon">
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg" alt="">
-                    </div>
-                    <div class="hotel__right--main">
-                        <div class="hotel__right--section">
-                            <div class="hotel__right--info">
-                                <div class="hotel__right--info__name">
-                                    <span class="hotel__right--title">Khánh sạn Golf Valley</span>
-                                    <span class="hotel__right--text">Golf Valley Hotel</span>
-                                    <span>
-                                        <span class="hotel__right--stars">
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                        </span>
-                                    </span>
-    
-                                </div>
-                                <div class="hotel__right--review">
-                                    <div class="hotel__right--review__score">
-                                        <span>4.4</span> 
-                                        <span class="slash">/</span> 
-                                        <span>5</span>
-                                    </div> 
-                                    <div class="hotel__right--review__desc">Rất tốt</div>
-                                    <div class="hotel__right--review__count">47 Bình luận</div>
-                                </div>
-                                <div class="hotel__right--ellipsis">
-                                    <ion-icon name="location-sharp"></ion-icon>
-                                    <span class="hotel__right--location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                    <span class="hotel__right--view__map">Xem bản đồ</span>
-    
-                                </div>
-                            </div>
-                            <div class="hotel__right--tag">
-                                <div class="hotel__right--tag__wrap">
-                                    <div class="hotel__right--card__tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                                <div class="hotel__right--booking">
-                                    <div class="hotel__right--booking__tag">
-                                        <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
-                                        <span>700+ Khách đã đặt</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__right--price">
-                            <div class="hotel__right--price__info">
-                                <span>đ</span>
-                                <span>1,444,527</span>
-                            </div>
-                            <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
-                            <button class="hotel__right--price__btn btn__one">
-                                Xem chi tiết
-                            </button>
-                            <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__right--item">
-                    <div class="hotel__right--img">
-                        <div class="hotel__right--img__icon">
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg" alt="">
-                    </div>
-                    <div class="hotel__right--main">
-                        <div class="hotel__right--section">
-                            <div class="hotel__right--info">
-                                <div class="hotel__right--info__name">
-                                    <span class="hotel__right--title">Khánh sạn Golf Valley</span>
-                                    <span class="hotel__right--text">Golf Valley Hotel</span>
-                                    <span>
-                                        <span class="hotel__right--stars">
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                            <ion-icon name="star" class="icon__star"></ion-icon>
-                                        </span>
-                                    </span>
-    
-                                </div>
-                                <div class="hotel__right--review">
-                                    <div class="hotel__right--review__score">
-                                        <span>4.4</span> 
-                                        <span class="slash">/</span> 
-                                        <span>5</span>
-                                    </div> 
-                                    <div class="hotel__right--review__desc">Rất tốt</div>
-                                    <div class="hotel__right--review__count">47 Bình luận</div>
-                                </div>
-                                <div class="hotel__right--ellipsis">
-                                    <ion-icon name="location-sharp"></ion-icon>
-                                    <span class="hotel__right--location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                    <span class="hotel__right--view__map">Xem bản đồ</span>
-    
-                                </div>
-                            </div>
-                            <div class="hotel__right--tag">
-                                <div class="hotel__right--tag__wrap">
-                                    <div class="hotel__right--card__tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="hotel__right--card__tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                                <div class="hotel__right--booking">
-                                    <div class="hotel__right--booking__tag">
-                                        <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
-                                        <span>700+ Khách đã đặt</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__right--price">
-                            <div class="hotel__right--price__info">
-                                <span>đ</span>
-                                <span>1,444,527</span>
-                            </div>
-                            <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
-                            <button class="hotel__right--price__btn btn__one">
-                                Xem chi tiết
-                            </button>
-                            <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>

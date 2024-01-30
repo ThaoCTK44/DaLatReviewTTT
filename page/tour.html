@@ -7,14 +7,16 @@
     <link href="../assets/css/tour_style.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 
-
-    <link href="../../img/logo_Congty.png" rel="icon" type="image/x-icon"/>
-    <link href="../index.html">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <link href="../assets//img//logo_Congty.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
 </head>
 <body>
+    <!-- /* ==============================================
+    Name: First Product, fix Filter Tour
+    Creact by: Ngọc Ánh
+    Creact at: 11AM 29/1/2024
+    
+    ============================================== */ -->
     <div class="tour">
         <!-- banner -->
         <div class="tour__banner"> 
@@ -44,7 +46,7 @@
                                 <div class="fliter__category">
                                     <div class="fliter__category--content ">
                                         <div class="primary__dropdown">
-                                            <div class="primary__dropdown--button" id="primaryDropdown" onclick="primaryDropdownHidden()">
+                                            <div class="primary__dropdown--button" onclick="primaryDropdown()">
                                                 <span>Tất cả danh mục</span>
                                                 <div class="primary__dropdown--icon">
                                                     <ion-icon name="chevron-down-outline"></ion-icon>
@@ -108,10 +110,255 @@
                 </div>
             </div>
         </div>
-    
+        <!-- firstProduct -->
+        <div class="firstProduct row-max-width">
+            <div class="firstProduct__content container-fluid">
+                <div class="firstProduct__content--list row">
+                    <div class="firstProduct__content--list__item col-sm-3 ">
+                        <div class="firstProduct__content--list__item--wrap">
+                            <div class="firstProduct__img">
+                                <img src="../assets/img/tourProduct.webp" alt="tourProduct">
+                            </div>
+                            <div class="firstProduct__info">
+                                <div class="firstProduct__info--top">
+                                    <div class="firstProduct__info--top__title">
+                                            <a href="#">Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt</a>
+                                    </div>
+                                    <div class="firstProduct__info--top__score">
+                                        <div class="firstProduct__info--top__score--star">
+                                            <div class="firstProduct__info--top__score--star__icon">
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+                                            <div class="firstProduct__info--top__score--star__number">
+                                                <span>4.5</span>
+                                            </div>
+                                        </div>
+                                        <span class="firstProduct__info--top__score--review">( <span class="firstProduct__info--top__score--review__number">1,485 </span>)</span>
+                                        <!-- sep -->
+                                        <div class="sep">
+                                            <ion-icon name="ellipse"></ion-icon>
+                                        </div>
+                                        <div class="firstProduct__info--top__score--booked">
+                                            <span firstProduct__info--top__score--booked__number>50K+  Đã được đặt </span>
+                                        </div>
+                                    </div>
+                                    <!-- tag -->
+                                    <div class="tagging__wrap">
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Bán chạy</span>
+                                            </div>
+                                        </div>
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Hoàn tiền dễ dàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom -->
+                                <div class="firstProduct__info--bottom">
+                                    <div class="firstProduct__info--bottom__content">
+                                        <div class="firstProduct__info--bottom__content--box">
+                                            <div class="firstProduct__info--bottom__content--box__price">
+                                                <span>đ 245,000</span>
+                                            </div>
+                                            <div class="firstProduct__info--bottom__content--box__underline">
+                                                <span>đ 345,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="firstProduct__info--bottom__tagging tagging__wrap">
+                                        <div class="tagging__box firstProduct__info--bottom__tagging--box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính sách đảm bảo về giá</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="firstProduct__content--list__item col-sm-3 ">
+                        <div class="firstProduct__content--list__item--wrap">
+                            <div class="firstProduct__img">
+                                <img src="../assets/img/tourProduct.webp" alt="tourProduct">
+                            </div>
+                            <div class="firstProduct__info">
+                                <div class="firstProduct__info--top">
+                                    <div class="firstProduct__info--top__title">
+                                            <a href="#">Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt</a>
+                                    </div>
+                                    <div class="firstProduct__info--top__score">
+                                        <div class="firstProduct__info--top__score--star">
+                                            <div class="firstProduct__info--top__score--star__icon">
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+                                            <div class="firstProduct__info--top__score--star__number">
+                                                <span>4.5</span>
+                                            </div>
+                                        </div>
+                                        <span class="firstProduct__info--top__score--review">
+                                            (
+                                                <span class="firstProduct__info--top__score--review__number">1,485</span>
+                                            )
+                                        </span>
+                                        <!-- sep -->
+                                        <div class="sep">
+                                            <ion-icon name="ellipse"></ion-icon>
+                                        </div>
+                                        <div class="firstProduct__info--top__score--booked">
+                                            <span firstProduct__info--top__score--booked__number>50K+  Đã được đặt </span>
+                                        </div>
+                                    </div>
+                                    <!-- tag -->
+                                    <div class="tagging__wrap">
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Bán chạy</span>
+                                            </div>
+                                        </div>
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Hoàn tiền dễ dàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom -->
+                                <div class="firstProduct__info--bottom">
+                                    <div class="firstProduct__info--bottom__content">
+                                        <div class="firstProduct__info--bottom__content--price">
+                                            <span>đ 245,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="firstProduct__content--list__item col-sm-3 ">
+                        <div class="firstProduct__content--list__item--wrap">
+                            <div class="firstProduct__img">
+                                <img src="../assets/img/tourProduct.webp" alt="tourProduct">
+                            </div>
+                            <div class="firstProduct__info">
+                                <div class="firstProduct__info--top">
+                                    <div class="firstProduct__info--top__title">
+                                            <a href="#">Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt</a>
+                                    </div>
+                                    <div class="firstProduct__info--top__score">
+                                        <div class="firstProduct__info--top__score--star">
+                                            <div class="firstProduct__info--top__score--star__icon">
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+                                            <div class="firstProduct__info--top__score--star__number">
+                                                <span>4.5</span>
+                                            </div>
+                                        </div>
+                                        <span class="firstProduct__info--top__score--review">
+                                            (
+                                                <span class="firstProduct__info--top__score--review__number">1,485</span>
+                                            )
+                                        </span>
+                                        <!-- sep -->
+                                        <div class="sep">
+                                            <ion-icon name="ellipse"></ion-icon>
+                                        </div>
+                                        <div class="firstProduct__info--top__score--booked">
+                                            <span firstProduct__info--top__score--booked__number>50K+  Đã được đặt </span>
+                                        </div>
+                                    </div>
+                                    <!-- tag -->
+                                    <div class="tagging__wrap">
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Bán chạy</span>
+                                            </div>
+                                        </div>
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Hoàn tiền dễ dàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom -->
+                                <div class="firstProduct__info--bottom">
+                                    <div class="firstProduct__info--bottom__content">
+                                        <div class="firstProduct__info--bottom__content--price">
+                                            <span>đ 245,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="firstProduct__content--list__item col-sm-3 ">
+                        <div class="firstProduct__content--list__item--wrap">
+                            <div class="firstProduct__img">
+                                <img src="../assets/img/tourProduct.webp" alt="tourProduct">
+                            </div>
+                            <div class="firstProduct__info">
+                                <div class="firstProduct__info--top">
+                                    <div class="firstProduct__info--top__title">
+                                            <a href="#">Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt</a>
+                                    </div>
+                                    <div class="firstProduct__info--top__score">
+                                        <div class="firstProduct__info--top__score--star">
+                                            <div class="firstProduct__info--top__score--star__icon">
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+                                            <div class="firstProduct__info--top__score--star__number">
+                                                <span>4.5</span>
+                                            </div>
+                                        </div>
+                                        <span class="firstProduct__info--top__score--review">
+                                            (
+                                                <span class="firstProduct__info--top__score--review__number">1,485</span>
+                                            )
+                                        </span>
+                                        <!-- sep -->
+                                        <div class="sep">
+                                            <ion-icon name="ellipse"></ion-icon>
+                                        </div>
+                                        <div class="firstProduct__info--top__score--booked">
+                                            <span firstProduct__info--top__score--booked__number>50K+  Đã được đặt </span>
+                                        </div>
+                                    </div>
+                                    <!-- tag -->
+                                    <div class="tagging__wrap">
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Bán chạy</span>
+                                            </div>
+                                        </div>
+                                        <div class="tagging__box">
+                                            <div class="tagging__tag">
+                                                <span class="tagging__tag--text">Hoàn tiền dễ dàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom -->
+                                <div class="firstProduct__info--bottom">
+                                    <div class="firstProduct__info--bottom__content">
+                                        <div class="firstProduct__info--bottom__content--price">
+                                            <span>đ 245,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-<script src="./tour.js"></script>
+<script src="../assets/js/tour.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.js"></script>
 
 </body>
 </html>

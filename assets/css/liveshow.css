@@ -1,0 +1,153 @@
+/*  Phuong Thao */
+/* ==============================================
+    Name: Liveshow Sticket
+    Creact by: Nguyen Phuong Thao
+    Creact at: 9AM 29/01/2024
+    Update at: 3PM 29/01/2024
+============================================== */ 
+
+@import "/assets/css/style.css";
+@import"/assets/css/thirdproductlist.css";
+@import"/assets/css/pagination.css";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #000;
+}
+button,
+input {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.liveshow{
+    margin-top: 115px;
+    width: 100%;
+    background-color: #F5F5F5; 
+}
+.liveshow__banner{
+    position: relative;
+}
+.liveshow__banner--img{
+    width: 100%;
+    height: 132px;
+    overflow: hidden;
+}
+.liveshow__banner--img img{
+    width: 110%;
+    height: 140px;
+    object-fit: cover;
+    filter: blur(10px);
+
+}
+.liveshow__banner--content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.liveshow__banner--content__title{
+   text-align: center;
+   color: var(--color-text-6);
+   font-size: var(--size-text-11);
+   margin-bottom: 1%;
+   font-weight: 700;
+}
+.liveshow__banner--content__des{
+    color: var(--color-text-6);
+}
+/*  */
+/* container */
+/*  */
+.liveshow__container{
+    width: 82.5%;
+    position: relative;
+    display: block;
+    margin-left: 9%; 
+    background-color: #F5F5F5;  
+}
+.liveshow__container--link,.liveshow__container--body{
+    
+    margin: 20px 0;
+}
+.liveshow__container--link__return3{
+    font-weight: 600;
+}
+.liveshow__container--link__return{
+    display: inline-flex;
+}
+
+/*  */
+/* body list */
+/*  */
+.liveshow__container--body{
+    width: 100%;
+  margin: 60px 0;
+  display: flex;
+  
+}
+.liveshow__container--body__menu{
+    
+    width: 25%;
+    height:315px;
+    background-color: var( --color-background-6);
+    border-radius: var(--border-radius-size-3);
+}
+.liveshow__container--body__menu--list{
+    margin: 20px 0 0 10px;
+}
+.liveshow__container--body__menu--list__item{
+    margin: 15px 0 0 10px;
+}
+.liveshow__container--body__menu--list__item--checkbox{
+    background-color: var(--color-background-7);
+}
+.liveshow__container--body__product{
+    width: 70%;
+    margin-left: 5%;
+    background-color: #F5F5F5;
+    
+}
+.liveshow__container--body__product--filter{
+    width: 100%;
+    height: 74px;
+    border-radius: var(--border-radius-size-5);
+    background-color: var(--color-background-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px ;
+}
+.liveshow__container--body__product--filter__price{
+  width: 15%;
+  height: 34px;
+  border: solid var( --color-background-0) 0.5px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var( --border-radius-size-1);
+    padding: 0 10px;
+}
+
