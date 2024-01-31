@@ -68,6 +68,7 @@ header{
 }
 .header__top--right ul{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .header__top--right ul li a img{
@@ -297,6 +298,12 @@ body.LoginSignUpForm .header__background--blur__fullview{
 body.LoginSignUpForm .login__signup--box{
     display: block;
 }
+body.checker .header__background--blur__fullview{
+    display: none;
+}
+body.checker .login__signup--box{
+    display: none;
+}
 body.LoginSignUpForm{
     overflow: hidden;
 }
@@ -381,8 +388,33 @@ body.TransLoginSignForm .login__signup--box__container--number{
     color: var(--color-text-6);
     cursor: pointer;
 }
-
-
+body.checker .check__login {
+    display: none;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+}
+body.checker .header__top--right__item--checker{
+    display: block;
+}
+body.checker .header__top--right__item.logout{
+    display: block;
+}
+.header__top--right__item.logout{
+    display: none;
+    visibility: hidden;
+}
+.header__top--right__item--checker{
+    display: none;
+}
+.header__top--right__item--checker img{
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius-size-6);
+    border: 1px solid var(--color-text-3);
+    cursor: pointer;
+}
+.header__top--right__item--logout
 
 
 
