@@ -39,6 +39,7 @@
     width: 16px;
     height: 16px;
     margin-left: auto;
+    padding-top: 10px;
   }
   .user__center--sidebarwrapper{
     display: flex;
@@ -59,10 +60,11 @@
       width: 100%;
   }
   .user__center--sidebar{
-    background-image: url("../img/user_background.png");
+    background-image: url("../img/user_avatar2.jpg");
     background-repeat: no-repeat;
     border-radius: var(--border-radius-size-2);
     width: 17em;
+    transition: opacity 0.3s ease;
   }
   
   .user__content{
@@ -83,6 +85,10 @@
       position: relative;
       width: 90px;
   }
+  .user__center--sidebar__profile--name{
+    color: var(--color-text-6);
+    font-weight: 700;
+  }
   .user__center--sidebar__profile--changer{
     display: flex;
     color: var(--color-text-6);
@@ -91,17 +97,136 @@
     margin-top: 10px;
   }
 /* thanh công cụ  */
-  .user__center--sidebar--preferential{
+
+  /* bọc ngoài của các link  */
+  .user__content--box__link:hover {
+    background-color: var(--color-background-12); /* Màu nền khi hover */
+}
+.user__content--box__link:active {
+ color: orange; /* Màu nền khi hover */
+}
+
+  .user__center--sidebar__preferential{
     border-top: 1px solid #e6e6e6;
     padding: 12px 0 7px;
     background-color: var(--color-background-6);
   }
+  .user__module--link ion-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: -3px;
+  }
 
+  .user__module--link{
+    display: flex;
+    padding: 14px 16px;
+    position: relative;
+    width: 100%;
 
+  }
+  .user__module--link span{
+    line-height: 1.3;
+  }
+ 
 
   /* right sight  */
   .user__content--box{
-    background-color: pink;
     width: 54em;
     border-radius: var(--border-radius-size-2);
   }
+
+  .user__num--count{
+    font-weight: 600;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .user__center--sidebar--invite{
+    background:#8dabe1 url("../img/user_banner_voucher.png") 100% 100% no-repeat;
+    background-size: auto 131px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .user__module--invite__link{
+   
+      color: inherit;
+      cursor: pointer;
+      text-decoration: none;
+  
+  }
+.user__invite--title{
+  
+    color: var(--color-text-6);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.user__invite--desc{
+  color: var(--color-text-6);
+    line-height: 1.2;
+    width: 67%;
+    font-weight: 500;
+}
+
+.user__invite--btn{
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 9px;
+  padding: 5px 16px;
+}
+.user__content--box__content{
+  padding: 40px 30px 30px 30px;
+}
+
+.user__input--wrapper{
+  margin: 0 auto;
+  width: 500px;
+}
+
+.input__button--input{
+  
+  align-items: center;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    color: #212121;
+    display: inline-flex;
+    font-size: 16px;
+    min-height: 44px;
+    position: relative;
+    transition: border .24s cubic-bezier(.22,0,.08,1);
+    width: 100%;
+}
+
+
+
+
+.input__button--input input{
+  background: hsla(0,0%,100%,0);
+    border: none;
+    caret-color: #ff5b00;
+    color: currentColor;
+    line-height: 1.5;
+    outline: none;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.user__btn--wrap{
+  align-items: center;
+  color: #212121;
+  display: flex;
+  flex-shrink: 0;
+}
+.user__btn{
+  background-color: #ff5b00;
+  border: 1px solid #ff5b00;
+  color: #fff;
+  border-radius: 0 12px 12px 0;
+  width: 150px;
+  padding: 10px 16px;
+  min-height: 44px;
+}

@@ -3,8 +3,7 @@
 /* rs css  */
 
 .voucher__card--container{
-    display: flex;justify-content: center;align-items: center;
-    padding-top: 200px;
+    
 }
 .voucher__card {
     margin: 0 10px 20px;
@@ -40,20 +39,19 @@
     padding: 6px 6px 6px 16px;
     background-position: right 9px top 0;
     background-size: 17px 17px;
-    background: linear-gradient(to right bottom,#ff8a65,#e64340);
+    background: linear-gradient(to right bottom,#00b1ff,#e64340)
 }
 
 .voucher__card--left {
     align-items: center;
     color: #fff;
     display: flex;
-    -ms-flex: 70%;
     flex: 70%;
     flex-wrap: wrap;
     position: relative;
 }
 
-.voucher__card--left .voucher__color :before {
+.voucher__color :before {
     background-position: right 8px top 0;
     background-size: 15px 15px;
     bottom: 0;
@@ -68,15 +66,14 @@
 .voucher__card--title {
     height: 60px;
     font-size: 20px;
-    width: 100%;
     word-break: break-word;
     font-weight: 700;
-    text-overflow: ellipsis;
+    text-overflow: pre;
     font-style: normal;
     font-weight: 700;
     overflow: hidden;
-}
 
+}
 
 .voucher__card--desc {
     width: 200px;
@@ -153,7 +150,7 @@
     line-height: 1.33;
     padding: 3px 0 3px 8px;
 }
-.voucher__card--right__useBtn span{
+.voucher__card--right__box span{
     max-width: 72px;
     line-height: 16px;
     font-size: 12px;
@@ -165,4 +162,10 @@
     font-weight: 500;
     border-radius: 6px;
     color: #fff;
+    cursor: pointer;
 }
+.voucher__card--right__box span.used {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
