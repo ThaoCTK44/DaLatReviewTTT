@@ -20,6 +20,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  width: 100%;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -74,6 +77,9 @@ ol {
   --color-background-16: #e6e6e6;
   --color-background-17: #e05000;
   --color-background-18: #fef1e5;
+  --color-background-19: #2073f9;
+  --color-background-20: #4d40cc;
+
 
   /* List color text */
   --color-text-0: #000000;
@@ -95,6 +101,8 @@ ol {
   --color-text-16: #e6e6e6;
   --color-text-17: #e05000;
   --color-text-18: #fef1e5;
+  --color-text-19: #2073f9;  
+  --color-text-20: #4d40cc;  
 
   /* List text size */
   --size-text-0: 6px;
@@ -109,6 +117,8 @@ ol {
   --size-text-9: 27px;
   --size-text-10: 28px;
   --size-text-11: 29px;
+  --size-text-12: 18px;
+
   /* List border radius */
   --border-radius-size-0: 6px;
   --border-radius-size-1: 8px;
@@ -141,8 +151,8 @@ ol {
   text-align: center;
   letter-spacing: 0.6px;
   padding: 12px 20px;
-
 }
+
 .firstBtn:hover {
   background-color: var(--color-background-17);
 }
@@ -221,7 +231,7 @@ ol {
   margin: 0 10px 0 20px;
 }
 
-/*! dropdown */
+/*! first dropdown */
 
 .primary__dropdown {
   position: relative;
@@ -251,8 +261,7 @@ ol {
   border: 1px solid var(--color-background-7);
   background-color: var(--color-background-13);
 }
-.primary__dropdown--button span {
-}
+
 .primary__dropdown--icon {
   margin-left: 6px;
 }
@@ -272,7 +281,10 @@ ol {
   border-radius: var(--border-radius-size-4);
   width: 250px;
 }
-.primary__dropdown--button.show {
+/* .primary__dropdown--button.active .primary__dropdown--content{
+  display: block;
+} */
+.show{
   display: block;
 }
 .primary__dropdown--content__list {
@@ -295,17 +307,204 @@ ol {
 .search__filter--right {
   display: flex;
 }
-.total__filter {
-}
+
 .total__filter--btn {
-  border: 1px so;
+  border-radius: var(--border-radius-size-2);
+  border: 2px solid #4a4a4a;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-text-4);
+  font-weight: 400;
+  color: var(--color-text-0);
 }
 .total__filter--btn__icon {
-}
-.total__filter--btn__icon ion-icon {
-}
-.total__filter--btn__text {
+  font-size: var(--size-text-5);
+  color: var(--color-text-0);
+  font-weight: 600;
 }
 
-.total__filter--btn__text span {
+.total__filter--btn__text {
+  margin-left: 8px;
+}
+
+/*! firstProduct */
+
+.firstProduct{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.firstProduct__content--list{
+  margin-bottom: 20px;
+}
+.firstProduct__content--list__item--wrap{
+  border-radius: var(--border-radius-size-4);
+  overflow: hidden;
+  border: 1px solid var(--color-background-16);
+  transition: all .2s ease;
+}
+.firstProduct__content--list__item--wrap:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.08);
+  cursor: pointer;
+}
+.firstProduct__img{
+  width: 100%;
+}
+.firstProduct__img img{
+  width: 100%;
+}
+.firstProduct__info{
+padding: 12px 16px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 190px;
+}
+.firstProduct__info--top{
+  width: 100%;
+  font-size: var(--size-text-4);
+  color: var(--color-text-2);
+}
+.firstProduct__info--top__title{
+  display: -webkit-box;
+  width: 100%;
+  margin-bottom: 8px;
+  white-space: normal;
+  line-height: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  max-height: 3.2rem;
+  -webkit-box-orient: vertical;
+  font-size: var(--size-text-5);
+}
+.firstProduct__info--top__title a{
+  color: var(--color-text-1);
+  line-height: 5px;
+  font-weight: 600;
+  /* font-style: 15px; */
+}
+.firstProduct__info--top__title a:hover{
+  text-decoration: none;
+  color: var(--color-text-1);
+}
+.firstProduct__info--top__score{
+  display: flex;
+  align-items: center;
+}
+.firstProduct__info--top__score--star{
+  color: var(--color-text-5);
+  display: flex;
+  align-items: center;
+  font-size: var(--size-text-4);
+  font-weight: 600;
+}
+.firstProduct__info--top__score--star__icon{
+  margin-right: 5px;
+}
+.firstProduct__info--top__score--review{
+  margin: 0 5px;
+}
+.sep{
+  font-size: 5px;
+  margin-right: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
+.tagging__wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tagging__box{
+  color: var(--color-text-2);
+  background-color: var(--color-background-12);
+  font-weight: 600;
+  padding: 0 8px;
+  border-radius: var(--border-radius-size-0);
+}
+.tagging__tag{
+  width: 100%;
+}
+.firstProduct__info--bottom{
+  margin: 10px 0;
+}
+.firstProduct__info--bottom__content--box{
+  display: flex;
+  align-items: center;
+}
+.firstProduct__info--bottom__content--box__price{
+  font-size: var(--size-text-5);
+  margin-right: 7px;
+}
+.firstProduct__info--bottom__content--box__underline{
+  font-size: var(--size-text-3);
+  text-decoration: line-through;
+  color: var(--color-text-2);
+
+}
+.firstProduct__info--bottom__tagging--box{
+  color: var(--color-text-7);
+  text-align: center;
+  font-size: var(--size-text-4);
+  background-color: var(--color-background-13);
+}
+/*! breakCrumb */
+.breakCrumb{
+margin-top: 50px;
+}
+.breakCrumb__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.breakCrumb__list--item{
+  color: var(--color-text-1);
+  margin-right: 8px;
+}
+.breakCrumb__list ion-icon{
+  margin-right: 8px;
+  font-size: var(--size-text-4);
+}
+.breakCrumb__list--item:last-child{
+  color: #a8a8a8;
+}
+.breakCrumb__list--item:hover{
+  text-decoration: none;
+  color: var(--color-text-10);
+}
+/*! firstReview */
+.firstReview{
+  margin-top: 64px;
+}.firstReview__Title{
+  font-size: var(--size-text-10);
+  color: var(--color-text-10);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.firstReview__card{
+}
+.firstReview__card--item{
+  width: 100%;
+  border: 1px solid var(--color-background-16);
+  border-radius: var(--border-radius-size-4);
+}
+.scoreStar{
+  color: var(--color-text-5);
+  display: flex;
+  align-items: center;
+  font-size: var(--size-text-4);
+  font-weight: 600;
+}
+.firstReview__for{
+
+}
+.firstReview__time{
+
+}
+.firstReview__content{
+
 }

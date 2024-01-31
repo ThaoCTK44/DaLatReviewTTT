@@ -1,0 +1,15 @@
+.liveshow__container--body__product--list__page{
+    position: absolute;
+    margin-top: 80%;
+    left: 92.5%;
+}
+.liveshow__container--body__product--list__page--list{
+    display: inline-flex;
+}
+.liveshow__container--body__product--list__page--list__item a{
+    width: 15%;
+    height: 15%;
+    border: solid #000 0.5px;
+    padding: 0 2%;
+    border-radius: 4px;
+}
