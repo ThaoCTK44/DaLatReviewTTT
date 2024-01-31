@@ -6,52 +6,55 @@
 ============================================== */
 
 /* phần footer  */
+footer {}
+
 @import url(../css/style.css);
 
-
-
-
 .footer__layout--mobile {
-       
+
     display: none;
 
 }
 
-
+/* dành cho màn <=1220px */
 @media only screen and (max-width: 1220px) {
-    
-    
     .layout__footerBanner--wrapper {
-        flex-flow: column;
+        align-items: center;
         padding: 0 60px 0 60px !important;
     }
-    
-    .footer__map {
-        width: 400px !important;
-        height: 260px !important;
-        border-radius: var(--border-radius-size-4);
-        min-width: 158px;
-    }
-}
-
-
-@media only screen and (max-width: 1100px) {
-    
-    .layout__footerBanner--wrapper {
-        padding: 0 60px 0 60px;
-    }
-    
-}
-@media only screen and (max-width: 900px) {
-   
-    .footer__trans{
+    .footer__banner--right{
         display: none;
     }
-    .layout__footerBanner--wrapper {
-
-      flex-direction: row;
+    .footer__banner--left{
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 17em 12em 14em !important;
     }
-    
+    .footer__listUnit li{
+        margin-bottom: 5px !important;
+    }
+}
+
+
+/* dành cho màn <= 1100px */
+@media only screen and (max-width: 1100px) {
+
+    .layout__footerBanner--wrapper {
+        padding: 0 60px 0 60px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .footer__banner--left{
+        max-width: 880px;
+    }
+
+}
+
+
+/* dành cho màn <=900px */
+@media only screen and (max-width: 900px) {
+    .footer__banner--left{
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -60,28 +63,31 @@
         display: none;
     }
 
-    .footer__layout--mobile{
+    .footer__layout--mobile {
         display: block;
         bottom: 0;
         width: 100%;
         margin: 0 auto;
     }
-    .footer__internal--wrap{
+
+    .footer__internal--wrap {
         margin: 20px;
     }
-    .layout__footer--devider{
+
+    .layout__footer--devider {
         margin-bottom: 26px;
     }
-    .footer__thongBao--info a img{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
+
+    .footer__thongBao--info a img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border-style: none;
     }
 }
 
 @media only screen and (max-width: 770px) {
-    .footer__map{
+    .footer__map {
         width: 300px !important;
         height: 200px !important;
         border-radius: var(--border-radius-size-4);
@@ -90,10 +96,7 @@
 }
 
 .footer__layout--desktop {
-    
     bottom: 0;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .layout__footer--devider {
@@ -126,6 +129,7 @@
     margin-top: 12px;
 }
 
+
 .footer__listUnit {
     color: var(--color-text-2);
     margin-top: 12px;
@@ -141,7 +145,6 @@
 
 .footer__listUnit li a {
     display: inline-block;
-    padding: 0 12px 0 12px;
     height: 12px;
     line-height: 2;
     color: var(--color-text-2);
@@ -149,7 +152,9 @@
 }
 
 .footer__banner--left {
-    display: flex;
+    display: grid;
+    grid-template-columns: 18em 18em 18em;
+
 }
 
 .footer__banner {
@@ -205,7 +210,7 @@
 .footer__unit--suggestion {
     display: inline-block;
     padding: 0 10px 0 10px;
-    height: 12px;
+    height: 17px;
     border-right: 1px solid var(--color-background-16);
     line-height: 20px;
     color: var(--color-text-2);

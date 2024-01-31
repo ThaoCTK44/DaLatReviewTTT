@@ -6,12 +6,13 @@
 ============================================== */
  .user__center--container{
     background-color: rgb(250, 250, 250);
+    
   }
   .user__center--box{
     margin: 0 auto;
     padding-bottom: 80px;
     padding-top: 40px;
-    width: 1160px;
+    max-width: 1160px;
   }
    
   .fill__more--info{
@@ -42,7 +43,7 @@
   .user__center--sidebarwrapper{
     display: flex;
     justify-content: space-between;
-    width: 1160px;
+    max-width: 1160px;
     height: 1011px;
   
   
@@ -60,8 +61,8 @@
   .user__center--sidebar{
     background-image: url("../img/user_background.png");
     background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 275px;
+    border-radius: var(--border-radius-size-2);
+    width: 17em;
   }
   
   .user__content{
@@ -81,4 +82,26 @@
       margin-bottom: 18px;
       position: relative;
       width: 90px;
+  }
+  .user__center--sidebar__profile--changer{
+    display: flex;
+    color: var(--color-text-6);
+    /* color: var(--color-text-19); */
+    font-weight: 500;
+    margin-top: 10px;
+  }
+/* thanh công cụ  */
+  .user__center--sidebar--preferential{
+    border-top: 1px solid #e6e6e6;
+    padding: 12px 0 7px;
+    background-color: var(--color-background-6);
+  }
+
+
+
+  /* right sight  */
+  .user__content--box{
+    background-color: pink;
+    width: 54em;
+    border-radius: var(--border-radius-size-2);
   }
