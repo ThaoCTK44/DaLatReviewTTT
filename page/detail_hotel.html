@@ -50,26 +50,26 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header__top--right__item">
+                            <div class="header__top--right__item open__login--signup__form">
                                 Đăng ký
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="header__top--right__itemlast">
+                            <div class="header__top--right__itemlast open__login--signup__form">
                                 Đăng nhập
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div class="header__top--right__mobile">
                     <div class="header__top--right__mobile--item">
-                        <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                        <ion-icon name="search-outline"></ion-icon>
                     </div>
                     <div class="header__top--right__mobile--item">
-                        <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+                        <ion-icon name="cart-outline"></ion-icon>
                     </div>
-                    <div class="header__top--right__mobile--item">
-                        <a href=""><ion-icon name="person-outline"></ion-icon></a>
+                    <div class="header__top--right__mobile--item open__login--signup__form">
+                        <ion-icon name="person-outline"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -110,23 +110,80 @@
             </div>
         </div>
         <div class="detailHotel__info">
-            <div class="detailHotel__info--header">
-                <div class="detailHotel__info--header__left">
+            <div class="detailHotel__info--wapper">
+                <div class="detailHotel__info--wapper__left">
                     <h1>Rose Milano Villa</h1>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
                 </div>
-                <div class="detailHotel__info--header__right">
-                    <p class="detailHotel__info--header__right--name">
-                        <span class="detailHotel__info--header__right--1">đ</span>
-                        <span class="detailHotel__info--header__right--price">20XXXXX</span>
-                        <span class="detailHotel__info--header__right--unit">Mỗi đêm</span>
+                <div class="detailHotel__info--wapper__right">
+                    <p class="detailHotel__info--wapper__right--name">
+                        <span class="detailHotel__info--wapper__right--1">đ</span>
+                        <span class="detailHotel__info--wapper__right--price">20XXXXX</span>
+                        <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                     </p>
-                    <p class="detailHotel__info--header__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
-                    <div class="detailHotel__info--header__btn firstBtn">Chọn phòng</div>
+                    <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
+                    <div class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</div>
                 </div>
                 
+            </div>
+            <div class="detailHotel__info--summary">
+                <div class="detailHotel__info--summary__left">
+                    <div class="detailHotel__info--summary__left--top">
+                        <div class="detailHotel__info--summary__left--top__rating">
+                            <span>4.3</span>
+                            <span>/5</span>
+                        </div>
+                        <div class="detailHotel__info--summary__left--top__score">
+                            <span>Rất tốt</span>
+                            <span>12 Bình luận</span>
+                        </div>
+                    </div>
+                    <div class="detailHotel__info--summary__left--bot">
+                        <img src="/assets/img/user_avatar.png" alt="">
+                        <div class="detailHotel__info--summary__left--bot__decs">
+                            <div class="detailHotel__info--summary__left--bot__decs--name">Tien Dat</div>
+                            <div class="detailHotel__info--summary__left--bot__decs--content">Khách sạn sạch đẹp, phòng tiện nghi đầy đủ, dịch vụ tốt và nhân viên thân thiện. Sạc điện thoại mình bị hư đã được ks hỗ trợ cho mượn cái thay thế.
+                                Tuy nhiên, mình có chút không thoải mái về vấn đề cách âm. Nếu cải thiện được vấn đề này sẽ rất tốt.
+                                Mình dự định sẽ quay lại đặt phòng trong kỳ nghỉ tới.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailHotel__info--summary__right">
+                    <div class="detailHotel__info--summary__right--address">
+                        <span>16 Trạng Trình(P.9)</span>
+                        <div class="detailHotel__info--summary__right--location">
+                            <ion-icon name="train-outline"></ion-icon>
+                            <p>Ga Đà Lạt, 1.1km</p>
+                        </div>
+                    </div>
+                    <div class="detailHotel__info--summary__right--map">
+                        <span>Xem bản đồ</span>
+                        <ion-icon name="location-sharp"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="detailHotel__list">
+                <div class="detailHotel__list--header">
+                    <div class="header__list--header__title">
+                        <h2>Chọn phòng của bạn</h2>
+                    </div>
+                </div>
+                <div class="detailHotel__list--body">
+                   <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p> 
+                   <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
+                   <div class="detailHotel__list--body__checkbox">
+                        <span class="detailHotel__list--body__checkbox--group">
+                            <input type="checkbox" aria-hidden="true" tabindex="-1" value="false">
+                            <span class="detailHotel__list--body__checkbox--base"></span>
+                            <span class="detailHotel__list--body__checkbox--lable">
+                            <ion-icon name="gift-outline"></ion-icon>
+                            <p>Ưu đãi của khách sạn(8)</p>
+                        </span>
+                        </span>
+                   </div>
+                </div>
             </div>
         </div>
     </section>
