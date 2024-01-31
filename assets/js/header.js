@@ -8,9 +8,17 @@ const btnOpenLoginSignForm = document.querySelector('.open__login--signup__form 
 const btnTransEmailLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--email');
 const btnTransNumberLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--numberphone');
 
-mobileMenuBtn.addEventListener('click',()=>{
+window.onload=function(){
+    mobileMenuBtn.addEventListener('click',mobileMenu);
+    hamburgerBtn.addEventListener('click',hamburger);
+}
+
+function mobileMenu() {
     headerBody.classList.toggle('active');
-})
+}
+// mobileMenuBtn.addEventListener('click',()=>{
+//     headerBody.classList.toggle('active');
+// })
 hamburgerBtn.addEventListener('click',()=>{
     headerBody.classList.toggle('active');
 })
