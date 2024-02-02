@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="/assets/css/secondDropdown.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/detail_hotel.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
 </head>
+
 <body>
     <header>
         <div class="header__content--top">
@@ -21,7 +24,8 @@
                     <img src="/assets/img/home-logo.png" alt="" class="header__top--left__logo">
                     <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
                     <div class="header__top--left__search">
-                        <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động">
+                        <input type="text" class="header__top--left__search--input"
+                            placeholder="Tìm theo điểm đến, hoạt động">
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
                 </div>
@@ -79,18 +83,18 @@
         <div class="hotel__fitter--wrapper">
             <div class="hotel__fitter--search">
                 <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
-        </div>
-        <div class="hotel__fitter--search">
-            <input type="search" placeholder="Chọn ngày" class="hotel__search">
-        </div>
-        <div class="hotel__fitter--search">
-            <input type="search" placeholder="Chọn phòng" class="hotel__search">
-        </div>
-        <a href="#">
-            <div class="hotel__fitter--btn firstBtn">
-                Tìm kiếm
             </div>
-        </a>
+            <div class="hotel__fitter--search">
+                <input type="search" placeholder="Chọn ngày" class="hotel__search">
+            </div>
+            <div class="hotel__fitter--search">
+                <input type="search" placeholder="Chọn phòng" class="hotel__search">
+            </div>
+            <a href="#">
+                <div class="hotel__fitter--btn firstBtn">
+                    Tìm kiếm
+                </div>
+            </a>
         </div>
     </div>
     <section class="detailHotel">
@@ -126,7 +130,7 @@
                     <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
                     <div class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</div>
                 </div>
-                
+
             </div>
             <div class="detailHotel__info--summary">
                 <div class="detailHotel__info--summary__left">
@@ -144,8 +148,11 @@
                         <img src="/assets/img/user_avatar.png" alt="">
                         <div class="detailHotel__info--summary__left--bot__decs">
                             <div class="detailHotel__info--summary__left--bot__decs--name">Tien Dat</div>
-                            <div class="detailHotel__info--summary__left--bot__decs--content">Khách sạn sạch đẹp, phòng tiện nghi đầy đủ, dịch vụ tốt và nhân viên thân thiện. Sạc điện thoại mình bị hư đã được ks hỗ trợ cho mượn cái thay thế.
-                                Tuy nhiên, mình có chút không thoải mái về vấn đề cách âm. Nếu cải thiện được vấn đề này sẽ rất tốt.
+                            <div class="detailHotel__info--summary__left--bot__decs--content">Khách sạn sạch đẹp, phòng
+                                tiện nghi đầy đủ, dịch vụ tốt và nhân viên thân thiện. Sạc điện thoại mình bị hư đã được
+                                ks hỗ trợ cho mượn cái thay thế.
+                                Tuy nhiên, mình có chút không thoải mái về vấn đề cách âm. Nếu cải thiện được vấn đề này
+                                sẽ rất tốt.
                                 Mình dự định sẽ quay lại đặt phòng trong kỳ nghỉ tới.</div>
                         </div>
                     </div>
@@ -171,18 +178,40 @@
                     </div>
                 </div>
                 <div class="detailHotel__list--body">
-                   <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p> 
-                   <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
-                   <div class="detailHotel__list--body__checkbox">
-                        <span class="detailHotel__list--body__checkbox--group">
-                            <input type="checkbox" aria-hidden="true" tabindex="-1" value="false">
-                            <span class="detailHotel__list--body__checkbox--base"></span>
-                            <span class="detailHotel__list--body__checkbox--lable">
-                            <ion-icon name="gift-outline"></ion-icon>
-                            <p>Ưu đãi của khách sạn(8)</p>
-                        </span>
-                        </span>
-                   </div>
+                    <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là
+                        mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p>
+                    <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
+                    <div class="detailHotel__list--body__checkbox">
+                        <div class="detailHotel__list--body__checkbox--group">
+                            <input type="checkbox" id="checkbox--group">
+                            <label class="detailHotel__list--body__checkbox--lable" for="checkbox--group">
+                                <ion-icon name="gift-outline"></ion-icon>
+                                <p>Ưu đãi của khách sạn(8)</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="detailHotel__list--body--select">
+                        <div class="detail__list--body--select__rom">
+                            <div class="primary__dropdown">
+                                <div class="primary__dropdown--button detail__list--body--select__rom--container" onclick="primaryDropdown()">
+                                    <span>2 loại phòng</span>
+                                    <div class="primary__dropdown--icon">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="primary__dropdown--content" id="primaryDropdownHidden"">
+                                    <ul class=" primary__dropdown--content__list" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="primary__dropdown--content__list--item" href="#">Phòng Deluxe  (Từ ₫ 20XXXXX)</a></li>
+                                    <li><a class="primary__dropdown--content__list--item" href="#">Phòng Deluxe  (Từ ₫ 20XXXXX)</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="detail__list--body--select__tip">
+                            Có <b>4</b> mức giá cho loại phòng này
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,4 +219,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </html>
