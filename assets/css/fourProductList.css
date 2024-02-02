@@ -6,6 +6,10 @@
 }
 .fourProductList__wrapper--item {
     width: 100%;
+    transition: all .2s ease-in-out;
+}
+.fourProductList__wrapper--item:hover{
+    transform: scale(1.1);
 }
 .fourProductList__wrapper--item img{
     width: 100%;
