@@ -1,8 +1,8 @@
 /* ==============================================
     Name: Header css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 12AM 29/2/2024
+    Creact at: 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
 body{
     width: 100%;
@@ -93,6 +93,17 @@ header{
     letter-spacing: .5px;
     border-radius: var(--border-radius-size-5);
 }
+.header__top--right__itemsignup{
+    padding:  12px 13px;
+    font-size: var(--size-text-3);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .5px;
+    border-radius: var(--border-radius-size-5);
+    cursor: pointer;
+}
 .header__top--right__itemlast{
     cursor: pointer;
     padding:  12px 13px;
@@ -136,8 +147,8 @@ header{
 /* ==============================================
     Name: Header list mobile css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 8AM 29/2/2024
+    Creact at: 8AM 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
 .header__mobile{
     position: fixed;
@@ -388,7 +399,8 @@ body.TransLoginSignForm .login__signup--box__container--number{
     color: var(--color-text-6);
     cursor: pointer;
 }
-body.checker .check__login {
+body.checker .open__login--signup__form--1,
+body.checker .open__login--signup__form--2{
     display: none;
     opacity: 0;
     width: 0;
@@ -397,12 +409,14 @@ body.checker .check__login {
 body.checker .header__top--right__item--checker{
     display: block;
 }
-body.checker .header__top--right__item.logout{
+body.checker .logout{
     display: block;
 }
-.header__top--right__item.logout{
+body.checker .login__mobile{
     display: none;
-    visibility: hidden;
+}
+.logout{
+    display: none;
 }
 .header__top--right__item--checker{
     display: none;
@@ -414,7 +428,6 @@ body.checker .header__top--right__item.logout{
     border: 1px solid var(--color-text-3);
     cursor: pointer;
 }
-.header__top--right__item--logout
 
 
 
@@ -430,8 +443,8 @@ body.checker .header__top--right__item.logout{
 /* ==============================================
     Name: Reponsive Header css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 12AM 29/2/2024
+    Creact at: 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
  @media only screen and (max-width: 1400px) {
     header{
