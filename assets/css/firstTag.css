@@ -15,7 +15,6 @@
     
     .firstTag__internal--desktop {
       display: block;
-      padding: 30px;
     }
   }
   
@@ -24,16 +23,15 @@
     .firstTag__internal--desktop {
       display: none;
     }
-  
     .firstTag__internal--mobile {
       display: block;
     }
-  
+    .firstTag__internal--wrap
+ 
     /* 1 */
     .firstTag__internal--title {
       font-size: var(--size-text-6) !important;
     }
-  
     /* 2 */
     .firstTag__internal--header {
       font-size: var(--size-text-5);
@@ -41,7 +39,6 @@
       font-weight: 600;
       margin-bottom: 12px;
     }
-  
     /* 3 */
     .firstTag__unit--suggestion {
       font-size: var(--size-text-4);
@@ -51,6 +48,12 @@
       border-right: 1px solid var(--color-background-16);
       line-height: 12px;
       color: var(--color-text-2);
+    }
+    .firstTag__internal--unit {
+      margin-bottom: 8px;
+    }
+    .firstTag__internal--title{
+      margin-bottom: 20px;
     }
   }
   
@@ -62,11 +65,10 @@
   
   .firstTag__internal--mobile {
     margin: 0 auto;
-    padding: 0 20px 0 20px;
   }
   
   .firstTag__internal--wrap {
-    margin: 64px 0;
+    margin: 1.5em 0 1em;
   }
   
   /* Thẻ H2 */
@@ -101,6 +103,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -12px -12px -12px;
+  }
+
+  .mobile__wrap{
+    margin: 24px 0;
   }
   
   /* thẻ li */
