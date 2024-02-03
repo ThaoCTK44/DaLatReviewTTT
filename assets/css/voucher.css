@@ -3,7 +3,9 @@
 /* rs css  */
 
 .voucher__card--container{
-    display: flex;justify-content: center;align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 200px;
 }
 .voucher__card {
