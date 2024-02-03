@@ -3,58 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voucher</title>
+  <title>Toggle Active Class</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    #voucher {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    #useButton {
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #useButton.used {
-      background-color: #ccc;
-      cursor: not-allowed;
+    .active {
+      color: red; /* Màu chữ khi được chọn */
+      text-decoration: underline; /* Gạch chân khi được chọn */
     }
   </style>
 </head>
 <body>
-  <div id="voucher">
-    <h2>Your Voucher</h2>
-    <p>This is your special voucher. Use it wisely!</p>
-    <button id="useButton" onclick="useVoucher()">Sử Dụng</button>
-  </div>
+
+  <div onclick="activateDiv(this)">Div 1</div>
+  <div onclick="activateDiv(this)">Div 2</div>
 
   <script>
-    function useVoucher() {
-      var useButton = document.getElementById('useButton');
-      if (!useButton.classList.contains('used')) {
-        // Perform any additional logic here (e.g., update server, show confirmation)
-        alert('Voucher đã được sử dụng!');
-        useButton.innerText = 'Đã Lưu';
-        useButton.classList.add('used');
+    function activateDiv(selectedDiv) {
+      // Lấy ra tất cả các div
+      var divs = document.querySelectorAll('div');
+
+      // Lặp qua tất cả các div và loại bỏ lớp 'active' nếu có
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.remove('active');
       }
+
+      // Thêm lớp 'active' cho div được chọn
+      selectedDiv.classList.add('active');
     }
   </script>
+
 </body>
 </html>
