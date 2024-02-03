@@ -7,6 +7,12 @@
 body{
     width: 100%;
 }
+p,span{
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
 header{
     position: fixed;
     width: 100%;
@@ -205,7 +211,7 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 450px;
-    height: 550px;
+    height: 600px;
     background: var( --color-background-6);
     border-radius: var(--border-radius-size-5);
 }
@@ -213,7 +219,7 @@ header{
     padding: 8%;
 }
 .login__signup--box__container--header{
-    margin-bottom: 38px;
+    margin-bottom: 10px;
     width: 85%;
 }
 .login__signup--box__container--header p{
@@ -352,7 +358,7 @@ body.TransLoginSignForm .login__signup--box__container--number{
 }
 .login__signup--box__container--number__main form{
     display: flex;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .login__signup--box__container--main__bottom{
     display: flex;
@@ -498,7 +504,26 @@ body.TransLoginSignForm .login__signup--box__container--number{
 
  }
  @media only screen and (max-width: 850px) {
-
+    .login__signup--box__container--main__note_3::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background-color: var(--color-background-1);
+        opacity: .4;
+    }
+    .login__signup--box__container--main__note_3::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 80px;
+        height: 1px;
+        background-color: var(--color-background-1);
+        opacity: .4;
+    }
     .header__top--left__namewebsite{
         display: block;
         color: var(--color-text-15);
@@ -550,4 +575,5 @@ body.TransLoginSignForm .login__signup--box__container--number{
     .login__signup--box__container--header p{
         font-size: var(--size-text-7);
     }
+
  }
