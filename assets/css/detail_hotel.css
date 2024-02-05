@@ -13,7 +13,7 @@
 }
 
 .detailHotel__top--link a {
-    color: var(--color-text-19);
+    color: var(--color-text-19) !important;
     font-size: var(--size-text-4);
 }
 
@@ -28,7 +28,7 @@
 }
 
 .detailHotel__img img ,
-.detailHotel__list--body--list--wrap__item--left__img--main img {
+.detailHotel__list--body__list--wrap__item--left__img--main img {
     object-fit: cover;
     width: 100%;
 }
@@ -119,7 +119,7 @@
     align-items: center;
     min-height: 140px;
     min-width: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .detailHotel__info--summary__left,
@@ -138,7 +138,8 @@
     display: flex;
 }
 
-.detailHotel__info--summary__left--top__rating span:first-child {
+.detailHotel__info--summary__left--top__rating span:first-child,
+.detailHotel__list--body__reviews--content__overview--info__score span:first-child {
     font-size: 44px;
     line-height: 1.32;
     font-weight: 600;
@@ -157,7 +158,8 @@
 }
 
 .detailHotel__info--summary__left--top__rating span:last-child,
-.detailHotel__info--summary__left--top__score span:last-child {
+.detailHotel__info--summary__left--top__score span:last-child,
+.detailHotel__list--body__reviews--content__overview--info__score span:last-child {
     color: var(--color-text-11);
     font-size: var(--size-text-4);
 }
@@ -172,11 +174,13 @@
     align-items: center;
 }
 
-.detailHotel__info--summary__left--bot img {
+.detailHotel__info--summary__left--bot img,
+.detailHotel__list--body__reviews--content__item--content__header--user img {
     border-radius: 50%;
     width: 38px;
     height: 38px;
     margin-right: 10px;
+    margin-bottom: 8px;
 }
 
 .detailHotel__info--summary__left--bot__decs {
@@ -242,7 +246,7 @@
 }
 
 .detailHotel__list--header {
-    padding: 40px 0 24px;
+    padding: 60px 0 32px;
 }
 
 .header__list--header__title h2 {
@@ -344,23 +348,23 @@
 }
 
 
-.detailHotel__list--body--select {
+.detailHotel__list--body__select {
     display: flex;
     align-items: center;
 }
 
-.detail__list--body--select__rom--container {
+.detail__list--body__select--rom--container {
     border-radius: var(--border-radius-size-1);
     margin-right: 20px;
     border: 1px solid var(--color-background-3);
 }
 
-.detail__list--body--select__rom--container:hover {
+.detail__list--body__select--rom--container:hover {
     border: 1px solid var(--color-background-0);
     background-color: var(--color-background-6);
 }
 
-.detail__list--body--select__rom--container span {
+.detail__list--body__select--rom--container span {
     font-weight: 600;
     font-size: var(--size-text-5);
 }
@@ -369,6 +373,7 @@
     color: var(--color-text-2);
     font-size: var(--size-text-4);
     font-weight: 400;
+    margin-left: 15px;
 }
 
 .detail__list--body--select__tip b {
@@ -377,12 +382,12 @@
 }
 
 
-.detailHotel__list--body--list--wrap{
+.detailHotel__list--body__list--wrap{
     background-color: var(--color-background-12);
     margin-top: 20px;
     padding: 20px;
 }
-.detailHotel__list--body--list--wrap__name{
+.detailHotel__list--body__list--wrap__name{
     font-size: var(--size-text-6);
     line-height: 1.32;
     font-weight: 600;
@@ -390,33 +395,33 @@
     display: flex;
     align-items: center;
 }
-.detailHotel__list--body--list--wrap__item{
+.detailHotel__list--body__list--wrap__item{
     display: flex;
     justify-content: space-between;
 }
-.detailHotel__list--body--list--wrap__item--left{
+.detailHotel__list--body__list--wrap__item--left{
     width: 300px;
 }
-.detailHotel__list--body--list--wrap__item--left__img{
+.detailHotel__list--body__list--wrap__item--left__img{
     position: relative;
 }
 
-.detailHotel__list--body--list--wrap__item--left__img--main{
+.detailHotel__list--body__list--wrap__item--left__img--main{
     display: flex;
     flex-wrap: wrap;
     
     cursor: pointer;
 }
-.detailHotel__list--body--list--wrap__item--left__img--main img {
+.detailHotel__list--body__list--wrap__item--left__img--main img {
     border-radius: var(--border-radius-size-2);
 }
-.detailHotel__list--body--list--wrap__item--left__img--main__2,
-.detailHotel__list--body--list--wrap__item--left__img--main__3{
+.detailHotel__list--body__list--wrap__item--left__img--main__2,
+.detailHotel__list--body__list--wrap__item--left__img--main__3{
     width: 48%;
     margin-top: 5px;
     margin-right: 5px;
 }
-.detailHotel__list--body--list--wrap__item--left__img--count{
+.detailHotel__list--body__list--wrap__item--left__img--count{
     position: absolute;
     padding: 4px 8px;
     border-radius: 12px 0 8px 0;
@@ -429,10 +434,10 @@
     bottom: 0;
     cursor: pointer;
 }
-.detailHotel__list--body--list--wrap__item--left__popular{
+.detailHotel__list--body__list--wrap__item--left__popular{
     margin-top: 12px;
 }
-.detailHotel__list--body--list--wrap__item--left__popular--platform{
+.detailHotel__list--body__list--wrap__item--left__popular--platform{
     display: flex;
     align-items: center;
     font-size: var(--size-text-4);
@@ -442,15 +447,15 @@
     overflow: hidden;
 }
 
-.detailHotel__list--body--list--wrap__item--left__popular--platform ion-icon{
+.detailHotel__list--body__list--wrap__item--left__popular--platform ion-icon{
     margin-right: 8px;
 }
-.detailHotel__list--body--list--wrap__item--left__facility{
+.detailHotel__list--body__list--wrap__item--left__facility{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-.detailHotel__list--body--list--wrap__item--left__facility--platform{
+.detailHotel__list--body__list--wrap__item--left__facility--platform{
     display: flex;
     align-items: center;
     width: calc(50% - 4px);
@@ -458,14 +463,14 @@
     margin-bottom: 6px;
     font-size: var(--size-text-4);
 }
-.detailHotel__list--body--list--wrap__item--left__facility--platform ion-icon{
+.detailHotel__list--body__list--wrap__item--left__facility--platform ion-icon{
     margin-right: 5px;
 }
-.detailHotel__list--body--list--wrap__item--left__poptip{
+.detailHotel__list--body__list--wrap__item--left__poptip{
     margin-top: 10px;
     width: 150px;
 }
-.detailHotel__list--body--list--wrap__item--left__poptip p{
+.detailHotel__list--body__list--wrap__item--left__poptip p{
 
     font-size: var(--size-text-5);
     line-height: 1.5;
@@ -473,45 +478,45 @@
     cursor: pointer;
     border-bottom: 1px dashed;
 }
-.detailHotel__list--body--list--wrap__item--right{
+.detailHotel__list--body__list--wrap__item--right{
     width: calc(100% - 316px);
     display: flex;
     align-self: stretch;
     flex-direction: column;
     background-color: var(--color-background-6);
 }
-.detailHotel__list--body--list--wrap__item--right__header{
+.detailHotel__list--body__list--wrap__item--right__header{
     display: flex;
     justify-content: space-between;
     color: var(--color-text-2);
 
 }
-.detailHotel__list--body--list--wrap__item--right__header div{
+.detailHotel__list--body__list--wrap__item--right__header div{
     padding: 12px 20px;
     font-size: var(--size-text-4);
     line-height: 1.5;
     font-weight: 600;
 
 }
-.detailHotel__list--body--list--wrap__item--right__header div:first-child,
-.detailHotel__list--body--list--wrap__item--right__body--info__left{
+.detailHotel__list--body__list--wrap__item--right__header div:first-child,
+.detailHotel__list--body__list--wrap__item--right__body--info__left{
     border-right: 1px solid var(--color-text-3);
     flex: 1;
 }
-.detailHotel__list--body--list--wrap__item--right__header div:last-child,
-.detailHotel__list--body--list--wrap__item--right__body--info__right{
+.detailHotel__list--body__list--wrap__item--right__header div:last-child,
+.detailHotel__list--body__list--wrap__item--right__body--info__right{
    width: 256px;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info{
+.detailHotel__list--body__list--wrap__item--right__body--info{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--color-text-3);
 
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__left{
+.detailHotel__list--body__list--wrap__item--right__body--info__left{
     padding: 16px 16px 48px 20px;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__left--name{
+.detailHotel__list--body__list--wrap__item--right__body--info__left--name{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -520,19 +525,19 @@
     line-height: 1.5;
     font-weight: 600;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__left--rate__card{
+.detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card{
     display: flex;
     align-items: center;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__left--rate__card ion-icon{
+.detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card ion-icon{
     margin-right: 5px;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__right{
+.detailHotel__list--body__list--wrap__item--right__body--info__right{
     align-self: flex-end;
     padding: 40px 20px 20px 0;
 }
 
-.detailHotel__list--body--list--wrap__item--right__body--info__right--price{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -542,7 +547,7 @@
     cursor: pointer;
 }
 
-.detailHotel__list--body--list--wrap__item--right__body--info__right--price__part--desc{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc{
     display: inline-block;
     font-size: var(--size-text-6);
     line-height: 1.32;
@@ -552,7 +557,7 @@
 
 }
 
-.detailHotel__list--body--list--wrap__item--right__body--info__right--price__part--tip{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip{
 
     margin-bottom: 4px;
     font-size: 12px;
@@ -560,18 +565,283 @@
     font-weight: 400;
     color: var(--color-text-11);
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__right--price__part{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__part{
     padding-top: 12px;
     text-align: right;
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__right--tip{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--tip{
     text-align: right;
     font-size: var(--size-text-3);
     line-height: 1.5;
     font-weight: 400;
     
 }
-.detailHotel__list--body--list--wrap__item--right__body--info__right--price div:last-child,
-.detailHotel__list--body--list--wrap__item--right__body--info__right--tip{
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price div:last-child,
+.detailHotel__list--body__list--wrap__item--right__body--info__right--tip{
     margin-top: 12px;
+}
+
+
+/* ==============================================
+    Name: hotelDetail review
+    Creact by: Tien Dat
+    Creact at: 5/2/2024
+============================================== */
+
+.detailHotel__list--body__reviews--content__overview a{
+    float: right;
+    font-size: var(--size-text-4);
+    color: var(--color-text-19) !important;
+}
+.detailHotel__list--body__reviews--content__overview--info,
+.detailHotel__list--body__reviews--content__overview--info__fomart{
+    display: flex;
+    align-items: center;
+}
+.detailHotel__list--body__reviews--content__overview--info__fomart{
+    margin-left: 15px;
+}
+.detailHotel__list--body__reviews--content__overview--info__fomart p{
+    font-size: var(--size-text-5);
+    font-weight: 600;
+    margin-right: 8px !important;
+}
+.detailHotel__list--body__reviews--content__overview--info__fomart span,
+.detailHotel__list--body__reviews--content__overview--category__item {
+    color: var(--color-text-2);
+    font-weight: 400;
+}
+.detailHotel__list--body__reviews--content__overview--category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.detailHotel__list--body__reviews--content__overview--category__item--progress{
+    display: flex;
+    position: relative;
+}
+.detailHotel__list--body__reviews--content__overview--category__item--progress__content{
+    position: relative;
+    display: flex;
+    top: 10px;
+    width: 230px;
+    height: 8px;
+    flex: 1;
+}
+.detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway{
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: var(--color-background-3);
+}
+.detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress{
+    border-radius: 6px;
+    position: absolute;
+    width: 80%;
+    height: 8px;
+    background-color: var(--color-background-5);
+}
+.detailHotel__list--body__reviews--content__overview--category__item--progress__end{
+    margin-left: 8px;
+}
+.detailHotel__list--body__reviews--content__swiper--item{
+    display: flex;
+}
+.detailHotel__list--body__reviews--content__swiper--items{
+    min-width: 32px;
+    padding: 6px 12px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: 14px;
+    border: 1px solid var(--color-background-16);
+    margin-right: 12px;
+    border-radius: 28px;
+}
+.detailHotel__list--body__reviews--content__item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid var(--color-background-16);
+    margin-top: 20px;
+    padding: 12px;
+    padding: 12px 20px 16px;
+}
+.detailHotel__list--body__reviews--content__item--content__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailHotel__list--body__reviews--content__item--content__header--review{
+    color: var(--color-background-2);
+    font-size: var(--size-text-3);
+    margin-left: 16px;
+}
+.detailHotel__list--body__reviews--content__item--content__score{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: var(--size-text-4);
+}
+
+.detailHotel__list--body__reviews--content__item--content__score--max span:first-child{
+    color: var(--color-text-17);
+}
+.detailHotel__list--body__reviews--content__item--content__score--max span:last-child{
+    color: var(--color-text-2);
+    font-size: var(--size-text-3);
+    text-align: end;
+    margin-right: 5px !important;
+}
+.detailHotel__list--body__reviews--content__item--content__text{
+    font-size: var(--size-text-4);
+    line-height: 20px;
+}
+.detailHotel__list--body__reviews--content__item--from{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.detailHotel__list--body__reviews--content__item--from img{
+    height: 16px;
+    margin-right: 4px;
+}
+.detailHotel__list--body__reviews--content__item--from{
+    color: var(--color-text-2);
+    font-size: var(--size-text-3);
+}
+
+
+.detailHotel__list--body__detail--content__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 20px 8px;
+    border: 1px solid var(--color-background-16);
+    border-radius: 12px;
+}
+.detailHotel__list--body__detail--content__item--wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% - 106px);
+    margin-bottom: 16px;
+    font-size: var(--size-text-4);
+    color: var(--color-text-1);
+}
+.detailHotel__list--body__detail--content__footer,
+.detailHotel__list--body__policies--footer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 44px;
+}
+.detailHotel__list--body__detail--content__footer span,
+.detailHotel__list--body__policies--footer span{
+    font-size: var(--size-text-4);
+    text-decoration: underline;
+}
+
+
+.detailHotel__list--body__facility--content div:first-child{
+    margin-bottom: 24px;
+}
+.detailHotel__list--body__facility--content__item--content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1 1 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+.detailHotel__list--body__facility--content__item--content:first-child{
+    border-bottom: 1px solid var(--color-background-16);
+}
+.detailHotel__list--body__facility--content__item,
+.detailHotel__list--body__policies--content__check{
+    display: flex;
+    align-items: flex-start;
+
+}
+.detailHotel__list--body__facility--content__item--title,
+.detailHotel__list--body__policies--content__check--title{
+    flex: 0 0 200px;
+    margin-right: 80px;
+    font-size: var(--size-text-5);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.detailHotel__list--body__facility--content__item--content--subitem ion-icon{
+    font-size: var(--size-text-5);
+    margin-right: 8px;
+}
+.detailHotel__list--body__facility--content__item--content--subitem{
+    flex: 0 0 33.33%;
+    margin-bottom: 16px;
+    padding-right: 32px;
+    font-size: var(--size-text-4);
+}
+
+.detailHotel__list--body__policies--content__check--content{
+    font-size: var(--size-text-4);
+    line-height: 2;
+}   
+.detailHotel__list--body__policies--content__check--content__instruction{
+    display: flex;
+    align-items: center;
+    color: var(--color-text-4);
+}
+.detailHotel__list--body__policies--content__check--content__desc,
+.detailHotel__list--body__policies--content__check--content__instruction{
+    margin-bottom: 20px;
+}
+.detailHotel__list--body__policies--content__check--content__instruction div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.detailHotel__list--body__policies--content__check--content__instruction ion-icon{
+    margin-right: 8px;
+    font-size: var(--size-text-6);
+}
+
+.detailHotel__list--body__description--text{
+    font-size: var(--size-text-4);
+}
+
+.detailHotel__list--body__link{
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.detailHotel__list--body__link--inner{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: auto;
+    font-size: var(--size-text-5);
+}
+.detailHotel__list--body__link--inner__divider{
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+.detailHotel__list--body__link--inner__item a{
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+
+.last__link{
+    color: var(--color-text-21) !important;
+    cursor: default;
 }
