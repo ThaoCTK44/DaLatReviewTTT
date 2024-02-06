@@ -228,7 +228,7 @@
                     </div>
                     <div class="checkouttour__container--left__info--add">
                         <p>Thông tin người tham gia</p>
-                        <button>+ Thêm</button>
+                        <button id="open__checkouttour--btn1">+ Thêm</button>
                     </div>
                     <div class="checkouttour__container--left__info--box contact__checkout">
                         <div class="checkouttour__container--left__info--box__contact">
@@ -339,9 +339,40 @@
                 </div>
             </div>
         </div>
+        
     </section>
     <!-- phần footer -->
-    
+    <div class="checkouttour__container--add shadow">
+        <div class="checkouttour__container--add--header">
+            <span>Thêm thông tin liên lạc</span>
+            <ion-icon id="close__checkouttour--btn1" name="close-outline"></ion-icon>
+        </div>
+        <div class="checkouttour__container--add__form">
+            <div class="checkouttour__container--add__form-left">
+                <div class="checkouttour__container--add__form--item">
+                    <span>Họ và Tên lót</span>
+                    <input type="text" placeholder="Nhập họ và tên lót">
+                </div>
+                <div class="checkouttour__container--add__form--item">
+                    <span>Tên</span>
+                    <input type="text" placeholder="Nhập tên của bạn">
+                </div>
+            </div>
+            <div class="checkouttour__container--add__form-right">
+                <div class="checkouttour__container--add__form--item">
+                    <span>Email</span>
+                    <input type="text" placeholder="Nhập email của bạn">
+                </div>
+                <div class="checkouttour__container--add__form--item">
+                    <span>Số điện thoại</span>
+                    <input type="text" placeholder="Nhập số điện thoại">
+                </div>
+            </div>
+        </div>
+        <div class="checkouttour__container--add__last">
+            <button id="close__checkouttour--btn2" class="secondBtn">Hủy bỏ</button><button id="close__checkouttour--btn3" class="firstBtn">Lưu</button>
+        </div>
+    </div>
     <footer class="footer__layout--desktop">
         <div class="layout__footer--devider"></div>
         <div class="layout__footer--wrapper row-max-width">
@@ -530,7 +561,7 @@
         </div>
     </footer>
     <script src="/assets/js/header.js"></script>
-    <script src="/assets/js/home.js"></script>
+    <script src="/assets/js/checkout-tour.js"></script>
     <!-- <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.js"></script> -->
 </body>
 </html>
