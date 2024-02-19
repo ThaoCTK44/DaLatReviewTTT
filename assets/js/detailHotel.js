@@ -1,5 +1,5 @@
 const btnDetailHotelRate = document.querySelector('.detailHotel__info--summary__left.rate');
-const btnDetailHotelRate2 = document.querySelector('.detailHotel__list--body__reviews--content__overview.rate');
+const btnDetailHotelRate2 = document.querySelector('.detailHotel__list--body__reviews--content__overview--link.rate');
 const closeDetailHotelRate = document.querySelector('.detailHotel__list--body__reviews--wrap__icon ion-icon');
 const closeDetailHotelBlur = document.querySelector('.detailHotel__backgroup--blur');
 
@@ -14,9 +14,11 @@ btnDetailHotelRate2.addEventListener('click', ()=>{
 })
 closeDetailHotelRate.addEventListener('click', ()=>{
     detailHotelBody.classList.remove('listDetailHotelRate')
+    detailHotelBody.classList.remove('listDetailHotelRate2')
 })
 closeDetailHotelBlur.addEventListener('click', ()=>{
     detailHotelBody.classList.remove('listDetailHotelRate')
+    detailHotelBody.classList.remove('listDetailHotelRate2')
     detailHotelBody.classList.remove('detailHotelBlur')
 
 })
