@@ -1,19 +1,6 @@
 /* CSS */
-.hotel__body{
-    top: 150px;
-    left: 50%;
-    position: fixed;
-    display: flex;
-    max-width: 1160px;
-    width: 100%;
-    height: calc(100vh - 150px);
-    transform: translateX(-50%);
-}
-.hotel__body--left{
-    flex: 30%;
-}
+
 .hotel__body--right{
-    flex: 70%;
     overflow-y: scroll;
 }
 .hotel__body--right::-webkit-scrollbar{

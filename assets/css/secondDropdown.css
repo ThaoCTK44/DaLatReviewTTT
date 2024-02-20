@@ -34,3 +34,41 @@
 .hotel__fitter--btn{
     min-width: 127px;
 }
+.hotelMobile__fitter{
+    display: none;
+}
+@media  (max-width: 450px){
+    .hotel__fitter{
+        display: none;
+    }
+    .hotelMobile__fitter{
+        position: relative;
+        z-index: 20;
+        top: 61px;
+        padding: 12px 35px;
+        display: block;
+    }
+    .hotelMobile__fitter--wraper{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 12px 20px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: var(--color-background-12);
+    }
+    .hotelMobile__fitter--wraper span {
+        color: var(--color-background-2);
+    }
+    .hotelMobile__fitter--date, .hotelMobile__fitter--location{
+        font-size: var(--size-text-4);
+    }
+    .hotelMobile__fitter--location{
+        white-space: nowrap; 
+        width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
