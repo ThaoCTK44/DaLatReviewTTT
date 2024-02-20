@@ -474,6 +474,141 @@
     border-radius: var(--border-radius-size-1);
     padding: 10px;
 }
+.checkouttour.final .checkouttour__header span:nth-child(3) ion-icon{
+    color: var(--color-text-4);
+}
+.checkouttour.final .checkouttour__header span:nth-child(5) ion-icon{
+    color: var(--color-text-5);
+    opacity: 1;
+}
+.checkouttour.final .checkouttour__header::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 25%;
+    width: 37%;
+    transform: translate(36%,-50%);
+    height: 1.5px;
+    background-color: var(--color-background-4);
+    opacity: 1;
+}
+.checkouttour.final .checkouttour__header span:nth-child(5)::before{
+    color: var(--color-text-1);
+}
+.checkouttour__container--final{
+    padding: 20px;
+}
+.checkouttour__container--final li{
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-text-3);
+}
+.checkouttour__container--final__context{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+.checkouttour__container--final__context--text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+.checkouttour__container--final__context img{
+    height: 30px;
+}
+.checkouttour__container--final__context p{
+    font-weight: 500;
+}
+.checkouttour__container--final__context span{
+    font-size: var(--size-text-4);
+    color: var(--color-text-2);
+}
+.cart__container--top__left--all__left--check {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .cart__container--top__left--all__left--check input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: var(--border-radius-size-1);
+    border: 2px solid var(--color-background-3);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .cart__container--top__left--all__left--check:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .cart__container--top__left--all__left--check input:checked ~ .checkmark {
+    background-color: var(--color-background-7);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .cart__container--top__left--all__left--check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .cart__container--top__left--all__left--check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.checkouttour__container--final__creadit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-background-3);
+    padding: 10px;
+    border-radius: var(--border-radius-size-2);
+}
+.checkouttour__container--final__creadit label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 body.CheckoutForm .checkouttour__container--add{
     display: block;
 }
@@ -528,9 +663,11 @@ body.CheckoutForm{
         flex-direction: column;
         gap: 20px;
     }
+    .checkouttour.final .checkouttour__header::before,
     .checkouttour__header::before{
         width: 35%;
     }
+    .checkouttour.final .checkouttour__header::after,
     .checkouttour__header::after{
         width: 35%;
     }
@@ -557,9 +694,11 @@ body.CheckoutForm{
     .checkouttour__header span:nth-child(5)::before{
         font-size: var(--size-text-3);
     }
+    .checkouttour.final .checkouttour__header::before,
     .checkouttour__header::before{
         width: 33%;
     }
+    .checkouttour.final .checkouttour__header::after,
     .checkouttour__header::after{
         width: 33%;
     }
@@ -591,10 +730,12 @@ body.CheckoutForm{
     .checkouttour__container--left__contact--form{
         padding: 10px;
     }
+    .checkouttour.final .checkouttour__header::before,
     .checkouttour__header::before{
         width: 30%;
         transform: translate(-30%,-50%);
     }
+    .checkouttour.final .checkouttour__header::after,
     .checkouttour__header::after{
         width: 30%;
         transform: translate(30%,-50%);
@@ -635,5 +776,16 @@ body.CheckoutForm{
         width: 100%;
         border-radius: var(--border-radius-size-3);
     }
-    
+    .checkouttour__container--final{
+        padding: 10px;
+    }
+    .checkouttour__container--final li{
+        gap: 5px;
+    }
+    .checkouttour__container--final__creadit label{
+        font-size: var(--size-text-4);
+    }
+    .checkouttour__container--final__context img{
+        display: none;
+    }
 }
