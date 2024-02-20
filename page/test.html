@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Active Class</title>
+  <style>
+    .active {
+      color: red; /* Màu chữ khi được chọn */
+      text-decoration: underline; /* Gạch chân khi được chọn */
+    }
+  </style>
+</head>
+<body>
+
+  <div onclick="activateDiv(this)">Div 1</div>
+  <div onclick="activateDiv(this)">Div 2</div>
+
+  <script>
+    function activateDiv(selectedDiv) {
+      // Lấy ra tất cả các div
+      var divs = document.querySelectorAll('div');
+
+      // Lặp qua tất cả các div và loại bỏ lớp 'active' nếu có
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.remove('active');
+      }
+
+      // Thêm lớp 'active' cho div được chọn
+      selectedDiv.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
