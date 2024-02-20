@@ -172,8 +172,8 @@ p,span{
   text-align: center;
   letter-spacing: 0.6px;
   padding: 12px 20px;
-
 }
+
 .firstBtn:hover {
   background-color: var(--color-background-17);
 }
