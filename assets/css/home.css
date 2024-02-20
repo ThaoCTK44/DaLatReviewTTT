@@ -16,7 +16,7 @@
     left: 0;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index:999;
 }
 .header__bottom{
     width: 100%;
@@ -339,7 +339,7 @@
     padding: 15px 35px;
     font-weight: 600;
     cursor: pointer;
-}
+}  /* height: 50vh; */
 
 .home__banner--search__mobile{
     padding: 10px;
@@ -358,7 +358,7 @@
 
 }
 .home__product--banner__container--list{
-    height: 50vh;
+    /* height: 50vh; */
 }
 .home__banner--mobile{
     padding: 15px;
@@ -461,9 +461,9 @@
 .home__info--banner__container--list__item{
     width: 23%;
 }
-.home__product--banner{
+/* .home__product--banner{
     height: 50vh;
-}
+} */
 @media only screen and (max-width: 1400px) {
     .home__slider--btns{
         display: none;

@@ -1,8 +1,8 @@
 /* ==============================================
     Name: Blog page css
     Creact by: Dang Phuong Tay
-    Creact at: 31/11/2024
-    Update at: 31/11/2024
+    Creact at: 31/1/2024
+    Update at: 31/1/2024
 ============================================== */
 .blog{
     width: 100%;
@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 390px;
+    height: 25rem;
 }
 .blog__banner::before{
     position: absolute;
@@ -25,7 +25,9 @@
     opacity: .7;
 }
 .blog__banner img{
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 .blog__banner--text{
     position: absolute;
@@ -44,6 +46,7 @@
    font-size: 3.5rem;
    font-weight: 700;
    white-space: nowrap;
+   text-transform: capitalize;
 }
 .blog__banner--text span{
     display: flex;
@@ -138,10 +141,12 @@
 }
 .blog__container--new__list--item__img{
     width: 100%;
+    height: 225px;
     overflow: hidden;
     border-radius: var(--border-radius-size-3);
 }
 .blog__container--new__list--item__img img{
+    object-fit: cover;
     width: 100%;
 }
 .blog__container--new__list--item p{
@@ -159,8 +164,27 @@
     .blog__container{
         padding: 0 30px;
      }
+     .blog__banner{
+        height: 15rem;
+    }
+    .blog__banner--text p{
+        font-size: 2rem;
+     }
+     .blog__banner--text span{
+        font-size: var(--size-text-4);
+     }
  }
 @media only screen and (max-width: 850px) {
+    .blog__banner--text{
+        width: 450px;
+     }
+    .blog__banner--text p{
+        font-size: 1.7rem;
+        white-space: normal;
+     }
+     .blog__banner--text span{
+        font-size: var(--size-text-3);
+     }
     .blog__container--bottom__right{
         width: 100%;
     }
@@ -179,6 +203,9 @@
 }
  }
  @media only screen and (max-width: 450px) {
+    .blog__banner--text{
+        width: 350px;
+     }
     .blog__container{
         padding: 0 15px;
     }
