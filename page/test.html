@@ -1,35 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toggle Active Class</title>
-  <style>
-    .active {
-      color: red; /* Màu chữ khi được chọn */
-      text-decoration: underline; /* Gạch chân khi được chọn */
+
+<div class="user__booking--popular__slide--banner">
+  <div class="user__booking--popular__slide--items mySlides">
+      <div class="user__booking--popular__slide--image">
+          <!-- Ảnh của tour 1 -->
+      </div>
+      <div class="user__booking--popular__slide--tour">
+          <!-- Thông tin tour 1 -->
+      </div>
+  </div>
+  <!-- Các phần tử khác tương tự -->
+</div>
+
+<!-- Thêm các dấu chấm tương ứng với mỗi phần tử -->
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <!-- Thêm số lượng dấu chấm phù hợp với số lượng phần tử -->
+</div>
+
+
+
+
+
+<!-- Thêm nút điều khiển -->
+<button onclick="plusSlides(-1)">❮</button>
+<button onclick="plusSlides(1)">❯</button>
+
+<!-- Thêm các phần tử slide -->
+<div class="user__booking--popular__slide--banner">
+    <div class="user__booking--popular__slide--items">
+        <!-- Slide 1 -->
+    </div>
+    <div class="user__booking--popular__slide--items">
+        <!-- Slide 2 -->
+    </div>
+    <!-- Thêm các slide khác -->
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
-  </style>
-</head>
-<body>
 
-  <div onclick="activateDiv(this)">Div 1</div>
-  <div onclick="activateDiv(this)">Div 2</div>
-
-  <script>
-    function activateDiv(selectedDiv) {
-      // Lấy ra tất cả các div
-      var divs = document.querySelectorAll('div');
-
-      // Lặp qua tất cả các div và loại bỏ lớp 'active' nếu có
-      for (var i = 0; i < divs.length; i++) {
-        divs[i].classList.remove('active');
-      }
-
-      // Thêm lớp 'active' cho div được chọn
-      selectedDiv.classList.add('active');
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
     }
-  </script>
 
-</body>
-</html>
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("user__booking--popular__slide--items");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>

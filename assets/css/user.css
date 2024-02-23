@@ -5,13 +5,15 @@
     Update at: 8AM 19/2/2024
 ============================================== */
 
+
 .user__center--container__desktop {
   display: block;
   background-color: rgb(250, 250, 250);
   padding-top: 60px;
 }
 .user__mb--container {
-  display: none;}
+  display: none;
+}
 
 .user__center--box {
   margin: 0 auto;
@@ -109,6 +111,7 @@
 
 .user__center--sidebar__box {
   box-sizing: inherit;
+  width: 274px;
 }
 
 .user__content {
