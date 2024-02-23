@@ -86,6 +86,7 @@
 }
 .hotel__left--star{
     display: inline-flex;
+    align-items: center;
     line-height: 21px;
     padding: 7px 12px;
     min-width: 48px;
@@ -432,7 +433,7 @@ body.hotelBlur .hotel__backgroup--blur {
     border-radius: var(--border-radius-size-5);
 }
 .hotelMobile__fitter--box__body--right__content:hover{
-    background-color: var(--color-background-3);
+    background-color: var(--color-background-22);
 }
 .hotelMobile__fitter--box__footer{
     display: flex;
@@ -663,6 +664,9 @@ body.hotelBlur .hotel__backgroup--blur {
     body.hotelBlur .hotel__backgroup--blur {
         display: block;
     }
+    body.listHotelMobileRange .hotel__body {
+        overflow: hidden;
+    }
     .hotel__right--fitter{
         width: 100%;
         display: flex;
@@ -683,6 +687,7 @@ body.hotelBlur .hotel__backgroup--blur {
     .hotel__right--fitter__title:target{
         background-color: var(--color-background-6); 
     }
+    
     .hotel__backgroup--blur{
         top: 350px;
         left: 0;

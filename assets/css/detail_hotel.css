@@ -416,8 +416,7 @@
     justify-content: space-between;
 }
 .detailHotel__list--body__list--wrap__item--left{
-    max-width: 300px;
-    width: 100%;
+    flex: 30%;
 }
 .detailHotel__list--body__list--wrap__item--left__img{
     position: relative;
@@ -890,16 +889,25 @@ body.listDetailHotelRate .detailHotel__list--body__reviews--wrap{
 body.listDetailHotelRate2 .detailHotel__list--body__reviews--wrap{
     right: 0;
 }
+body.listDetailHotelRate3 .detailHotel__list--body__reviews--wrap{
+    right: 0;
+}
 body.listDetailHotelRate .detailHotel__backgroup--blur{
     display: block;
 }
 body.listDetailHotelRate2 .detailHotel__backgroup--blur{
     display: block;
 }
+body.listDetailHotelRate3 .detailHotel__backgroup--blur{
+    display: block;
+}
 body.listDetailHotelRate {
     overflow: hidden;
 }
 body.listDetailHotelRate2 {
+    overflow: hidden;
+}
+body.listDetailHotelRate3 {
     overflow: hidden;
 }
 .detailHotel__backgroup--blur{
@@ -977,10 +985,7 @@ body.listDetailHotelPrice .detailHotel__backgroup--blur{
 body.listDetailHotelPrice2 .detailHotel__backgroup--blur{
     display: block;
 }
-body.listDetailHotelPrice {
-    overflow: hidden;
-}
-body.listDetailHotelPrice2 {
+body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     overflow: hidden;
 }
 .detailHotel__list--body__list--wrapper{
@@ -1108,8 +1113,16 @@ body.listDetailHotelSlides2 .detailHotel__backgroup--blur{
 body.listDetailHotelSlides2 {
     overflow: hidden;
 }
-.detailHotelMobile__slides{
+.detailHotelMobile__slides,
+.detailHotelMobile__info--summary,
+.detailHotel__list--body__list--wrap__item--left__popular--name,
+.detailHotel__list--body__list--wrap__item--left__popular--price,
+.detailHotel__list--body__list--wrap__item--left__action,
+.detailHotelMobie__footer{
     display: none;
+}
+.list__wrapper{
+    display: none !important;
 }
 
  /* ==============================================
@@ -1123,12 +1136,41 @@ body.listDetailHotelSlides2 {
     }
     .detailHotel__list--body__reviews--content__overview--category{
        flex-wrap: wrap;
-    }
-    
+    }    
 }
 
+ /* ==============================================
+    Name: Mobie
+    Creact by: Tien Dat
+    Creact at: 22/2/2024
+============================================== */
+@media  (max-width: 700px){
+/* ==============================================
+    Name: rateWrap 
+    Creact by: TienDat
+    Creact at: 19/2/2024
+============================================== */
+    body.listDetailHotelRate3 .detailHotel__list--body__reviews--wrap{
+        top: 140px;
+    }
+    body.listDetailHotelRate3 .detailHotel__backgroup--blur{
+        display: block;
+    }
+    .detailHotel__list--body__reviews--wrap{
+        width: 100%;
+        right: 0;
+        top: 200vh;
+        height: 90vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-radius: var(--border-radius-size-4);
+    }
+    .detailHotel__list--body__reviews--wrap__icon{
+        display: none;
+    }
+}
 
-@media  (max-width: 800px){
+@media  (max-width: 600px){
     .detailHotel__banner{
         margin-top: 65px;
         height: 0;
@@ -1151,15 +1193,20 @@ body.listDetailHotelSlides2 {
     .detailHotel__list--body__policies--footer ion-icon,
     .detailHotel__list--body__list--wrap__item--left__img--main__2,
     .detailHotel__list--body__list--wrap__item--left__img--main__3,
-    .detailHotel__list--body__list--wrap__item--right,
     .detailHotel__list--body__list--wrap__item--left__facility,
     .detailHotel__list--body__list--wrap__item--left__poptip,
-    .detailHotel__list--body__list--wrap__name{
+    .detailHotel__list--body__list--wrap__name,
+    .detailHotel__list--body__list--wrap__item--left__img--count span,
+    .detail__list--body--select__tip,
+    .detailHotel__list--body__reviews--content__overview--link,
+    .detailHotel__list--body__list--wrap__item--right__header,
+    .detailHotel__list--body__list--wrap__item--right__body--info__right--tip,
+    .detailHotel__list--body__list--wrapper__icon{
         display: none;
     }
     .detailHotel__top--link{
         justify-content: center;
-        margin: 12px 0 0;
+        margin: 0;
     }
     .detailHotelMobile__slides{
         display: flex;
@@ -1175,6 +1222,7 @@ body.listDetailHotelSlides2 {
     .detailHotelMobile__slides--show__item{
         display: flex;
         transition: .5s;
+        width: 100%;
     }
     .detailHotelMobile__slides--show__item img{
         width: 100%;
@@ -1192,8 +1240,14 @@ body.listDetailHotelSlides2 {
     .detailHotel__info--wapper .fourProductList__wrapper--info__review{
         margin-top: 10px;
         font-size: var(--size-text-4);
+        display: flex !important;
     }
-    .detailHotel__info--summary{
+    .detailHotel__info--summary,
+    .detailHotel__list--body__list--wrap__item--left__popular--name,
+    .detailHotel__list--body__list--wrap__item--left__popular--price,
+    .detailHotel__list--body__policies--content__check,
+    .detailHotel__list--body__list--wrap__item,
+    .detailHotel__list--body__list--wrap__item--left__action{
         display: block;
     }
     .detailHotelMobile__info--summary{
@@ -1233,10 +1287,6 @@ body.listDetailHotelSlides2 {
         font-weight: 500;
         padding: 10px 15px;
     }
-    .detailHotel__list--body__policies--content__check,
-    .detailHotel__list--body__list--wrap__item{
-        display: block;
-    }
     .detailHotel__list--body__policies--content__check--content__instruction{
         display: block;
         padding: 16px;
@@ -1257,6 +1307,10 @@ body.listDetailHotelSlides2 {
     .detailHotel__list--body__list--wrap__item--left__img{
         margin-right: 10px;
     }
+    .detailHotel__list--body__list--wrap__item--left__popular{
+        flex: 1;
+        min-width: 0;
+    }
     .detailHotel__list--body__list--wrap__item--left__popular--price__amount{
         display: flex;
         align-items: center;
@@ -1276,22 +1330,214 @@ body.listDetailHotelSlides2 {
         display: flex;
         flex-wrap: wrap;
     }
+    .detailHotel__list--body__list--wrap__item--left__popular--platform{
+        display: flex;
+        width: calc(50% - 4px);
+        overflow: hidden;
+        align-items: center;
+        margin-bottom: 4px;
+    }
     .detailHotel__list--body__list--wrap__item--left__action--arrow__down{
         border: 1px solid var(--color-text-7);
         border-radius: 6px;
         width: 20px;
-    height: 20px;
+        height: 20px;
+        margin-left: 20px;
     }
     .detailHotel__list--body__list--wrap__item--left__action--arrow__down ion-icon{
         color: var(--color-text-7);
     }
-    
-}
- /* ==============================================
-    Name: Mobie
-    Creact by: Tien Dat
-    Creact at: 22/2/2024
-============================================== */
-@media  (max-width: 450px){
+    .detailHotel__list--body__list--wrap__item--left__img--main__1{
+        flex: none;
+        position: relative;
+        transition: height .2s;
+        width: 66px;
+        flex: 0 0 66px;
+        min-height: 80px;
+    }
+    .detailHotel__list--body__list--wrap__item--left__img--main__1 img{
+        object-fit: cover;
+        height: 100%;
+        width: 66px;
+        position: absolute;
+        transition: all .2s;
+    }
+    .detailHotel__list--body__list--wrap{
+        padding: 16px 0;
+        border-top: 1px solid var(--color-background-12);
+        margin: 0;
+        background-color: var(--color-background-6);
+    }
+    .detailHotel__list--body__select{
+        margin-bottom: 10px;
+    }
+    .detailHotel__list--body__facility--content__item--content--subitem{
+        margin: 0;
+        padding: 0;
+    }
+    .detailHotel__info--summary__right--address span,
+    .detailHotel__info--summary__right--location,
+    .detailHotel__info--summary__right--map,
+    .detailHotel__list--body__facility--content__item--content--subitem {
+        font-size: var(--size-text-3);
+    }
+    .detailHotel__list--body__list--wrap__item--left__img--count{
+        border-radius: 0 12px;
+        right: auto;
+        padding: 1px 4px;
+    }
 
+/* ==============================================
+    Name: service 
+    Creact by: TienDat
+    Creact at: 23/2/2024
+============================================== */
+    body.listDetailHotelSevice .detailHotelMobile__list--body__service--container{
+        top: 150px;
+    }
+    body.listDetailHotelSevice .detailHotel__backgroup--blur{
+        display: block;
+    }
+    body.listDetailHotelSevice {
+        overflow: hidden;
+    }
+    body.listDetailHotelSevice2 .detailHotelMobile__list--body__service--container{
+        top: 150px;
+    }
+    body.listDetailHotelSevice2 .detailHotel__backgroup--blur{
+        display: block;
+    }
+    body.listDetailHotelSevice2 {
+        overflow: hidden;
+    }
+    .detailHotelMobile__list--body__service--container{
+        position: fixed;
+        top: 200vh;
+        right: 0;
+        background-color: var(--color-background-6);
+        width: 100%;
+        padding: 26px 0 64px;
+        z-index: 1001;
+        border-radius: var(--border-radius-size-5);
+        transition: all ease-in-out .2s;
+    }
+    .detailHotelMobile__list--body__service--body{
+        overflow-y: scroll;
+        height: calc(100vh - 245px);
+        padding: 0 20px;
+        scroll-behavior: smooth;
+    }
+    .detailHotelMobile__list--body__service--container::before,
+    .detailHotel__list--body__list--wrapper::before{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 4px;
+        background-color: #e6e6e6;
+        top: 10px;
+        left: calc(50% - 20px);
+        border-radius: 2px;        
+    }
+    .detailHotelMobile__list--body__service--container
+    .detailHotel__list--header{
+        padding: 32px 0 16px;
+    }
+    .detailHotelMobile__list--body__service--body nav {
+        margin: 0 -20px;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        overflow: hidden;
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+        height: 35px;
+        background-color: var(--color-background-6);
+    }
+    .detailHotelMobile__list--body__service--body nav a {
+        margin-right: 16px;
+        padding: 10px 0;
+        font-size: var(--size-text-4);
+    }
+    .detailHotelMobie__footer{
+        border-top: 1px solid #eee;
+        padding: 8px 20px;
+    }
+    .detailHotelMobie__footer div{
+        width: 100%;
+    }
+/* ==============================================
+    Name: service 
+    Creact by: TienDat
+    Creact at: 23/2/2024
+============================================== */
+
+    body.listDetailHotelRoom .detailHotel__list--body__list--wrap__item--right{
+        display: block;
+    }
+    .detailHotel__list--body__list--wrap__item--right{
+        display: none;
+    }
+    .detailHotel__list--body__list--wrap__item--right__body--info{
+        display: block;
+        padding: 16px 16px 20px;
+        border-radius: 12px;
+        margin-top: 15px;
+        border: 1px solid var(--color-background-12);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background-color: var(--color-background-6);
+    }
+    .detailHotel__list--body__list--wrap__item--right,
+    .detailHotel__list--body__list--wrap__item--right__body--info__right,
+    .detailHotel__list--body__list--wrap__item--right__body--info__left{
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    /* ==============================================
+    Name: roomWrap mobie
+    Creact by: TienDat
+    Creact at: 23/2/2024
+============================================== */
+body.listDetailHotelPrice .detailHotel__list--body__list--wrapper{
+    top: 150px;
+}
+body.listDetailHotelPrice2 .detailHotel__list--body__list--wrapper{
+    top: 150px;
+}
+body.listDetailHotelPrice .detailHotel__backgroup--blur{
+    display: block;
+}
+body.listDetailHotelPrice2 .detailHotel__backgroup--blur{
+    display: block;
+}
+body.listDetailHotelPrice,.listDetailHotelPrice2 {
+    overflow: hidden;
+}
+    .detailHotel__list--body__list--wrapper{
+        position: fixed;
+        right: 0;
+        width: 100%;
+        height: 90vh;
+        top: 200vh;
+    }
+    .detailHotel__list--body__list--wrapper__container--box nav {
+        margin-top: 30px;
+    }
+    .detailHotel__list--body__list--wrapper__container{
+        height: calc(100vh - 295px);
+    }
+}
+
+@media  (max-width: 550px){
+    .detailHotel__list--body__reviews--content__overview--category__item{
+        width: 100%;
+    }
+    .detailHotelMobile__slides--show__item img{
+        height: 370px;
+    }
+}
+@media  (max-width: 450px){
+    .detailHotelMobile__slides--show__item img{
+        height: 330px;
+    }
 }
