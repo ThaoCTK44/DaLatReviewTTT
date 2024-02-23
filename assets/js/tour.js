@@ -1,14 +1,18 @@
 const primaryDropdown = document.querySelector('.primary__dropdown--button');
+const firstQuestion = document.querySelector('.firstQuestion__button');
 // const primaryDropdownHidden = document.querySelector('.primary__dropdown--content');
 
 primaryDropdown.addEventListener('click', ()=> {
     primaryDropdown.classList.toggle('active');
 });
 
-  window.primaryDropdown = function() {
+firstQuestion.addEventListener('click', ()=> {
+  firstQuestion.classList.toggle('active');
+});
+
+window.primaryDropdown = function() {
     document.getElementById("primaryDropdownHidden").classList.toggle("show");
   };
-
 
 window.onclick = function(event) {
   if (!event.target.matches('.primary__dropdown--button')) {
