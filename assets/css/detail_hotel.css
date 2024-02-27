@@ -1118,7 +1118,8 @@ body.listDetailHotelSlides2 {
 .detailHotel__list--body__list--wrap__item--left__popular--name,
 .detailHotel__list--body__list--wrap__item--left__popular--price,
 .detailHotel__list--body__list--wrap__item--left__action,
-.detailHotelMobie__footer{
+.detailHotelMobie__footer,
+.detailHotelMobile__list--body__service--container{
     display: none;
 }
 .list__wrapper{
@@ -1420,6 +1421,7 @@ body.listDetailHotelSlides2 {
         z-index: 1001;
         border-radius: var(--border-radius-size-5);
         transition: all ease-in-out .2s;
+        display: block;
     }
     .detailHotelMobile__list--body__service--body{
         overflow-y: scroll;

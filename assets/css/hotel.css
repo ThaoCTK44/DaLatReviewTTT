@@ -77,6 +77,7 @@
     justify-content: space-between;
     padding: 12px 20px;
     border-bottom: 1.5px solid var(--color-background-3);
+    cursor: pointer;
 }
 .hotel__left--content:hover{
     background-color: var(--color-background-18);
@@ -341,10 +342,10 @@
     Creact at: 11AM 30/1/2024
 ============================================== */
 body.listHotelMobileLocation .hotelMobile__fitter--box{
-    top: 25%;
+    top: 15%;
 }
 body.listHotelMobileFitter .hotelMobile__fitter--box__1{
-    top: 25%;
+    top: 15%;
 }
 body.hotelBlur .hotel__backgroup--blur {
     display: block;
@@ -442,7 +443,7 @@ body.hotelBlur .hotel__backgroup--blur {
     padding: 8px 20px;
     width: 100%;
     border-top: 1px solid var(--color-background-12);
-    bottom: 0;
+    bottom: 0%;
 }
 .hotelMobile__fitter--box__footer button:first-child{
     padding: 10px 16px;
@@ -489,6 +490,9 @@ body.hotelBlur .hotel__backgroup--blur {
     }
     .hotel__body--right{
         padding: 0 30px;
+    }
+    .hotelMobile__fitter--box{
+        
     }
 }
 @media  (max-width: 630px) {
@@ -654,9 +658,6 @@ body.hotelBlur .hotel__backgroup--blur {
         left: 0;
         transition: all ease-in-out .3s;
     }
-    .hotelMobile__fitter--box__body{
-        min-height: 735px;
-    }
     /* dropdown */
     body.listHotelMobileRange .hotel__right--fitter {
         top: 0;
@@ -686,6 +687,9 @@ body.hotelBlur .hotel__backgroup--blur {
     }
     .hotel__right--fitter__title:target{
         background-color: var(--color-background-6); 
+    }
+    .hotelMobile__fitter--box__body,.hotelMobile__fitter--box__body--right{
+        height: calc(100vh - 115px);
     }
     
     .hotel__backgroup--blur{
