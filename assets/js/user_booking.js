@@ -1,28 +1,38 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+
+const ListImage = document.querySelector('.user__booking--popular__slide--banner');
+const imgs = document.querySelectorAll('.user__booking--popular__slide--items');
+const btnLeft = document.querySelector('.user__left--btn');
+const btnRight = document.querySelector('.user__right--btn');
+const lenght = imgs.length;
+let current = 0;
+
+
+const handleChangeSlide = () =>{
+    if(current == lenght - 1){
+        current = 0;
+        let width = imgs[0].offsetWidth;
+        ListImage.style.transform = `translateX(0px)`;
+    }else{
+        current ++;
+        let width = imgs[0].offsetWidth;
+        ListImage.style.transform = `translateX(${300 * -current}px)`;
+    }
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+btnRight.addEventListener('click',()=>{
+    handleChangeSlide();
+})
+
+btnLeft.addEventListener('click',()=>{
+    if(current == 0){
+        current = lenght - 1;
+        let width = imgs[0].offsetWidth;
+        ListImage.style.transform = `translateX(${300 * -current}px)`;
+    }else{
+        current --;
+        let width = imgs[0].offsetWidth;
+        ListImage.style.transform = `translateX(${300 * -current}px)`;
+    }
+})
