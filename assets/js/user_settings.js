@@ -63,3 +63,72 @@ toggleConfirmPasswordVisibilityIcon.addEventListener('click', function() {
     const icon = toggleConfirmPasswordVisibilityIcon.querySelector('ion-icon');
     icon.name = type === 'password' ? 'eye-outline' : 'eye-off-outline';
 });
+
+
+// xử lý nhập liệu mã otp 
+document.addEventListener('DOMContentLoaded', function() {
+    const otpLabels = document.querySelectorAll('.user__verify--sms__otp--valid__label');
+
+    otpLabels.forEach(function(label, index) {
+        label.tabIndex = 0; // Cho phép label nhận focus
+        
+        label.addEventListener('click', function(event) {
+            // Khi click vào label, đặt focus vào label đó
+            label.focus();
+        });
+
+        label.addEventListener('keydown', function(event) {
+            if (event.key >= 0 && event.key <= 9) {
+                label.textContent = event.key;
+                // Chuyển tới label tiếp theo nếu có
+                if (index < otpLabels.length - 1) {
+                    otpLabels[index + 1].focus();
+                }
+            } else if (event.key === 'Backspace') {
+                // Xóa label trước nếu có và chuyển focus về label trước đó
+                if (index > 0) {
+                    otpLabels[index].textContent = '';
+                    otpLabels[index - 1].focus();
+                }
+            }
+            // Ngăn chặn sự kiện mặc định của phím nhấn
+            event.preventDefault();
+        });
+    });
+});
+// xử lý open pop up
+document.addEventListener('DOMContentLoaded', function() {
+    const openPopup = document.querySelector('.user__open--popup');
+    const popup = document.querySelector('.user__popup');
+    const codeContainer = document.querySelector('.user__verify--sms__code--container');
+    openPopup.addEventListener('click', function() {
+        popup.style.display = 'block';
+        codeContainer.style.display = 'block';
+    });
+});
+
+//  Xử lý đổi popup 
+document.addEventListener('DOMContentLoaded', function() {
+    const readyButton = document.querySelector('.user__verify--sms__input--ready');
+    const codeContainer = document.querySelector('.user__verify--sms__code--container');
+    const validateInput = document.querySelector('.user__verify--sms__input--validate');
+
+    readyButton.addEventListener('click', function() {
+        codeContainer.style.display = 'none';
+        validateInput.style.display = 'block';
+    });
+});
+
+// xử lý tắt pop up 
+document.addEventListener('DOMContentLoaded', function() {
+    const closeIcon = document.querySelector('.close-icon');
+    const verifyContainer = document.querySelector('.user__popup');
+    const smsInputValidate = document.querySelector('.user__verify--sms__input--validate');
+    
+    closeIcon.addEventListener('click', function() {
+        verifyContainer.style.display = 'none';
+        smsInputValidate.style.display = 'none'; // Thêm dòng này để ẩn phần tử .user__verify--sms__input--validate
+    });
+});
+
+
