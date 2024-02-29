@@ -580,6 +580,20 @@
 }
 
 /* phần header _ tag cam */
+.user__section--title__header{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  position: relative;
+}
+.user__section--title__header h1,
+.user__section--title__header h2,
+.user__section--title__header h3
+{
+  padding-left: 20px;
+
+}
+
 .user__section--title__header h1::before,
 .user__section--title__header h2::before,
 .user__section--title__header h3::before,
