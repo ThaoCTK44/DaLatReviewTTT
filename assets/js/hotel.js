@@ -25,12 +25,15 @@ btnHotelMobileLocation.addEventListener('click', ()=>{
 })
 closeHotelMobileLocation.addEventListener('click', ()=>{
     hotelBody.classList.remove('listHotelMobileLocation')
+    hotelBody.classList.remove('hotelBlur')
 })
 closeHotelMobileFitter.addEventListener('click', ()=>{
     hotelBody.classList.remove('listHotelMobileFitter')
+    hotelBody.classList.remove('hotelBlur')
 })
 btnHotelMobileFitter.addEventListener('click', ()=>{
     hotelBody.classList.add('listHotelMobileFitter')
+    
 })
 btnHotelMobileRange.addEventListener('click', ()=>{
     hotelBody.classList.add('listHotelMobileRange')
