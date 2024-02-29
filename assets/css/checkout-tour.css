@@ -609,6 +609,9 @@
     flex-direction: column;
     gap: 10px;
 }
+.checkouttour__container--left__last--btn a{
+    color: var(--color-text-6) !important;
+}
 body.CheckoutForm .checkouttour__container--add{
     display: block;
 }

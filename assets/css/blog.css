@@ -70,7 +70,8 @@
 .blog__container--bottom__left{
     width: 60%;
 }
-
+.blog__container--bottom__right--header__list--item a,
+.blog__container--bottom__left--header__list--item a,
 .blog__container--bottom__left--header__list--item,
 .blog__container--bottom__right--header__list--item{
     display: flex;
@@ -78,6 +79,10 @@
     justify-content: center;
     gap: 10px;
     padding: 15px;
+}
+.blog__container--bottom__right--header__list--item a,
+.blog__container--bottom__left--header__list--item a{
+    padding: 0;
 }
 .blog__container--new__list--item__text p,
 .blog__container--bottom__left--header__list--item__text p,
