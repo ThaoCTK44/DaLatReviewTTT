@@ -72,8 +72,8 @@ header{
     gap: 10px;
 }
 .header__top--right ul li a img{
-    width: 22px;
-    height: 14.6px;
+    /* width: 22px;
+    height: 14.6px; */
 }
 .header__top--right ul li a ion-icon{
     margin-left: 5px;

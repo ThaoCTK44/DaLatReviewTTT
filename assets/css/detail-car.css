@@ -108,6 +108,21 @@
     padding: 15px 20px;
     border-radius: var(--border-radius-size-4);
 }
+.detail__car--map{
+    display: none;
+    position: fixed;
+    width: 60vw;
+    min-height: 90vh;
+    max-height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--color-background-6);
+    z-index: 1111;
+    padding: 15px 20px;
+    border-radius: var(--border-radius-size-4);
+}
+.detail__car--map__header,
 .detail__car--info__header{
     position: relative;
     display: flex;
@@ -116,6 +131,7 @@
     border-bottom: 1px solid var(--color-text-22);
     padding-bottom: 10px;
 }
+.detail__car--map__header--icon,
 .detail__car--info__header--icon{
     position: absolute;
     top: 25%;
@@ -127,9 +143,11 @@
     cursor: pointer;
     transition: all ease .15s;
 }
+.detail__car--map__header--icon:hover,
 .detail__car--info__header--icon:hover{
     background: var(--color-background-22);
 }
+.detail__car--map__header span,
 .detail__car--info__header span{
     font-weight: 600;
 }
@@ -174,6 +192,39 @@
     background: var(--color-background-6);
     width: 50%;
 }
+.detail__car--map__body{
+    position: relative;
+    min-height: 100vh;
+}
+.detail__car--map__body--iframe{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 83vh;
+    overflow: hidden;
+}
+.detail__car--map__body--input{
+    position: absolute;
+    width: 100%;
+    bottom: 9%;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    gap: 10px;
+}
+.detail__car--map__body--input input{
+    padding: 10px 20px;
+    border-radius: var(--border-radius-size-2);
+}
+.detail__car--map__body--input input:nth-child(1){
+    background: var(--color-background-18);
+    width: 70%;
+}
+.detail__car--map__body--input input:nth-child(2){
+    width: 30%;
+    background: var(--color-background-7);
+    color: var(--color-text-6);
+}
 .detail__car--info__body{
     overflow: auto;
     min-height: 70vh;
@@ -213,6 +264,13 @@ body.InfoCarForm .detail__car--info{
     display: block;
     
 }
+body.MapCarForm .detail__car--map{
+    display: block;
+    
+}
+/* .header__background--blur__fullview{
+    display: block;
+} */
 body.InfoCarForm .header__background--blur__fullview{
     display: block;
 }
@@ -234,6 +292,9 @@ body.InfoCarForm{
    }
 }
 @media only screen and (max-width: 650px) {
+    .detail__car--map{
+        width: 100vw;
+    }
     .detail__car--info{
         position: fixed;
         min-width: 60vw;
@@ -250,6 +311,19 @@ body.InfoCarForm{
     }
 }
 @media only screen and (max-width: 590px) {
+    .detail__car--map__body--iframe{
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 73vh;
+        overflow: hidden;
+    }
+    .detail__car--map__body--input{
+        flex-wrap: wrap;
+    }
+    .detail__car--map__body--input input{
+        width: 100% !important;
+    }
     .detail__car--container{
         padding: 10px 10px;
     }
