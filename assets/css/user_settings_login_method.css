@@ -1,0 +1,22 @@
+.desktop__login--method__panel{background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.user__section--title__header {
+    margin: 0;
+}
+.desktop__login--method__panel--title{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__section--title__header--icon {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+.user__section--title__header--icon ion-icon{
+    font-size: 20px;
+}
