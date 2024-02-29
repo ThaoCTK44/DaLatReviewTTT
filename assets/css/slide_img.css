@@ -1,56 +1,30 @@
-@import "/assets/css/style.css";
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  color: black;
-  scroll-behavior: smooth;
-}
-
-a {
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  color: #000;
-}
-button,
-input {
-  outline: none;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-}
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 
   /* Position the image container (needed to position the left and right arrows) */
+  
   .container__slides {
+    width: 800px;
     overflow: hidden;
     position: fixed;
     height: auto;
-    width: 800px;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   display: none;
-   z-index: 1003;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    z-index: 1005;
   }
-  
+  .container__slide--number{
+    width: 100%;
+    display: flex ;
+    overflow: hidden ;
+    overflow-x: scroll;
+  }
   /* Hide the images by default */
   .mySlides {
-    display: none;
+  
+    /* display: none; */
   }
- img {
+  .mySlides img {
     vertical-align: middle;
   }
   
@@ -105,18 +79,18 @@ ol {
     color: white;
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+ 
   
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+
   }
-  
+  .column img{
+    width: 150px !important;
+    height: 100px;
+    object-fit: cover;
+  }
   /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;

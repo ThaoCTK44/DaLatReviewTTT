@@ -1,45 +1,8 @@
-.lsDetail__container{
+.lsDetail__container {
     max-width: 75%;
     height: auto;
     justify-content: center;
     background-color: var(--color-background-3);
     margin: auto;
-    margin-top: 3%;
 }
-
-/* Link Page */
-.lsDetail__container--header__intro--link{
-    font-size: var(--size-text-5);
-    margin: 2% 0;
-    letter-spacing: 1.5px;
-}
-/* Title */
-.lsDetail__container--header__intro--title{
-    font-size: 32px;
-    font-weight: 550;
-    letter-spacing: 1.5px;
-}
-/* Rate */
-.lsDetail__container--header__intro--sub{
-display:flex;
-justify-content: space-between;
-margin-top: 2%; 
-}
-.star__rate,
-.favorite__save{
-    display: flex;
-    justify-content: space-around;   
-}
-.star__rate{
-    max-width: 800px;
-}
-.star__rate--icon,.star__rate--number{
-font-size: var(--size-text-6);
-color: var(--color-text-5);
-}
-.star__rate--number{
-    font-weight: 600;
-}
-.favorite__save{
-
-}
+/* header */
