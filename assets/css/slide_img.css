@@ -10,7 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* display: none; */
+    display: none;
     z-index: 1005;
   }
   .container__slide--number{
@@ -22,7 +22,7 @@
   /* Hide the images by default */
   .mySlides {
   
-    /* display: none; */
+    display: none;
   }
   .mySlides img {
     vertical-align: middle;
