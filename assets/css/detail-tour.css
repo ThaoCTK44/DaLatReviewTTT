@@ -561,18 +561,7 @@ input[type="number"] {
 .detail__tour--content__left--contact__btn span,ion-icon{
     color: var(--color-text-7);
 }
-.container__slides {
-    display: none;
-    overflow: hidden;
-    position: fixed;
-    height: auto;
-    width: 800px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: var(--color-background-6);
-    z-index: 1111;
-  }
+
 
 
 .detail__tour--content__left--option__item--info{
