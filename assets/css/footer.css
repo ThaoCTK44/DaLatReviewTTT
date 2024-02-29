@@ -50,7 +50,9 @@ footer {}
 
 }
 
-
+footer{
+    margin-top: 100px;
+}
 /* dành cho màn <=900px */
 @media only screen and (max-width: 900px) {
     .footer__banner--left{
