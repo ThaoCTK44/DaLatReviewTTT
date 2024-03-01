@@ -331,11 +331,6 @@ body.InfoCarForm{
         margin-left: 20px;
     }
     .detail__car--container__list{
-        /* padding: 20px 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        gap: 20px; */
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;

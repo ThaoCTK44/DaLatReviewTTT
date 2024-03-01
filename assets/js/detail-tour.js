@@ -1,4 +1,5 @@
 const slider_detail_tour_open = document.querySelector('.detail__tour--img');
+
 const mobile_detail_tour_lost_option = document.querySelector('.detail__tour--content__left--option__item--info__close');
 const mobile_detail_tour_lost_sale = document.querySelector('.detail__tour--content__left--sale__info--close');
 const sale_detail_tour_open = document.querySelector('.detail__tour--content__left--sale');
@@ -9,7 +10,7 @@ const option_detail_tour_open = document.querySelector('.detail__tour--content__
 
 slider_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('slider__detail--tour');
-})
+  })
 option_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('option__detail--tour');
 })

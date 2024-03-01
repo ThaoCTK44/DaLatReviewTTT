@@ -730,15 +730,7 @@ input[type="number"] {
 
 
 
-body.slider__detail--tour .header__background--blur__fullview{
-    display: block;
-}
-body.slider__detail--tour .container__slides{
-    display: block;
-}
-body.slider__detail--tour{
-   overflow: hidden;
-}
+
 
 
 
