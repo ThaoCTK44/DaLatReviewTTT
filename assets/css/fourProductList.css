@@ -45,10 +45,13 @@
 }
 .fourProductList__wrapper--info__review{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    
 }
 .fourProductList__wrapper--info__review div{
     margin-right: 10px;
+    margin-top: 10px;
 }
 .fourProductList__wrapper--info__ellipsis{
     display: flex;
