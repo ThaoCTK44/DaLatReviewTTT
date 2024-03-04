@@ -7,9 +7,28 @@ const checkout_detail_tour_open_pc = document.querySelector('.detail__tour--cont
 const slider_detail_tour_close = document.querySelector('.header__background--blur__fullview');
 const option_detail_tour_open = document.querySelector('.detail__tour--content__left--option__list');
 
+// const ListImage = document.querySelector('.detail__tour--img__right');
+// const imgss = document.querySelectorAll('.detail__tour--img__right img');
+// const lenght = imgss.length;
+// let current = 0;
+
+// const handleChangeSlide = () =>{
+//     if(current == lenght - 1){
+//         current = 0;
+//         let width = imgss[0].offsetWidth;
+//         ListImage.style.transform = `translateX(0px)`;
+//     }else{
+//         current ++;
+//         let width = imgss[0].offsetWidth;
+//         ListImage.style.transform = `translateX(${width * -1 * current}px)`;
+//     }
+// }
+// setInterval(handleChangeSlide,4000);
+
+
 slider_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('slider__detail--tour');
-})
+  })
 option_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('option__detail--tour');
 })
@@ -33,3 +52,4 @@ mobile_detail_tour_lost_option.addEventListener('click',()=>{
 mobile_detail_tour_lost_sale.addEventListener('click',()=>{
     headerBody.classList.remove('sale__detail--tour');
 })
+
