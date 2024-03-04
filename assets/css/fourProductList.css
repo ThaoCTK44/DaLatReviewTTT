@@ -46,7 +46,7 @@
 .fourProductList__wrapper--info__review{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;  
     
 }
 .fourProductList__wrapper--info__review div{
