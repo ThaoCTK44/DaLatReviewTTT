@@ -1,16 +1,19 @@
 const headerBody = document.querySelector('body'); 
+const btnLogin1 = document.querySelector('.login1');
+const btnLogin2 = document.querySelector('.login2');
+const btnLogout = document.querySelector('.logout');
 const mobileMenuBtn = document.querySelector('.home__banner--mobile__bottom');
+const loginChecker = document.querySelector('.header__top--right__item--checker');
 const hamburgerBtn = document.querySelector('.header__top--left__hamburger');
 const btnCloseLoginSignForm = document.querySelector('.login__signup--box__close');
-const btnOpenLoginSignFormPc1 = document.querySelector('.header__top--right__item.open__login--signup__form');
-const btnOpenLoginSignFormPc2 = document.querySelector('.header__top--right__itemlast.open__login--signup__form');
+const btnOpenLoginSignFormPc1 = document.querySelector('.open__login--signup__form--1');
+const btnOpenLoginSignFormPc2 = document.querySelector('.open__login--signup__form--2');
 const btnOpenLoginSignForm = document.querySelector('.open__login--signup__form ion-icon');
 const btnTransEmailLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--email');
 const btnTransNumberLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--numberphone');
 
 window.onload=function(){
     mobileMenuBtn.addEventListener('click',mobileMenu);
-    hamburgerBtn.addEventListener('click',hamburger);
 }
 
 function mobileMenu() {
@@ -22,6 +25,20 @@ function mobileMenu() {
 hamburgerBtn.addEventListener('click',()=>{
     headerBody.classList.toggle('active');
 })
+
+btnLogin2.addEventListener('click',()=>{
+    headerBody.classList.add('checker');
+    headerBody.classList.remove('LoginSignUpForm');
+})
+btnLogin1.addEventListener('click',()=>{
+    headerBody.classList.add('checker');
+    headerBody.classList.remove('LoginSignUpForm');
+})
+btnLogout.addEventListener('click',()=>{
+    headerBody.classList.remove('checker');
+    headerBody.classList.remove('LoginSignUpForm');
+})
+
 btnOpenLoginSignForm.addEventListener('click',()=>{
     headerBody.classList.add('LoginSignUpForm');
 })

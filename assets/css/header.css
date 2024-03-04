@@ -1,8 +1,8 @@
 /* ==============================================
     Name: Header css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 12AM 29/2/2024
+    Creact at: 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
 body{
     width: 100%;
@@ -68,11 +68,12 @@ header{
 }
 .header__top--right ul{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .header__top--right ul li a img{
-    width: 22px;
-    height: 14.6px;
+    /* width: 22px;
+    height: 14.6px; */
 }
 .header__top--right ul li a ion-icon{
     margin-left: 5px;
@@ -91,6 +92,17 @@ header{
     justify-content: center;
     letter-spacing: .5px;
     border-radius: var(--border-radius-size-5);
+}
+.header__top--right__itemsignup{
+    padding:  12px 13px;
+    font-size: var(--size-text-3);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .5px;
+    border-radius: var(--border-radius-size-5);
+    cursor: pointer;
 }
 .header__top--right__itemlast{
     cursor: pointer;
@@ -135,8 +147,8 @@ header{
 /* ==============================================
     Name: Header list mobile css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 8AM 29/2/2024
+    Creact at: 8AM 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
 .header__mobile{
     position: fixed;
@@ -297,6 +309,12 @@ body.LoginSignUpForm .header__background--blur__fullview{
 body.LoginSignUpForm .login__signup--box{
     display: block;
 }
+body.checker .header__background--blur__fullview{
+    display: none;
+}
+body.checker .login__signup--box{
+    display: none;
+}
 body.LoginSignUpForm{
     overflow: hidden;
 }
@@ -381,8 +399,35 @@ body.TransLoginSignForm .login__signup--box__container--number{
     color: var(--color-text-6);
     cursor: pointer;
 }
-
-
+body.checker .open__login--signup__form--1,
+body.checker .open__login--signup__form--2{
+    display: none;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+}
+body.checker .header__top--right__item--checker{
+    display: block;
+}
+body.checker .logout{
+    display: block;
+}
+body.checker .login__mobile{
+    display: none;
+}
+.logout{
+    display: none;
+}
+.header__top--right__item--checker{
+    display: none;
+}
+.header__top--right__item--checker img{
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius-size-6);
+    border: 1px solid var(--color-text-3);
+    cursor: pointer;
+}
 
 
 
@@ -398,8 +443,8 @@ body.TransLoginSignForm .login__signup--box__container--number{
 /* ==============================================
     Name: Reponsive Header css
     Creact by: Dang Phuong Tay
-    Creact at: 8AM 29/2/2024
-    Update at: 12AM 29/2/2024
+    Creact at: 29/1/2024
+    Update at: 2/2/2024
 ============================================== */
  @media only screen and (max-width: 1400px) {
     header{

@@ -15,7 +15,9 @@
     
     .firstTag__internal--desktop {
       display: block;
+      padding: 0 30px;
     }
+
   }
   
   @media only screen and (max-width: 700px) {
@@ -25,8 +27,11 @@
     }
     .firstTag__internal--mobile {
       display: block;
+
     }
-    .firstTag__internal--wrap
+    .firstTag__internal--wrap{
+      padding: 0 20px;
+    }
  
     /* 1 */
     .firstTag__internal--title {

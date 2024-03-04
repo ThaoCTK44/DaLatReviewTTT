@@ -1,0 +1,584 @@
+<!-- ==============================================
+    Name: Blog page html
+    Creact by: Dang Phuong Tay
+    Creact at: 31/1/2024
+    Update at: 3/2/2024
+============================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đà Lạt Review</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/sale_banner.css">
+    <link rel="stylesheet" href="/assets/css/contact-banner.css">
+    <link rel="stylesheet" href="/assets/css/firstTag.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/fourProductList.css">
+    <link rel="stylesheet" href="/assets/css/detail-blog.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/voucher.css">
+</head>
+<body>
+    <div class="header__compoment">
+        <header>
+            <div class="header__content--top">
+                <div class="header__top">
+                    <div class="header__top--left">
+                        <div class="header__top--left__hamburger">
+                            <div class="header__top--left__hamburger--box">
+                            </div>
+                        </div>
+                        <a href="home.html"><img src="/assets/img/home-logo.png" alt="" class="header__top--left__logo"></a>
+                        <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
+                        <div class="header__top--left__search">
+                            <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="header__top--right">
+                        <ul>
+    
+                            <li>
+                                <a href="#" class="header__top--right__item">
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__top--right__item">
+                                    Xem gần đây
+                                </a>
+                            </li>
+                            <li class="logout">
+                                <div class="header__top--right__item logout">
+                                    Đăng xuất
+                                </div>
+                            </li>
+                            <li class="open__login--signup__form--1">
+                                <div class="header__top--right__item  check__login">
+                                    Đăng ký
+                                </div>
+                            </li>
+                            <li class="open__login--signup__form--2">
+                                <div class="header__top--right__itemlast check__login">
+                                    Đăng nhập
+                                </div>
+                            </li>
+                            <li>
+                                <div class="header__top--right__item--checker">
+                                    <a href="user.html">
+                                        <img src="/assets/img/user_avatar.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__top--right__mobile">
+                        <div class="header__top--right__mobile--item">
+                            <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                        </div>
+                        <div class="header__top--right__mobile--item">
+                            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+                        </div>
+                        <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                        <div class="header__top--right__item--checker">
+                            <a href="user.html">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__mobile shadow">
+            <div class="header__mobile--box">
+                <ul>
+                    <li><a href="tour.html"><img src="/assets/img/header-icon-1.png" alt="img"><span>Tour</span></a></li>
+                    <li><a href="tour.html"><img src="/assets/img/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-4.png" alt="img"><span>Tour đi biển</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-5.png" alt="img"><span>Hoạt động cắm trại</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-6.png" alt="img"><span>Trải nghiệm văn hóa</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-7.png" alt="img"><span>Công viên giải trí</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-10.png" alt="img"><span>Công viên và vườn Bác thảo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-1.png" alt="img"><span>Tour</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-4.png" alt="img"><span>Tour đi biển</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-5.png" alt="img"><span>Hoạt động cắm trại</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-6.png" alt="img"><span>Trải nghiệm văn hóa</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-7.png" alt="img"><span>Công viên giải trí</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-10.png" alt="img"><span>Công viên và vườn Bác thảo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__background--blur">
+        </div>
+        <div class="header__background--blur__fullview">
+        </div>
+        <div class="login__signup--box">
+            <ion-icon class="login__signup--box__close" name="close-outline"></ion-icon>
+            <div class="login__signup--box__container">
+                <div class="login__signup--box__container--header">
+                    <p>Đăng nhập/ Đăng ký</p>
+                    <span>Nhập tài khoản và khám phá niềm vui của bạn ở bất cứ đâu</span>
+                </div>
+                <div class="login__sigup--box__container--form__box">
+                    <div class="login__signup--box-container-form">
+                    <div class="login__signup--box__container--number">
+                        <div class="login__signup--box__container--number__main">
+                            <div class="login__singup--box__container--number__main--btn">
+                                <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--email">
+                                    Địa chỉ Email
+                                </div>
+                                <div class="login__signup--box__container--main__btn--numberphone">
+                                    Số điện thoại
+                                </div>
+                            </div>
+                            <form action="#">
+                                <div class="login__signup--box__container--main__form">
+                                    <label for="#">
+                                        <select name="#" id="#">
+                                            <option value="#">+84</option>
+                                            <option value="#">+84</option>
+                                            <option value="#">+84</option>
+                                            <option value="#">+84</option>
+                                            <option value="#"></option>
+                                        </select>
+                                    </label>
+                                    <input type="text" placeholder="Số điện thoại">
+                                </div>  
+                            </form>
+                            <div class="login__signup--box__container--main__note_1">Đăng nhập bằng số điện thoại chưa đăng ký để tạo tài khoản Đà Lạt review tất tần tật mới</div>
+                            <button class="login__signup--box__container--main__btn firstBtn login2">Gửi mã xác nhận</button>
+                            <div class="login__signup--box__container--main__note_2">Đăng nhập bằng mật khẩu</div>
+                            <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                            <div class="login__signup--box__container--main__bottom">
+                                <a href="#"><img src="/assets/img/fb_logo.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/gg_logo.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login__signup--box__container--email">
+                        <div class="login__signup--box__container--email__main">
+                            <div class="login__singup--box__container--email__main--btn">
+                                <div class="login__signup--box__container--main__btn--numberphone">
+                                    Địa chỉ Email
+                                </div>
+                                <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--numberphone">
+                                    Số điện thoại
+                                </div>
+                            </div>
+                            <form action="#">
+                                <div class="login__signup--box__container--main__form">
+                                    <input type="text" placeholder="Địa chi Email">
+                                </div>
+                            </form>
+                            <button class="login__signup--box__container--main__btn firstBtn login1">Xác nhận</button>
+                            <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                            <div class="login__signup--box__container--main__bottom">
+                                <a href="#"><img src="/assets/img/fb_logo.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/gg_logo.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="detail__blog">
+        <div class="detail__blog--container">
+            <div class="detail__blog--left">
+                <div class="detail__blog--left__date--img">
+                    <img src="/assets/img/blog-2.png" alt="">
+                </div>
+                <div class="detail__blog--left__header">
+                    Top 21 quán cafe đẹp nhất Đà Lạt 2021, không đi là tiếc hùi hụi
+                </div>
+                <div class="detail__blog--left__date">
+                    <span>Đăng ngày: </span><span>16/02/21</span>
+                </div>
+                <div class="detail__blog--left__content">
+                    <div class="detail__blog--left__content--paragraph__title">
+                        <p>Năm 2021 Đà Lạt có quán cafe nào mới và đẹp? Những quán cafe dưới đây sẽ là gợi ý tuyệt vời, chắc chắn sẽ không làm bạn thất vọng. Cùng Đà Lạt Review tìm hiểu dưới bài viết nhé.</p>
+                    </div>
+                    <div class="detail__blog--left__content--paragraph">
+                        <div class="detail__blog--left__content--paragraph__header" id="detail__blog--left__content--paragraph__header--1">
+                            Mê Linh Coffee Garden – Top quán cafe đẹp nhất Đà Lạt
+                        </div>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-7.jpg" alt="">
+                        </div>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-8.jpg" alt="">
+                        </div>
+                        <p>Nổi tiếng với nông trại cafe xanh ngát. Mê Linh Coffee Garden Đà Lạt là điểm đến nổi tiếng mà bất cứ ai đến Đà Lạt cũng nên ghé thăm. Không gian trong lành, view tứ phía là cafe và đồi thông. Đảm bảo bạn sẽ không tìm thấy quán thứ hai trên Đà Lạt.</p>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-9.jpg" alt="">
+                        </div>
+                        <p>Tuy hơi xa thành phố nhưng bù lại bạn sẽ được ngắm trọn view trang trại cafe dưới chân và đồi núi xa xa. Quán thiết kế không gian mở,tạo cảm giác thoải mái cho du khách.
+
+                            Hiện tại quán đã mở rộng quy mô lớn hơn. Nhiều khu vực mới mở hấp dẫn du khách bốn phương. Tiểu cảnh checkin độc mà đẹp. Cộng với view sông núi có 1 không 2 tại Đà Lạt.</p>
+                    </div>
+                    <div class="detail__blog--left__content--paragraph">
+                        <div class="detail__blog--left__content--paragraph__header">
+                            Vườn hồng nhà Tom
+                        </div>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-5.jpg" alt="">
+                        </div>
+                        <p>Vườn hồng nhà Tom là một nông trại xanh kết hợp du lịch. Bạn được checkin thả ga vừa được hái hồng ngay tại vườn luôn nhé.Vườn hồng nhà Tom có đến 400 gốc hồng tạo khung cảnh bắt mắt. Có cả con đường gỗ xịn xò để bạn hái hồng nữa.</p>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-6.jpg" alt="">
+                        </div>
+                        <p>Vườn hồng này được dựng nhiều phối cảnh khác nhau như khu vực nhà kính hồng treo gió, cầu gỗ và đặc biệt là bức tượng gỗ quái vật khổng lồ. Đây là điểm nhấn của vườn hồng năm nay. Nếu bạn có ý định tham quan vườn hồng. Đừng quên check in với tượng gỗ nhé.</p>
+                    </div>
+                    <div class="detail__blog--voucher">
+                        <div class="voucher__card shadow">
+                            <div class="voucher__card--left">
+                                <div class="voucher__card--showMore">
+                                    <div class="voucher__card--title">
+                                    Áp dụng khi mua 3 vé Universal Studios Singapore. Không cộng dồn với các mã khuyến mãi khác.
+                                    </div>
+                                    <div class="voucher__card--desc">
+                                        Áp dụng khi mua 3 vé Universal Studios Singapore. Không cộng dồn với các mã khuyến mãi khác. 
+                                    </div>
+                                </div>
+                                <div class="voucher__card--popper">
+                                    <div class="voucher__card--popper__inner">
+                                        <div class="voucher__card--popper__inner--title">Giảm 260.000đ</div>
+                                        <div class="voucher__card--popper__inner--content">Áp dụng khi mua 3 vé Skyline Luge. Không cộng dồn với các mã khuyến mãi khác.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voucher__card--right">
+                                <div class="voucher__card--right__type">
+                                    <p>Mã ưu đãi</p>
+                                    <span>WINGSOFTIME</span> 
+                                </div>
+                                <div class="voucher__card--right__useBtn">
+                                    <span>SỬ DỤNG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__blog--left__content--paragraph">
+                        <div class="detail__blog--left__content--paragraph__header">
+                            Malá Home & Coffee
+                        </div>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-4.jpg" alt="">
+                        </div>
+                        <p>Malá Home & Coffee là một quán cafe nằm giữa lòng Đà Lạt. Dù mở cách đây không lâu nhưng địa điểm này lại rất hút khách. Kiến trúc độc đáo của quán như đưa bạn vào không gian của câu chuyện một nghìn lẻ một đêm.</p>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-3.jpg" alt="">
+                        </div>
+                        <p>Menu đa dạng nhiều loại đồ uống. Bạn tha hồ lựa chọn những loại nước mình yêu thích. Mức giá Malá từ 25.000- 60.000đ là phù hợp cho một địa điểm cafe checkin đẹp.</p>
+                    </div>
+                    <div class="detail__blog--left__content--paragraph">
+                        <div class="detail__blog--left__content--paragraph__header">
+                            Kimochi
+                        </div>
+                        <div class="detail__blog--left__content--paragraph__img">
+                            <img src="/assets/img/detail-blog-2.jpg" alt="">
+                        </div>
+                        <p>Kimochi là quán cafe trên đỉnh đồi cho phép bạn ngắm trọn thiên nhiên Đà Lạt. Và cả thung lũng như nằm dưới chân quán, ban ngày đến ngắm cảnh rừng thông xanh mát. Buổi tối chiêm ngưỡng thung lũng đèn lãng mạn.Phong cảnh xanh mát là phông nền hoàn hảo để bạn check in .Kimochi coffee còn có một điểm đặc biệt không lẫn vào đâu được chính là “quán không có 1 cánh cửa nào”.</p>
+                        <p>Thiết kế gần gũi mộc mạc đón chào du khách ghé thăm.Kimochi coffee làm chủ yếu bằng gỗ trang trí thêm anh đào, lá phong đậm chất Nhật Bản. Ai đến đây lần đầu sẽ ngỡ như lạc vào sử sở mặt trời mọc thật sự.</p>
+                    </div>
+                    <div class="detail__blog--left__content--menu">
+                        <p class="detail__blog--left__content--menu__title">Top 21 quán cafe đẹp nhất Đà Lạt 2021, không đi là tiếc hùi hụi</p>
+                        <ul class="detail__blog--left__content--menu__list">
+                            <li><a href=""><span>1. </span><span>Lưng Chừng</span></a></li>
+                            <li><a href="#detail__blog--left__content--paragraph__header--1"><span>2. </span><span>Mê Linh Coffee Garden – Top quán cafe đẹp nhất Đà Lạt</span></a></li>
+                            <li><a href=""><span>3. </span><span>Vườn hồng nhà Tom</span></a></li>
+                            <li><a href=""><span>4. </span><span>Malá Coffee</span></a></li>
+                            <li><a href=""><span>5. </span><span>Kimochi Coffee</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail__blog--voucher">
+                    <div class="voucher__card shadow">
+                        <div class="voucher__card--left">
+                            <div class="voucher__card--showMore">
+                                <div class="voucher__card--title">
+                                Áp dụng khi mua 3 vé Universal Studios Singapore. Không cộng dồn với các mã khuyến mãi khác.
+                                </div>
+                                <div class="voucher__card--desc">
+                                    Áp dụng khi mua 3 vé Universal Studios Singapore. Không cộng dồn với các mã khuyến mãi khác. 
+                                </div>
+                            </div>
+                            <div class="voucher__card--popper">
+                                <div class="voucher__card--popper__inner">
+                                    <div class="voucher__card--popper__inner--title">Giảm 260.000đ</div>
+                                    <div class="voucher__card--popper__inner--content">Áp dụng khi mua 3 vé Skyline Luge. Không cộng dồn với các mã khuyến mãi khác.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="voucher__card--right">
+                            <div class="voucher__card--right__type">
+                                <p>Mã ưu đãi</p>
+                                <span>WINGSOFTIME</span> 
+                            </div>
+                            <div class="voucher__card--right__useBtn">
+                                <span>SỬ DỤNG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog__container--bottom__right">
+                    <div class="blog__container--bottom__right--header">
+                        <p>Phổ biến nhất</p>
+                    </div>
+                    <div class="blog__container--bottom__right--header__list">
+                        <div class="blog__container--bottom__right--header__list--item">
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>1</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
+                        </div>
+                        <div class="blog__container--bottom__right--header__list--item">
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>2</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
+                        </div>
+                        <div class="blog__container--bottom__right--header__list--item">
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>3</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
+                        </div>
+                        <div class="blog__container--bottom__right--header__list--item">
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>4</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+  
+        </div>
+    </section>
+        <!-- phần footer -->
+    
+        <footer class="footer__layout--desktop">
+            <div class="layout__footer--devider "></div>
+            <div class="layout__footer--wrapper row-max-width">
+                <div class="layout__footerBanner--wrapper">
+                    <div class="footer__banner--left">
+                   <!-- cột 1 -->
+                   <div class="footer__banner">
+                    <div class="footer__banner--title">
+                        Thông tin liên hệ
+                    </div>
+                    <div class="footer__banner--content">
+                        <ul class="footer__listUnit">
+                            <li>Công ty TNHH Đà Lạt Review Tất Tần Tật</li>
+                            <li>108 Lý Nam Đế,P8 ,TP Đà Lạt, Lâm Đồng</li>
+                            <li>Mã số công ty: 5801460907</li>
+                            <li>Chủ tài khoản: NGUYỄN  KIM NHẬT</li>
+                            <li>Ngân hàng: TECHCOMBANK</li>
+                            <li>Số tài khoản: 7836373839</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cột 2 -->
+                <div class="footer__banner">
+                    <div class="footer__banner--title">
+                        Dịch vụ
+                    </div>
+                    <div class="footer__banner--content">
+                        <ul class="footer__listUnit">
+                            <li><a href="">Khách sạn</a></li>
+                            <li><a href="">Villa Đà Lạt</a></li>
+                            <li><a href="">Cho thuê xe</a></li>
+                            <li><a href="">Combo du lịch</a></li>
+                            <li><a href="">Thuê trang phục</a></li>
+                            <li><a href="">Campling Đà Lạt</a></li>
+                            <li><a href="">Gampling Đà Lạt</a></li>
+                            <li><a href="">Vé tham quan Đà Lạt</a></li>
+                            <li><a href="">Đặt vé LiveShow</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cột 3 -->
+                <div class="footer__banner">
+                    <div class="footer__banner--title">
+                        Thông tin
+                    </div>
+                    <div class="footer__banner--content">
+                        <ul class="footer__listUnit">
+                            <li><a href="">Sapa Review Tất Tần Tật</a></li>
+                            <li><a href="">Đà Lạt Review Tất Tần Tật</a></li>
+                            <li><a href="">TikTok Đà Lạt Review Tất Tần Tật</a></li>
+                            <li><a href="">Nha Trang Review Tất Tần Tật</a></li>
+                            <li><a href="">Phan Thiết Review Tất Tần Tật</a></li>
+                            <li><a href="">Phan Rang Review Tất Tần Tật</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+                <!-- cột 4 -->
+                <div class="footer__banner--right">
+                    <div class="footer__banner--title">
+                        Bản đồ
+                    </div>
+                    <div class="footer__banner--content">
+                        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    
+        <footer class="footer__layout--mobile">
+            <div class="layout__footer--devider "></div>
+            <div class="layout__footer--wrapper">
+                <div class="footer__internal--wrap">
+                   
+                    <!-- module-banner -->
+                    <div class="footer__internal--content">
+                        <h3 class="footer__internal--header">
+                            Về Đà Lạt Review
+                        </h3>
+                        <ul class="footer__internal--wrapper">
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">Về Chúng Tôi</a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">Đà Lạt Review Blog</a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">Cơ hội nghề nghiệp</a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Phiếu quà tặng Đà Lạt Review
+                                  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__internal--content">
+                        <h3 class="footer__internal--header">
+                            ĐỐI TÁC
+                        </h3>
+                        <ul class="footer__internal--wrapper">
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Chương trình cho người nổi tiếng
+                                  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__internal--content">
+                        <h3 class="footer__internal--header">
+                            Điều khoản sử dụng
+                        </h3>
+                        <ul class="footer__internal--wrapper">
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Chính sách bảo mật của Đà Lạt Review
+                                  </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Chính sách Cookie
+                                  </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Chương trình thưởng phát hiện lỗi phần mềm
+                                  </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                    Chính sách và quy định
+                                  </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="footer__unit--suggestion">
+                                        Chính sách Phúc lợi động vật  
+                                  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__internal--content">
+                        <h3 class="footer__internal--header">
+                            KÊNH THANH TOÁN
+                        </h3>
+                        <ul class="footer__internal--wrapper">
+                            <li class="footer__internal--unit">
+                                <a href="" class="  "> 
+                                    
+                                </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="  ">   
+    
+                                </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="  ">    
+    
+                                </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="  ">    
+    
+                                </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="  ">   
+                                
+                                </a>
+                            </li>
+                            <li class="footer__internal--unit">
+                                <a href="" class="  ">
+                                      
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__thongBao--info">
+                        <a href="https://www.dmca.com/Protection/Status.aspx?ID=09844cd5-429f-464d-be00-1437024cd892">
+                            <img src="../assets/img/footer_dmca_icon.png" alt="" srcset=""></a>
+                    </div>
+            </div>
+        </footer>
+    <script src="/assets/js/header.js"></script>
+</body>
+</html>
