@@ -90,3 +90,56 @@
 .filter__price{
   margin: 0 10px 0 20px;
 }
+/*! filter mobile */
+.tourMobile__category {
+  display: none;
+}
+@media only screen and (max-width: 1040px) {
+  .tour__banner {
+    display: none;
+  }
+  .tourMobile__category {
+    display: block;
+  }
+  .tourMobile__categoryTop {
+    display: block;
+    margin-top: 80px;
+  }
+  .tourMobile__category--list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    white-space: nowrap;
+  }
+  .tourMobile__categoryTop--list__item{
+    height: 36px;
+    padding: 0 16px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-text-22);
+    border-radius: var(--border-radius-size-5);
+    margin-right: 8px;
+  }
+  .tourMobile__categoryTop--list__item img{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  }
+  .tourMobile__categoryTop--list__item span{
+    font-size: var(--size-text-4);
+    display: inline;
+    text-align: center;
+  } 
+  .tourMobile__categoryBot--list__item{
+    border-radius: var(--border-radius-size-5);
+    padding: 8px 12px;
+    background-color: var(--color-background-12);
+    border: 1px solid transparent;
+    font-size: var(--size-text-4);
+    margin-right: 8px;
+  }
+}
