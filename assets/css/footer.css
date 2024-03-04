@@ -66,6 +66,7 @@ footer{
     }
 
     .footer__layout--mobile {
+        margin-top: 50px !important;
         display: block;
         bottom: 0;
         width: 100%;

@@ -1,0 +1,252 @@
+.user__gift--card__panel{
+    margin-bottom: 20px;
+}
+.user__gift--card__banner--container{
+    background-size: cover;
+    height: 220px;
+    overflow: hidden;
+    max-width: 866px;
+    background-image: url(../img/user_gift_card_banner.jpg);
+}
+.user__gift--card__banner--title{
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 52px;
+    margin: 37px 0 0 30px;
+    max-height: 104px;
+    max-width: 400px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+.user__buynow--btn{
+    background-color: #fff;
+    margin: 4px 0 0 30px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    color: #ff5b00;
+}
+
+
+/* benefit*/
+.user__gift--card__benefit{
+    background-color: #fff;
+    padding: 40px 50px;
+    width: 100%;
+}
+
+/* res */
+.user__gift--card__benefit--items{
+    display: inline-flex;
+    height: 90px;
+    margin-top: 20px;
+    max-width: 350px;
+}
+.user__gift--card__benefit--items:first-child{
+    margin-top: 0;
+}
+.user__gift--card__benefit--items:nth-child(2n){
+    margin-left: 60px;
+
+}
+
+.user__gift--card__benefit--icon{
+    background-size: cover;
+    min-height: 72px;
+    min-width: 90px;
+}
+.user__benefit--icon1{
+    background-image: url(../img/user_gif-benefit_1.png);
+}
+.user__gift--card__benefit--content{
+    height: 100%;
+    margin-left: 14px;
+    max-width: 265px;
+}
+.user__gift--card__benefit--title{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.user__gift--card__benefit--desc{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+    
+}
+.user__benefit--icon2{
+    background-image: url(../img/user_gif-benefit_2.png);
+}
+.user__benefit--icon3{
+    background-image: url(../img/user_gif-benefit_3.png);
+}
+.user__benefit--icon4{
+    background-image: url(../img/user_gif-benefit_4.png);
+}
+
+
+/* banner share with people */
+.user__gift--card__share{
+    background-color: #fff;
+    padding: 20px 40px 40px;
+}
+.user__gift--card__share .title{
+    color: #212121;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px !important;
+    text-align: center;
+}
+.user__gift--card__share .another__person--container{
+    display: flex;
+    height: 192px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.wrapper{
+    width: 33.333333%;
+}
+.user__gift--card__another--item{
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+
+.user__gift--card__share .desc{
+    color: #212121;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    line-height: 16px;
+    margin-top: 12px;
+    text-align: center;
+  
+}
+/* ảnh items */
+.user__family1{background-image: url(../img/user_another_ps1.jpg);}
+.user__family2{background-image: url(../img/user_another_ps2.jpg);}
+.user__family3{background-image: url(../img/user_another_ps3.jpg);}
+
+
+
+/* banner explore the next trip */
+.user__gift--card__explore{
+    background-color: #fff;
+    padding: 20px 40px 28px;
+}
+.user__gift--card__explore .title{
+    color: #212121;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 15px !important;
+    text-align: center;
+
+}
+
+.user__gift--card__explore .adv__img--container{
+    display: flex;
+    justify-content: space-between;
+}
+.adv__img--container .adv__img--item .image{
+    background-size: cover;
+    height: 72px;
+    margin: 0 auto;
+    width: 72px;
+
+}
+/* img items */
+.user__gift--card__explore--img1{
+    background-image: url(../img/user_explore1.png);
+}
+.user__gift--card__explore--img2{
+    background-image: url(../img/user_explore2.png);
+}
+.user__gift--card__explore--img3{
+    background-image: url(../img/user_explore3.png);
+}
+.user__gift--card__explore--img4{
+    background-image: url(../img/user_explore4.png);
+}
+.user__gift--card__explore--img5{
+    background-image: url(../img/user_explore5.png);
+}
+
+/* Banner điền mã quà tặng */
+.user__gift--card__redeem--container{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 30px;
+    position: relative;
+
+}
+.user__gift--card__redeem{
+    display: flex;
+    justify-content: space-between;
+}
+.user__gift--card__redeem--left{
+
+}
+.user__section--title__header{
+
+}
+.user__gift--card__redeem--wrapper{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+.user__gift--card__redeem--wrapper input{
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: #212121;
+    font-size: 16px;
+    height: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
+ 
+}
+.user__reedem--btn{
+    background-color: #ff5b00;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    width: 140px;
+
+}
+.errorText{
+
+}
+.user__gift--card__redeem--detail{
+
+}
+.user__gift--card__redeem--right{
+
+}
+.user__gift--card__img--input{
+
+}
+.user__gift--card__tnc--container{
+
+}
+.user__gift--card__tnc--desc{
+
+}
