@@ -414,9 +414,11 @@
 .detailHotel__list--body__list--wrap__item{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .detailHotel__list--body__list--wrap__item--left{
     flex: 30%;
+    padding: 0 10px;
 }
 .detailHotel__list--body__list--wrap__item--left__img{
     position: relative;
@@ -918,7 +920,7 @@ body.listDetailHotelRate3 {
     top: 0;
     left: 0;
     background-color: var(--color-background-1);
-    z-index: 1001;
+    z-index: 1004;
     opacity: .5;
 }
 .detailHotel__list--body__reviews--wrap{
@@ -926,7 +928,7 @@ body.listDetailHotelRate3 {
     top: 0;
     right: -50%;
     background-color: var(--color-background-6);
-    z-index: 1002;
+    z-index: 1004;
     height: 100vh;
     width: 50%;
     transition: all ease-in-out .3s;
@@ -994,7 +996,7 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     right: -50%;
     width: 40%;
     height: 100vh;
-    z-index: 1003;
+    z-index: 1005;
     background-color: var(--color-background-6);
     transition: all ease-in-out .3s;
 }
@@ -1125,7 +1127,20 @@ body.listDetailHotelSlides2 {
 .list__wrapper{
     display: none !important;
 }
-
+body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
+    display: block;
+}
+.detail__list--body__select--rom__item{
+    position: absolute;
+    left: 0;
+    display: none;
+    background-color: var(--color-background-6);
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px;
+    border-radius: var(--border-radius-size-4);
+    width: 250px;
+    z-index: 99;
+}
  /* ==============================================
     Name: Table
     Creact by: Tien Dat
@@ -1202,8 +1217,9 @@ body.listDetailHotelSlides2 {
     .detailHotel__list--body__reviews--content__overview--link,
     .detailHotel__list--body__list--wrap__item--right__header,
     .detailHotel__list--body__list--wrap__item--right__body--info__right--tip,
-    .detailHotel__list--body__list--wrapper__icon{
-        display: none;
+    .detailHotel__list--body__list--wrapper__icon,
+    .hotelMobile__fitter{
+        display: none !important;
     }
     .detailHotel__top--link{
         justify-content: center;
@@ -1418,7 +1434,7 @@ body.listDetailHotelSlides2 {
         background-color: var(--color-background-6);
         width: 100%;
         padding: 26px 0 64px;
-        z-index: 1001;
+        z-index: 1004;
         border-radius: var(--border-radius-size-5);
         transition: all ease-in-out .2s;
         display: block;
@@ -1478,6 +1494,7 @@ body.listDetailHotelSlides2 {
     }
     .detailHotel__list--body__list--wrap__item--right{
         display: none;
+        transition: all ease-in .3s;
     }
     .detailHotel__list--body__list--wrap__item--right__body--info{
         display: block;
