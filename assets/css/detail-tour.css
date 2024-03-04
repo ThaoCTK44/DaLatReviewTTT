@@ -963,7 +963,7 @@ body.sale__detail--tour{
     .detail__tour--container::before{
         position: absolute;
         content: '';
-        top: 350px;
+        top: 351px;
         left: 0;
         width: 100%;
         height: 20px;
