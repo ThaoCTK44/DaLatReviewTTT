@@ -18,7 +18,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
     background: var(--color-background-6);
     border-bottom: 1px solid var(--color-text-3);
 }
@@ -162,7 +162,10 @@ header{
     flex-direction: column;
     position: relative;
 }
-.header__box--chatcall a{
+.header__box--chatcall p:hover{
+    background: var(--color-background-17);
+}
+.header__box--chatcall p{
     width: 47px;
     height: 47px;
     background: var(--color-background-7);
@@ -172,13 +175,18 @@ header{
     border-radius: var(--border-radius-size-6);
     font-size: var(--size-text-6);
     color: var(--color-text-6) !important;
+    cursor: pointer;
+}
+body.chatBox .header__container--chat{
+    display: block;
 }
 .header__container--chat{
+    display: none;
     width: 400px;
     height: 500px;
-    position: absolute;
-    bottom: 0;
-    right: 250px;
+    position: fixed;
+    bottom: 10px;
+    right: 16%;
     background: var(--color-background-6);
     border-radius: var(--border-radius-size-2);
     overflow: hidden;
@@ -195,21 +203,24 @@ header{
     align-items:center;
     justify-content: space-between;
 }
-
+.header__container--chat__box--title ion-icon:hover{
+    background-color: var(--color-background-22);
+}
 .header__container--chat__box--title ion-icon{
     font-size: var(--size-text-7);
+    padding: 5px;
+    border-radius: var(--border-radius-size-6);
 }
 .header__container--chat__box--body{
-    height: 376px;
     background-color: var(--color-background-22);
     overflow-y: auto;
+    height: 100vh;
 }
 .header__container--chat__box--input input:nth-child(1){
     padding: 10px;
 }
 .header__container--chat__box--item{
     width: 100%;
-    gap: 10px;
     padding: 10px 0;
     display: flex;
  
@@ -220,7 +231,9 @@ header{
     flex-direction: column;
 }
 .header__container--chat__box--item__text{
+    position: relative;
     width: 75%;
+    padding: 0 10px;
 }
 .header__container--chat__box--title img,
 .header__container--chat__box--item img{
@@ -229,21 +242,62 @@ header{
     border-radius: var(--border-radius-size-6);
     object-fit: cover;
 }
-.header__container--chat__box--item__text::before{
-    content: "";
-    position: absolute;
-}
-.header__container--chat__box--item__text{
+
+.header__container--chat__box--item__text p{
     background: var(--color-background-6);
     border-radius: var(--border-radius-size-2);
     padding: 10px;
 }
+.header__container--chat__box--item__text span{
+    font-size: var(--size-text-4);
+    padding-top: 5px;
+    color: var(--color-background-2);
+}
+.header__container--chat__box--item.chatbox__right .header__container--chat__box--item__text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
 .header__container--chat__box--item.chatbox__right {
     flex-direction: row-reverse;
+    
 }
 .header__container--chat__box--item.chatbox__left {
    
+}
+.header__container--chat__box--input{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    background: var(--color-background-6);
+}
+.header__container--chat__box--input textarea{
+    width: 75%;
+    text-wrap: wrap;
+    outline: none;
+    border: none;
+    padding: 12px 30px;
+    resize: none;
+}
+.header__container--chat__box--input input:nth-child(2):hover{
+    background: var(--color-background-17);
+}
+.header__container--chat__box--input input:nth-child(2){
+    width: 25%;
+    background: var(--color-background-7);
+    color: var(--color-text-6);
+    padding: 8px 10px;
+    border-radius: var(--border-radius-size-1);
+    font-weight: 500;
+    font-size: var(--size-text-5);
+}
+.header__container--chat__close{
+    cursor: pointer;
 }
 /* ==============================================
     Name: Header list mobile css
@@ -254,7 +308,7 @@ header{
 .header__mobile{
     position: fixed;
     background: var(--color-background-6);
-    z-index: 1000;
+    z-index: 999;
     top: 200vh;
     left: 0;
     width: 100%;
@@ -555,8 +609,25 @@ body.checker .login__mobile{
     .header__bottom--listlink__allcategory--list{
        width: 1100px; 
     }
+    .header__container--chat{
+        right: 13%;
+    }
 }
 @media only screen and (max-width: 1111px) {
+    .header__container--chat{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: calc(100vh - 61px);
+        top: 61px;
+        left: 0;
+        background: var(--color-background-6);
+        border-radius: var(--border-radius-size-2);
+        overflow: hidden;
+    }
+    .header__box--chatcall{
+        padding-right: 5px;
+    }
     .header__top--left__hamburger{
         position: relative;
         width: 28px;
