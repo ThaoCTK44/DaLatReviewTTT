@@ -589,6 +589,9 @@
     padding-top: 12px;
     text-align: right;
 }
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price a{
+    color: var(--color-text-6) !important;
+}
 .detailHotel__list--body__list--wrap__item--right__body--info__right--tip{
     text-align: right;
     font-size: var(--size-text-3);
@@ -888,28 +891,10 @@
 body.listDetailHotelRate .detailHotel__list--body__reviews--wrap{
     right: 0;
 }
-body.listDetailHotelRate2 .detailHotel__list--body__reviews--wrap{
-    right: 0;
-}
-body.listDetailHotelRate3 .detailHotel__list--body__reviews--wrap{
-    right: 0;
-}
 body.listDetailHotelRate .detailHotel__backgroup--blur{
     display: block;
 }
-body.listDetailHotelRate2 .detailHotel__backgroup--blur{
-    display: block;
-}
-body.listDetailHotelRate3 .detailHotel__backgroup--blur{
-    display: block;
-}
 body.listDetailHotelRate {
-    overflow: hidden;
-}
-body.listDetailHotelRate2 {
-    overflow: hidden;
-}
-body.listDetailHotelRate3 {
     overflow: hidden;
 }
 .detailHotel__backgroup--blur{
@@ -1011,6 +996,10 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     overflow: hidden;
     box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
     height: 35px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    min-width: 100%;
+    white-space: nowrap;
 }
 .detailHotel__list--body__list--wrapper__container--box nav a{
     margin-right: 16px;
@@ -1021,7 +1010,7 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
 .detailHotel__list--body__list--wrapper__container{
     padding: 24px 50px 30px;
     overflow-y: scroll;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 190px);
     scroll-behavior: smooth;
 }
 .detailHotel__list--body__list--wrapper .header__list--header__title{
@@ -1076,7 +1065,7 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 15px 20px;
     border-top: 1px solid #eee;
 }
 .detailHotel__footer--price__info{
@@ -1097,7 +1086,7 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     Creact by: TienDat
     Creact at: 22/2/2024
 ============================================== */
-body.listDetailHotelSlides .container__slides{
+body.listDetailHotelSlides .slide__img--box{
     display: block;
 }
 body.listDetailHotelSlides .detailHotel__backgroup--blur{
@@ -1106,22 +1095,14 @@ body.listDetailHotelSlides .detailHotel__backgroup--blur{
 body.listDetailHotelSlides {
     overflow: hidden;
 }
-body.listDetailHotelSlides2 .container__slides{
-    display: block;
-}
-body.listDetailHotelSlides2 .detailHotel__backgroup--blur{
-    display: block;
-}
-body.listDetailHotelSlides2 {
-    overflow: hidden;
-}
 .detailHotelMobile__slides,
 .detailHotelMobile__info--summary,
 .detailHotel__list--body__list--wrap__item--left__popular--name,
 .detailHotel__list--body__list--wrap__item--left__popular--price,
 .detailHotel__list--body__list--wrap__item--left__action,
 .detailHotelMobie__footer,
-.detailHotelMobile__list--body__service--container{
+.detailHotelMobile__list--body__service--container,
+.detail__list--body__select--rom{
     display: none;
 }
 .list__wrapper{
@@ -1166,10 +1147,10 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     Creact by: TienDat
     Creact at: 19/2/2024
 ============================================== */
-    body.listDetailHotelRate3 .detailHotel__list--body__reviews--wrap{
+    body.listDetailHotelRate .detailHotel__list--body__reviews--wrap{
         top: 140px;
     }
-    body.listDetailHotelRate3 .detailHotel__backgroup--blur{
+    body.listDetailHotelRate .detailHotel__backgroup--blur{
         display: block;
     }
     .detailHotel__list--body__reviews--wrap{
@@ -1183,6 +1164,9 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     }
     .detailHotel__list--body__reviews--wrap__icon{
         display: none;
+    }
+    .detailHotel__list--body__reviews--wrap .detailHotel__list--body__reviews{
+        padding: 0 20px;
     }
 }
 
@@ -1240,6 +1224,8 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
         display: flex;
         transition: .5s;
         width: 100%;
+        /* overflow-x: auto;
+        scroll-snap-type: x mandatory; */
     }
     .detailHotelMobile__slides--show__item img{
         width: 100%;
@@ -1264,8 +1250,11 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     .detailHotel__list--body__list--wrap__item--left__popular--price,
     .detailHotel__list--body__policies--content__check,
     .detailHotel__list--body__list--wrap__item,
-    .detailHotel__list--body__list--wrap__item--left__action{
-        display: block;
+    .detailHotel__list--body__list--wrap__item--left__action,
+    .detailHotel__list--body__policies--content__fee,
+    .detailHotel__list--body__policies--content__dining,
+    .fourProductList__wrapper--info__count{
+        display: block !important;
     }
     .detailHotelMobile__info--summary{
         display: flex;
@@ -1320,6 +1309,12 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     .detailHotel__list--body__list--wrap__item--left{
         display: flex;
         align-items: center;
+        position: sticky;
+        top: 7%;
+        border-radius: var(--border-radius-size-3);
+        z-index: 99;
+        background-color: var(--color-background-6);
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,.1);
     }
     .detailHotel__list--body__list--wrap__item--left__img{
         margin-right: 10px;
@@ -1403,6 +1398,7 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
         right: auto;
         padding: 1px 4px;
     }
+    
 
 /* ==============================================
     Name: service 
@@ -1541,10 +1537,13 @@ body.listDetailHotelPrice,.listDetailHotelPrice2 {
     }
     .detailHotel__list--body__list--wrapper__container--box nav {
         margin-top: 30px;
+        padding: 0 20px;
     }
     .detailHotel__list--body__list--wrapper__container{
         height: calc(100vh - 295px);
+        padding: 0 20px;
     }
+
 }
 
 @media  (max-width: 550px){
