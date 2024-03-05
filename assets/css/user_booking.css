@@ -74,6 +74,8 @@
     overflow-x: hidden;
     
 }
+
+
 .user__booking--popular__wrapper {
     margin: 0;
     position: relative;
@@ -128,7 +130,7 @@
 }
 
 
-.user__booking--popular__slide--image {
+.user__booking--popular__slide--image img{
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -137,9 +139,7 @@
     background-color: rgb(233, 233, 233);
     border-radius: 6px 6px 0px 0px;
     width: 100%;
-    padding: 0px 0px 56.4972%;
     margin: 0px;
-    background-image: url(https://res.klook.com/image/upload/activities/yf9jzfbou3qoijdqfcpm.webp);
 
 }
 
@@ -223,6 +223,8 @@
     text-overflow: ellipsis;
 }
 /* hover items */
+
+
 .user__booking--popular__slide--items__wrapper {
 
     flex: 0 0 275px;

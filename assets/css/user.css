@@ -233,6 +233,7 @@
 
 .user__content--right__banner {
   background-color: var(--color-background-6);
+  border-radius: var(--border-radius-size-2);
 }
 
 
@@ -460,7 +461,7 @@
   display: flex;
   flex-direction: column;
   line-height: 1.4;
-  width: 352px;
+  max-width: 352px;
 }
 
 
@@ -897,6 +898,7 @@
     padding-top: 70px;
     max-width: 1160px;
   }
+
   
   .user__center--sidebar__wrapper {
     gap: 10px;
@@ -909,12 +911,13 @@
 }
 
 .user__content--items {
-  width: 240px;
+  width: 290px;
   margin-right: 10px;
 }
 
+
 .user__bannerCut {
-  width: 238.5px;
+  width: 288.5px;
 }
 
 .user__content--items__desc {

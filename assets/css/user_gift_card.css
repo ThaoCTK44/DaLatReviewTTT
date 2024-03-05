@@ -111,6 +111,8 @@
     height: 192px;
     justify-content: space-between;
     gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 .wrapper{
     width: 33.333333%;
@@ -232,21 +234,86 @@
     width: 140px;
 
 }
-.errorText{
+
+
+/* Báo lỗi  */
+.user__gift--card__redeem--left .errorText
+{
+    box-sizing: border-box;
+    color: #ff5b00;
+    font-size: 14px;
+    height: 28px;
+    padding: 6px 0 8px;
 
 }
+
+/* detail */
 .user__gift--card__redeem--detail{
 
+}
+.user__gift--card__redeem--detail p {
+    color: #757575;
+    display: flex;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.user__gift--card__redeem--detail p span{
+    background-color: #eee;
+    border-radius: 50%;
+    display: inline-block;
+    height: 3px;
+    margin-right: 8px !important;
+    margin-top: -1px !important;
+    min-width: 3px;
+    position: relative;
+    top: 7px;
+    width: 3px;
 }
 .user__gift--card__redeem--right{
 
 }
 .user__gift--card__img--input{
-
+    background-image: url(../img/user_gift_card_input.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 166px;
+    width: 100%;
 }
+
+/* banner điều khoản */
 .user__gift--card__tnc--container{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 30px;
+    position: relative;
 
 }
 .user__gift--card__tnc--desc{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+.user__gift--card__tnc--desc ul li{
+    margin-bottom: 16px;
+}
 
+/* mobile from here  */
+.user__mb--gift__card--banner__container {
+    background-repeat: no-repeat;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 58.6667%;
+    position: relative;
+    width: 100%;
+    
+    background-size: cover;
+    z-index: 0;
+    background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg);
+
+}
+.user__mb--gift__card--banner__container img{
+    
 }
