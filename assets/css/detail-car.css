@@ -258,7 +258,26 @@
     border-radius: 10px;
     color: var(--color-text-6) !important;
 }
-
+.detail__car--container__top{
+    width: 100%;
+}
+.detail__car--container__top--contact span:nth-child(1),
+.detail__car--container__top--address span:nth-child(1){
+    font-weight: 500;
+}
+.detail__car--container__top--des img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-size-3);
+}
+.detail__car--container__top--des img,
+.detail__car--container__top--des p,
+.detail__car--container__top--contact ,
+.detail__car--container__top--address {
+    font-size: var(--size-text-5);
+    color: var(--color-text-1);
+    padding-bottom: 5px;
+}
 
 body.InfoCarForm .detail__car--info{
     display: block;
