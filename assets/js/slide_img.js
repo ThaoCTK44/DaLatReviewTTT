@@ -31,4 +31,5 @@ function showSlides(n) {
 }
 function closeSlides() {
   headerBody.classList.remove('slider__detail--tour');
+  headerBody.classList.remove('listDetailHotelSlides');
 }

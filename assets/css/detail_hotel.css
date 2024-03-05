@@ -1086,7 +1086,7 @@ body.listDetailHotelPrice,.listDetailHotelPrice3,.listDetailHotelPrice2 {
     Creact by: TienDat
     Creact at: 22/2/2024
 ============================================== */
-body.listDetailHotelSlides .container__slides{
+body.listDetailHotelSlides .slide__img--box{
     display: block;
 }
 body.listDetailHotelSlides .detailHotel__backgroup--blur{

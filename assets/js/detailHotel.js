@@ -4,7 +4,6 @@ const btnDetailHotelTypeRoom = document.querySelector('.detail__list--body__sele
 const closeDetailHotelPrice = document.querySelector('.detailHotel__list--body__list--wrapper__icon ion-icon');
 const closeDetailHotelRate = document.querySelector('.detailHotel__list--body__reviews--wrap__icon ion-icon');
 const closeDetailHotelBlur = document.querySelector('.detailHotel__backgroup--blur');
-
 const ListSlide = document.querySelector('.detailHotelMobile__slides--show__item');
 const slides = document.querySelectorAll('.detailHotelMobile__slides--show__item img');
 const lenght = slides.length;
