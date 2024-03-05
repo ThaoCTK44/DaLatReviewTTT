@@ -1,0 +1,649 @@
+<!-- ==============================================
+    Name: user page html
+    Creact by: NL Thanh Tinh
+    Creact at: 01/02/2024
+    Update at: 29/02/2024
+
+============================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/sale_banner.css">
+    <link rel="stylesheet" href="/assets/css/contact-banner.css">
+    <link rel="stylesheet" href="/assets/css/firstTag.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/fourProductList.css">
+    <link rel="stylesheet" href="../assets/css/user.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/user_gift_card.css">
+    <link rel="stylesheet" href="../assets/css/user_settings_login_method.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+
+<body>
+    <!-- header của Tây  -->
+
+
+    <div class="header__compoment">
+        <header>
+            <div class="header__content--top">
+                <div class="header__top">
+                    <div class="header__top--left">
+                        <div class="header__top--left__hamburger">
+                            <div class="header__top--left__hamburger--box">
+                            </div>
+                        </div>
+                        <a href="home.html"><img src="/assets/img/home-logo.png" alt=""
+                                class="header__top--left__logo"></a>
+                        <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
+                        <div class="header__top--left__search">
+                            <input type="text" class="header__top--left__search--input"
+                                placeholder="Tìm theo điểm đến, hoạt động">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="header__top--right">
+                        <ul>
+
+                            <li>
+                                <a href="#" class="header__top--right__item">
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__top--right__item">
+                                    Xem gần đây
+                                </a>
+                            </li>
+                            <li class="logout">
+                                <div class="header__top--right__item logout">
+                                    Đăng xuất
+                                </div>
+                            </li>
+                            <li class="open__login--signup__form--1">
+                                <div class="header__top--right__item  check__login">
+                                    Đăng ký
+                                </div>
+                            </li>
+                            <li class="open__login--signup__form--2">
+                                <div class="header__top--right__itemlast check__login">
+                                    Đăng nhập
+                                </div>
+                            </li>
+                            <li>
+                                <div class="header__top--right__item--checker">
+                                    <a href="user.html">
+                                        <img src="/assets/img/user_avatar.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__top--right__mobile">
+                        <div class="header__top--right__mobile--item">
+                            <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                        </div>
+                        <div class="header__top--right__mobile--item">
+                            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+                        </div>
+                        <div
+                            class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                        <div class="header__top--right__item--checker">
+                            <a href="user.html">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__mobile shadow">
+            <div class="header__mobile--box">
+                <ul>
+                    <li><a href="tour.html"><img src="/assets/img/header-icon-1.png" alt="img"><span>Tour</span></a>
+                    </li>
+                    <li><a href="tour.html"><img src="/assets/img/header-icon-2.png" alt="img"><span>Vé Đạp
+                                Vịt</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-4.png" alt="img"><span>Tour đi biển</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-5.png" alt="img"><span>Hoạt động cắm
+                                trại</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-6.png" alt="img"><span>Trải nghiệm văn
+                                hóa</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-7.png" alt="img"><span>Công viên giải
+                                trí</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-10.png" alt="img"><span>Công viên và vườn Bác
+                                thảo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-1.png" alt="img"><span>Tour</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-4.png" alt="img"><span>Tour đi biển</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-5.png" alt="img"><span>Hoạt động cắm
+                                trại</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-6.png" alt="img"><span>Trải nghiệm văn
+                                hóa</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-7.png" alt="img"><span>Công viên giải
+                                trí</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-10.png" alt="img"><span>Công viên và vườn Bác
+                                thảo</span></a></li>
+                    <li><a href="#"><img src="/assets/img/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a>
+                    </li>
+                    <li><a href="#"><img src="/assets/img/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__background--blur">
+        </div>
+        <div class="header__background--blur__fullview">
+        </div>
+        <div class="login__signup--box">
+            <ion-icon class="login__signup--box__close" name="close-outline"></ion-icon>
+            <div class="login__signup--box__container">
+                <div class="login__signup--box__container--header">
+                    <p>Đăng nhập/ Đăng ký</p>
+                    <span>Nhập tài khoản và khám phá niềm vui của bạn ở bất cứ đâu</span>
+                </div>
+                <div class="login__sigup--box__container--form__box">
+                    <div class="login__signup--box-container-form">
+                        <div class="login__signup--box__container--number">
+                            <div class="login__signup--box__container--number__main">
+                                <div class="login__singup--box__container--number__main--btn">
+                                    <div class="login__signup--box__container--main__btn--email"
+                                        id="login__signup--box__container--main__btn--email">
+                                        Địa chỉ Email
+                                    </div>
+                                    <div class="login__signup--box__container--main__btn--numberphone">
+                                        Số điện thoại
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="login__signup--box__container--main__form">
+                                        <label for="#">
+                                            <select name="#" id="#">
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#"></option>
+                                            </select>
+                                        </label>
+                                        <input type="text" placeholder="Số điện thoại">
+                                    </div>
+                                </form>
+                                <div class="login__signup--box__container--main__note_1">Đăng nhập bằng số điện thoại
+                                    chưa đăng ký để tạo tài khoản Đà Lạt review tất tần tật mới</div>
+                                <button class="login__signup--box__container--main__btn firstBtn login2">Gửi mã xác
+                                    nhận</button>
+                                <div class="login__signup--box__container--main__note_2">Đăng nhập bằng mật khẩu</div>
+                                <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                                <div class="login__signup--box__container--main__bottom">
+                                    <a href="#"><img src="/assets/img/fb_logo.png" alt=""></a>
+                                    <a href="#"><img src="/assets/img/gg_logo.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login__signup--box__container--email">
+                            <div class="login__signup--box__container--email__main">
+                                <div class="login__singup--box__container--email__main--btn">
+                                    <div class="login__signup--box__container--main__btn--numberphone">
+                                        Địa chỉ Email
+                                    </div>
+                                    <div class="login__signup--box__container--main__btn--email"
+                                        id="login__signup--box__container--main__btn--numberphone">
+                                        Số điện thoại
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="login__signup--box__container--main__form">
+                                        <input type="text" placeholder="Địa chi Email">
+                                    </div>
+                                </form>
+                                <button class="login__signup--box__container--main__btn firstBtn login1">Xác
+                                    nhận</button>
+                                <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                                <div class="login__signup--box__container--main__bottom">
+                                    <a href="#"><img src="/assets/img/fb_logo.png" alt=""></a>
+                                    <a href="#"><img src="/assets/img/gg_logo.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body from here !  -->
+    <div class="user__center--container__desktop">
+        <div class="user__center--box">
+            <a class="fill__more--info" href="">
+                <img src="../assets/img/user_location.png" alt="">
+                <span>Thêm quốc gia/khu vực của bạn để nhận đề xuất tốt hơn</span>
+                <ion-icon name="chevron-forward-outline" class="user__profile--icon"></ion-icon>
+            </a>
+            <div class="user__center--sidebar__wrapper ">
+                <div class="user__center--sidebar">
+
+                    <div class="user__center--sidebar__box">
+                        <div class="user__center--sidebar__profile">
+                            <div class="user__center--sidebar__profile--avatar__cover">
+                                <img class="user__center--sidebar__profile--avatar" src="../assets/img/user_avatar.png"
+                                    alt="" srcset="">
+                                <div class="user__center--sidebar__profile--name">NGƯỜI DÙNG ĐL REVIEW</div>
+                            </div>
+                            <a onclick="primaryDropdown()" href="" class="user__center--sidebar__profile--changer">
+                                <div class="user__changer">Chỉnh sửa</div>
+                                <div class="user__changer--icon">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                            <div class="user__center--rewardsUser">
+                                <div class="user__center--rewardsUser__logo">
+
+                                </div>
+                                <div class="user__center--rewardsUser__ranked">
+                                    <div class="user__center--rewardsUser__ranked--level">
+                                        lv1
+                                    </div>
+                                    <div class="user__center--rewardsUser__ranked--name">
+                                        Bạc
+                                    </div>
+                                </div>
+                                <div class="user__center--rewardsUser__seeMore">
+                                    <div>Xem ưu đãi thành viên </div>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="user__center--sidebar__preferential--wrapper">
+
+                            <div class="user__center--sidebar__preferential">
+
+                                <div class="user__content--link">
+                                    <a class="user__module--link " href="">
+                                        <ion-icon name="pricetags-outline"></ion-icon>
+                                        <span>Mã ưu đãi</span>
+                                        <!--  -->
+                                        <span class="user__num--count">3</span>
+                                        <!--  -->
+                                    </a>
+                                </div>
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="diamond-outline"></ion-icon>
+                                        <span>DLR credit</span>
+                                        <!--  -->
+                                        <span class="user__num--count">0</span>
+                                        <!--  -->
+                                    </a>
+                                </div>
+                                <div class="user__content--link">
+                                    <a class="user__module--link user__focus" href="">
+                                        <ion-icon name="ticket-outline"></ion-icon>
+                                        <span>Phiếu quà tặng</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="user__center--sidebar__preferential">
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="../page/user_booking.html">
+                                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                                        <span>Đơn hàng</span>
+
+                                    </a>
+                                </div>
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <span>Đánh giá</span>
+
+                                    </a>
+                                </div>
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="journal-outline"></ion-icon>
+                                        <span>Quản lý phương thức thanh toán</span>
+
+                                    </a>
+                                </div>
+
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="bicycle-outline"></ion-icon>
+                                        <span>Quản lý thông tin giao hàng</span>
+
+                                    </a>
+                                </div>
+
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <span>Yêu thích </span>
+
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="user__center--sidebar__preferential">
+                                <div class="user__content--link">
+                                    <a class="user__module--link" href="">
+                                        <ion-icon name="id-card-outline"></ion-icon>
+                                        <span>Quản lý đăng nhập</span>
+
+                                    </a>
+                                </div>
+                                <div class="user__content--link">
+                                    <a class="user__module--link " href="">
+                                        <ion-icon name="settings-outline"></ion-icon>
+                                        <span>Cài đặt</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user__center--sidebar__invite">
+                        <a class="user__module--invite__link" href="">
+                            <div class="user__invite--title">Mời bạn bè</div>
+                            <div class="user__invite--desc">Nhận 100.000đ khi mời bạn bè sử dụng</div>
+                            <div class="user__invite--btn">Xem chi tiết</div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="user__content--box">
+                    <!--  -->
+                    <!--  -->
+                    <div class="user__gift--card__panel">
+                        <!--  -->
+                        <!--  -->
+                        <div>
+                            <div class="user__gift--card__banner--container">
+                                <h1 class="user__gift--card__banner--title">
+                                    Phiếu Quà Tặng Đà Lạt Review !!!
+                                </h1>
+                                <button type="button" class="user__buynow--btn">
+                                    <!--  -->
+                                    <!--  -->
+                                    <span>Dùng ngay</span>
+                                    <!--  -->
+                                    <!--  -->
+                                </button>
+                            </div>
+                            <!-- các tiện ích -->
+    
+                            <div class="user__gift--card__benefit">
+                                <!-- item1 -->
+                                <div class="user__gift--card__benefit--items">
+                                    <div class="user__gift--card__benefit--icon user__benefit--icon1">
+                                    </div>
+                                    <div class="user__gift--card__benefit--content">
+                                        <div class="user__gift--card__benefit--title">
+                                            Dễ thanh toán
+                                        </div>
+                                        <div class="user__gift--card__benefit--desc">
+                                            Chỉ cần chọn phiếu quà tặng Klook tại trang thanh toán
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item2 -->
+                                <div class="user__gift--card__benefit--items">
+                                    <div class="user__gift--card__benefit--icon user__benefit--icon2">
+                                    </div>
+                                    <div class="user__gift--card__benefit--content">
+                                        <div class="user__gift--card__benefit--title">
+                                            Không bao giờ hết hạn
+                                        </div>
+                                        <div class="user__gift--card__benefit--desc">
+                                            Bạn chưa có kế hoạch? Đừng lo lắng - hãy dùng phiếu quà tặng bất cứ lúc nào
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item3 -->
+                                <div class="user__gift--card__benefit--items">
+                                    <div class="user__gift--card__benefit--icon user__benefit--icon3">
+                                    </div>
+                                    <div class="user__gift--card__benefit--content">
+                                        <div class="user__gift--card__benefit--title">
+                                            Rất quyền năng
+                                        </div>
+                                        <div class="user__gift--card__benefit--desc">
+                                            Đặt vé tham quan, khách sạn, di chuyển và hơn thế nữa tại hơn 1700 điểm đến trên
+                                            toàn thế giới cùng Đà Lạt Review!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__gift--card__benefit--items">
+                                    <div class="user__gift--card__benefit--icon user__benefit--icon4">
+                                    </div>
+                                    <div class="user__gift--card__benefit--content">
+                                        <div class="user__gift--card__benefit--title">
+                                            Dùng kèm với ưu đãi khác & tiết kiệm thêm
+                                        </div>
+                                        <div class="user__gift--card__benefit--desc">
+                                            Dùng chung với Klook credits hay mã ưu đãi? Không thành vấn đề
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- banner share gift card với mọi người -->
+                            <div class="user__gift--card__share">
+                                <p class="title">Chia sẻ niềm vui với mọi người</p>
+                                <!-- item 1 -->
+                                <div class="another__person--container">
+                                    <div class="wrapper">
+                                        <div class="user__gift--card__another--item user__family1">
+    
+                                        </div>
+                                        <div class="desc">
+                                            Bạn bè
+                                        </div>
+                                    </div>
+    
+                                    <!-- item 2 -->
+                                    <div class="wrapper">
+                                        <div class="user__gift--card__another--item user__family2">
+    
+                                        </div>
+                                        <div class="desc">
+                                            Gia đình
+                                        </div>
+                                    </div>
+    
+    
+    
+                                    <!-- item 3 -->
+                                    <div class="wrapper">
+                                        <div class="user__gift--card__another--item user__family3">
+    
+                                        </div>
+                                        <div class="desc">
+                                            Người ấy
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+    
+    
+    
+                            </div>
+    
+                            <!-- banner khám phá hành trình tiếp theo -->
+                            <div class="user__gift--card__explore">
+                                <p class="title">Chọn ngay cho hành trình tiếp theo</p>
+                                <div class="adv__img--container">
+                                    <div class="adv__img--item">
+                                        <div class="image user__gift--card__explore--img1">
+                                        </div>
+                                        <div class="desc">Tham quan & giải trí </div>
+                                    </div>
+                                    <div class="adv__img--item">
+                                        <div class="image user__gift--card__explore--img2"></div>
+                                        <div class="desc">Di chuyển </div>
+                                    </div>
+                                    <div class="adv__img--item">
+                                        <div class="image user__gift--card__explore--img3"></div>
+                                        <div class="desc">Lưu trú & nghỉ dưỡng </div>
+                                    </div>
+                                    <div class="adv__img--item">
+                                        <div class="image user__gift--card__explore--img4"></div>
+                                        <div class="desc">Ẩm thực & Nhà hàng </div>
+                                    </div>
+                                    <div class="adv__img--item">
+                                        <div class="image user__gift--card__explore--img5"></div>
+                                        <div class="desc">Tiện ích du lịch </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- banner áp mã quà tặng/ mã giảm giá -->
+                            <div class="user__gift--card__redeem--container">
+                                <div class="user__gift--card__redeem">
+                                    <div class="user__gift--card__redeem--left">
+                                        <div class="user__section--title__header">
+                                            <h3>Sử dụng Phiếu Quà Tặng</h3>
+                                        </div>
+                                        <div class="user__gift--card__redeem--wrapper">
+                                            <input type="text" placeholder="Điền mã phiếu quà tặng của bạn">
+                                            <span class="user__reedem--btn">Sử dụng</span>
+                                        </div>
+                                        <p class="errorText"></p>
+                                        <div class="user__gift--card__redeem--detail">
+                                            <p>
+                                                <span></span>
+                                                Số dư đã sử dụng trên Phiếu Quà Tặng DLR không thể rút hoặc chuyển sang tài
+                                                khoản DLR khác
+                                            </p>
+                                            <p>
+                                                <span></span>
+                                                Phiếu Quà Tặng DLR không hỗ trợ chuyển đổi ngoại tệ
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="user__gift--card__redeem--right">
+                                        <div class="user__gift--card__img--input">
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- banner điều khoản/ điều kiện -->
+                            <div class="user__gift--card__tnc--container">
+                                <div class="user__section--title__header">
+                                    <h3>Điều kiện & Điều khoản</h3>
+                                </div>
+                                <div class="user__gift--card__tnc--desc">
+                                    <ul>
+                                        <li>Tất cả Phiếu Quà Tặng Klook đều được phát hành bởi Klook Travel Technology
+                                            Limited (sau đây gọi tắt là “KLOOK”).</li>
+                                        <li>Khi bạn mua Phiếu Quà Tặng Klook, bạn đã đồng ý với tất cả Điều Kiện & Điều
+                                            Khoản, <a>, có thể được thay đổi và điều chỉnh theo quyết định riêng của KLOOK.
+                                                Việc tiếp tục sử dụng Phiếu Quà Tặng Klook và/hoặc trang web và ứng dụng
+                                                KLOOK (gọi chung là “nền tảng KLOOK”) sau khi đã có sự thay đổi và điều
+                                                chỉnh đồng nghĩa với việc bạn đồng ý với tất cả những điều khoản đó.</a>
+                                        </li>
+                                        <li>Không thể chuyển nhượng, hoàn tiền, hay bán lại cho bên thứ ba.</li>
+                                        <li>Klook Credit sẽ không được tích luỹ khi mua Phiếu Quà Tặng Klook</li>
+                                        <li>Trừ khi có quy định ngoại lệ, không thể sử dụng Klook Credit, số dư trong Phiếu
+                                            Quà Tặng, hay tất cả các mã ưu đãi từ các chương trình giảm giá, ưu đãi đặc
+                                            biệt, hay coupon khuyến mãi để mua Phiếu Quà Tặng Klook.</li>
+                                        <li>Chỉ chấp nhận thanh toán cùng một mệnh giá tiền tệ với mệnh giá của số dư trên
+                                            Phiếu Quà Tặng Klook.</li>
+                                        <li>Thẻ Quà tặng Điện tử Klook không áp dụng cho các Thẻ Klook / Vé Gói & Tiết kiệm
+                                            / Bảo hiểm Du lịch / Vé Bảo tàng Cung điện Hồng Kông / Triển lãm Đặc biệt Bảo
+                                            tàng Khoa học Hồng Kông.</li>
+                                        <li>KLOOK sẽ không xử lý hay chịu trách nhiệm về bất kỳ mất mát hay hư hỏng nào xảy
+                                            ra với Phiếu Quà Tặng Klook do các hành vi hay thiếu sót của người dùng hoặc bên
+                                            thứ ba bất kỳ</li>
+                                        <li>Theo luật hiện hành, KLOOK có quyền thay đổi, điều chỉnh, tạm ngừng, huỷ, hay
+                                            chấm dứt các Điều Kiện & Điều Khoản của Phiếu Quà Tặng Klook bất cứ lúc nào dựa
+                                            theo quyết định riêng của Klook mà không cần thông báo trước.</li>
+                                        <li>Trong trường hợp có bất kỳ sự khác biệt nào giữa phiên bản tiếng Anh của Điều
+                                            Kiện & Điều Khoản Klook với các ngôn ngữ khác, bản tiếng Anh sẽ được ưu tiên áp
+                                            dụng.</li>
+                                        <li>Xin liên lạc với bộ phận hỗ trợ của KLOOK theo email <a>support@klook.com</a>
+                                            nếu bạn có thắc mắc.</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+    <!-- responsive mobile -->
+
+    <div class="user__mb--container">
+
+            <div class="user__mb--above__header">
+                <div>Phiếu quà tặng Đà Lạt Review</div>
+            </div>
+            <!-- khu vực body -->
+            <div class="user__mb--gift__card user__mb--nogGift__card">
+                <div class="user__mb--gift__card--introduction">
+                    <div class="user__mb--gift__card--banner__container">
+                        <!-- <img src="../assets/img/user_gift_card_banner.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+    </div>
+
+
+    <!--  -->
+</body>
+
+<script src="../assets/js/user.js"></script>
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/user_settings.js"></script>
+<script src="/assets/js/header.js"></script>
+<script src="/assets/js/home.js"></script>
+
+</html>
