@@ -139,7 +139,7 @@ header{
     position: absolute;
     width: 100%;
     height: 1000vh;
-    top: 61px;
+    top: 0px;
     left: 0;
     background: var(--color-background-1);
     z-index: 888;
