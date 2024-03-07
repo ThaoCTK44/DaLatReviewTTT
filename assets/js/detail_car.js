@@ -19,4 +19,5 @@ function closeMapCarFormBtn(){
 
 closeInfoCarFormBlur.addEventListener('click',()=>{
     detailCarBody.classList.remove('InfoCarForm');
+    detailCarBody.classList.remove('MapCarForm');
 })
