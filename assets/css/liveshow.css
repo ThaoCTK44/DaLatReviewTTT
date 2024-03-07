@@ -70,22 +70,42 @@
 .liveshow__container--body{
   display: flex;
   position: relative;
+  padding-bottom: 70px;
 }
 .liveshow__container--body__menu{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
     position: sticky;
     top: 70px;
     left: 0;
     overflow-y: scroll;
-    width: 300px;
+    width: 274px;
     min-height: 200px;
     padding: 20px 8px 9px;
     border-radius: 12px;
     margin-right: 21px;
     background-color: var( --color-background-6);
     border-radius: var(--border-radius-size-2);
+}
+.liveshow__container--body__menu--wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.liveshow__boder{
+    border-bottom: 1px solid var(--color-background-22);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+.liveshow__container--body__menu--item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: var(--border-radius-size-2);
+}
+.liveshow__container--body__menu--item:hover{
+    background-color: var(--color-background-12);
 }
 .liveshow__container--body__menu .cart__container--top__left--all__left--check{
     font-weight: 400;
@@ -219,10 +239,103 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     display: flex;
     align-items: center;
 }
-.liveshow__container--body__product--filter__price--poptip__option:hover{
+.liveshow__container--body__product--filter__price--poptip__option:hover,.liveshow__container--body__menu--item__content:hover{
     background-color: var(--color-background-3);
 }
 .liveshow__container--body__product--filter__price--poptip__option span{
     padding: 12px 0;
     font-size: var(--size-text-5);
+}
+
+body.listLiveshowSub .liveshow__container--body__menu--item__dropdown{
+    display: block;
+}
+body.listLiveshowSub1 .liveshow__container--body__menu--item__dropdown--1{
+    display: block;
+}
+body.listLiveshowSub2 .liveshow__container--body__menu--item__dropdown--2{
+    display: block;
+}
+.liveshow__container--body__menu--item__dropdown,
+.liveshow__container--body__menu--item__dropdown--1,
+.liveshow__container--body__menu--item__dropdown--2{
+    padding-left: 15px;
+    display: none;
+}
+.liveshow__container--body__menu--item__content{
+    display: flex;
+    padding: 10px 16px;
+    align-items: flex-start;
+    border-radius: var(--border-radius-size-2);
+}
+.liveshow__container--body__product--list .firstProduct__info{
+    background-color: var(--color-background-6);
+}
+.liveshow__container--body__product--list .firstProduct__content--list__item{
+    margin-bottom: 15px;
+}
+.liveshowMoblie__fitter--wrap{
+    display: none;
+}
+@media  (max-width: 1120px) {
+    .liveshow__banner,
+    .liveshow__container--link,
+    .liveshow__container--body__wrap,
+    .liveshow__container--body__product--filter__price--wrap
+    {
+        display: none;
+    }
+    .liveshow__container--body__product--filter__find{
+        display: block;
+        margin-top: 12px !important;
+    }
+    .liveshow__container--body__product{
+        padding: 0 16px;
+    }
+    .liveshow__container,.liveshow,.liveshow__container--body__product{
+        background-color: var(--color-background-6);
+    }
+    .liveshow__container--body__product--filter{
+        padding: 0;
+        color: var(--color-text-11);
+    }
+    .liveshowMobile__title{
+        height: 44px;
+        padding: 12px 0;
+        font-weight: 500;
+        font-size: var(--size-text-5);
+    }
+    .liveshow{
+        padding-top: 70px;
+    }
+    .liveshowMoblie__fitter--wrap{
+        background-color: var(--color-background-6);
+        left: 0;
+        padding: 16px;
+        position: fixed;
+        top: 61px;
+        width: 100%;
+        z-index: 999;
+        display: block;
+    }
+    .liveshowMobile__fitter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--color-background-7);
+        border-radius: 99rem;
+        min-height: 40px;
+        padding: 0 0 0 12px;
+    }
+    .liveshowMobile__fitter--icon{
+        align-items: center;
+        background: var(--color-background-7);
+        border-radius: 20px;
+        color: var(--color-background-6);
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        width: 52px;
+        margin-right: 5px;
+    }
 }
