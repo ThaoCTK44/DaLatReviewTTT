@@ -1,0 +1,27 @@
+.user__wishlist--body{
+
+}
+.content{
+
+}
+.user__wishlist--empty__desktop{
+    display: block;
+    margin: 0 auto;
+    max-width: 712px;
+    padding: 32px 20px;
+    text-align: center;
+
+}
+
+
+.user__wishlist--empty__desktop img{
+width: 200px;
+height: 200px;
+}
+.user__wishlist--empty__title{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 24px;
+}
