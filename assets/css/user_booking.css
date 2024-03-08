@@ -2,7 +2,10 @@
     display: none;
 }
 .user__booking--container__wrapper {
-    width: 865px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 98;
 }
 
 .user__booking--container {
@@ -99,17 +102,16 @@
     display: flex;
     height: 32px;
     justify-content: center;
-    margin-top: -16px;
     position: absolute;
     width: 32px;
-    top: 50%;
+    top: 40%;
     z-index: 99;    
 }
 .user__left--btn{
     left: -20px;
 }
 .user__right--btn{
-    right: -20px;
+    right: 0px;
 }
 /* ========================================================== */
 
@@ -297,7 +299,8 @@
     z-index: 2;
 }
 
-.mbUser__bookinglist--content {
+.mbUser__bookinglist--content,
+.mbUser__content {
     padding: 14px 16px;
 }
 
@@ -307,7 +310,6 @@
     display: flex;
     font-size: 14px;
     line-height: 20px;
-
 }
 
 .mbUser__bookinglist--content__dropdown--btn ion-icon {
@@ -354,4 +356,37 @@
     line-height: 24px;
     margin-bottom: 16px;
     text-align: left;
+}
+
+.mbUser__bookinglist--content__dropdown--list{
+    z-index: 200;
+    position: absolute;
+    inset: 7px auto auto 0px;
+    transform: translate3d(16px, 152px, 0px);
+    min-width: 120px;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: var(--border-radius-size-5);
+    background-color: var(--color-background-6);
+    display: none;
+}
+body.listUserBookingDropDown .mbUser__bookinglist--content__dropdown--list{
+    display: block;
+}
+.mbUser__bookinglist--content__dropdown--list div{
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-background-22);
+    color: #212121;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 11px 20px;
+    transition: background-color .24s cubic-bezier(.22,0,.08,1);
+}
+@media only screen and (max-width: 800px){
+    .mbUser__container{
+        display: block ;
+    }
 }

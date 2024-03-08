@@ -60,6 +60,7 @@ closeDetailHotelBlur.addEventListener('click', ()=>{
     detailHotelBody.classList.remove('listDetailHotelSlides')
     detailHotelBody.classList.remove('listDetailHotelSevice')
     detailHotelBody.classList.remove('listDetailHotelSevice2')
+    detailHotelBody.classList.remove('MapCarForm')
     detailHotelBody.classList.remove('detailHotelBlur')
 })
 

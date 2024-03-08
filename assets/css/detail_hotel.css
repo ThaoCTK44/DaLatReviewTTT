@@ -1122,6 +1122,12 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     width: 250px;
     z-index: 99;
 }
+body.MapCarForm .detailHotel__backgroup--blur{
+    display: block;
+}
+body.MapCarForm{
+    overflow: hidden;
+}
  /* ==============================================
     Name: Table
     Creact by: Tien Dat
@@ -1141,36 +1147,21 @@ body.listDetailHotelTypeRoom .detail__list--body__select--rom__item{
     Creact by: Tien Dat
     Creact at: 22/2/2024
 ============================================== */
-@media  (max-width: 700px){
+@media  (max-width: 900px){
 /* ==============================================
     Name: rateWrap 
     Creact by: TienDat
     Creact at: 19/2/2024
 ============================================== */
-    body.listDetailHotelRate .detailHotel__list--body__reviews--wrap{
-        top: 140px;
-    }
-    body.listDetailHotelRate .detailHotel__backgroup--blur{
-        display: block;
-    }
+   
+    .detailHotel__list--body__list--wrapper,
     .detailHotel__list--body__reviews--wrap{
-        width: 100%;
-        right: 0;
-        top: 200vh;
-        height: 90vh;
-        overflow: hidden;
-        overflow-y: scroll;
-        border-radius: var(--border-radius-size-4);
-    }
-    .detailHotel__list--body__reviews--wrap__icon{
-        display: none;
-    }
-    .detailHotel__list--body__reviews--wrap .detailHotel__list--body__reviews{
-        padding: 0 20px;
+        width: 70%;
+        right: -70%;
     }
 }
 
-@media  (max-width: 600px){
+@media  (max-width: 800px){
     .detailHotel__banner{
         margin-top: 65px;
         height: 0;
@@ -1541,6 +1532,27 @@ body.listDetailHotelPrice,.listDetailHotelPrice2 {
     }
     .detailHotel__list--body__list--wrapper__container{
         height: calc(100vh - 295px);
+        padding: 0 20px;
+    }
+    body.listDetailHotelRate .detailHotel__list--body__reviews--wrap{
+        top: 140px;
+    }
+    body.listDetailHotelRate .detailHotel__backgroup--blur{
+        display: block;
+    }
+    .detailHotel__list--body__reviews--wrap{
+        width: 100%;
+        right: 0;
+        top: 200vh;
+        height: 90vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-radius: var(--border-radius-size-4);
+    }
+    .detailHotel__list--body__reviews--wrap__icon{
+        display: none;
+    }
+    .detailHotel__list--body__reviews--wrap .detailHotel__list--body__reviews{
         padding: 0 20px;
     }
 

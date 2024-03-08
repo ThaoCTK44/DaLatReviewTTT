@@ -58,7 +58,7 @@
 .user__center--sidebar__wrapper {
   display: flex;
   justify-content: space-between;
-
+  gap: 10px;
 }
 
 .user__center--sidebar__profile {
@@ -899,10 +899,6 @@
     max-width: 1160px;
   }
 
-  
-  .user__center--sidebar__wrapper {
-    gap: 10px;
-  }
 
   .user__content--wrap {
     margin: 0px 100px 0px 22px;

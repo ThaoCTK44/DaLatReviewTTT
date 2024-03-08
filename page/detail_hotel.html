@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/slide_img.css" />
     <link rel="stylesheet" href="/assets/css/secondDropdown.css">
+    <link rel="stylesheet" href="/assets/css/detail-car.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -499,6 +500,19 @@
                     <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
                     <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
                 </div>
+                <div class="detail__car--map">
+                    <div class="detail__car--map__header">
+                        <ion-icon class="detail__car--map__header--icon" name="close-outline" onclick="closeMapCarFormBtn()">
+                        </ion-icon> <span>CHỌN ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span>
+                    </div>
+                    <div class="detail__car--map__body">
+                        <iframe class="detail__car--map__body--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="detail__car--map__body--input">
+                            <input type="text" placeholder="Xem địa chỉ">
+                            <input type="submit" value="XÁC NHẬN" onclick="closeMapCarFormBtn()">
+                        </div>
+                    </div>
+                </div>
                 <div class="fourProductList__wrapper--info__review list__wrapper">
                     <div class="fourProductList__wrapper--info__score">
                         <span>4.4</span>
@@ -545,7 +559,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="detailHotel__info--summary__right">
+                <div class="detailHotel__info--summary__right" onclick="openMapsCarFormBtn()">
                     <div class="detailHotel__info--summary__right--address">
                         <span>16 Trạng Trình(P.9)</span>
                         <div class="detailHotel__info--summary__right--location">
@@ -1309,7 +1323,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detailHotel__list--body__detail--content__footer">
+                        <div class="detailHotel__list--body__detail--content__footer" onclick="openMapsCarFormBtn()">
                             <span>Xem bản đồ</span>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </div>
@@ -2098,6 +2112,7 @@
     </footer>
 </body>
 <script src="/assets//js/detailHotel.js"></script>
+<script src="/assets/js/detail_car.js"></script>
 <script src="/assets/js/slide_img.js"></script>
 <script src="/assets/js/header.js"></script>
 <script src="/assets/js/secondDropdown.js"></script>
