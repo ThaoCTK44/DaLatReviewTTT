@@ -1,3 +1,5 @@
+
+const userBody = document.querySelector('body');
 document.addEventListener("DOMContentLoaded", function() {
     // Lấy ra tất cả các div có class 'user__content--option__btn'
     var options = document.querySelectorAll('.user__content--option__btn');
@@ -37,4 +39,7 @@ function activate(contentClassName) {
     }
 }
 
+function btnUserNotify(){
+    userBody.classList.toggle('listUserNotify')
+}
 
