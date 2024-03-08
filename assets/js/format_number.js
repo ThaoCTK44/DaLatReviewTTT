@@ -1,8 +1,10 @@
-const formatNumberVnd = document.getElementById('numberVnd').innerHTML;
+const formatNumberVnd = document.getElementsByClassName('numberVnd');
 
 const VND = new Intl.NumberFormat('vi-VN', {
     style: 'currency',
     currency: 'VND',
   });
-
-document.getElementById('numberVnd').innerHTML = VND.format(formatNumberVnd);
+// Lặp và gán sự kiện
+  for (var i = 0; i < formatNumberVnd.length; i++){
+    formatNumberVnd[i].innerHTML = VND.format(formatNumberVnd[i].innerHTML);
+  }
