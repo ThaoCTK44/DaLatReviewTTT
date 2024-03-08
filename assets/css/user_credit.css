@@ -1,0 +1,107 @@
+.user__credit--banner {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    justify-content: center;
+    padding: 20px 120px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-image: url(../img/user_credit.png);
+}
+
+.user__credit--number {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.32;
+}
+
+.user__credit--tips {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user__credit--history__box {
+    margin-top: 20px;
+
+}
+
+.user__credit--title__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.32;
+    padding: 8px 16px;
+}
+
+.user__credit--type__tabbox {
+    padding: 0 20px;
+}
+
+.user__credit--type__tabbox--header {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    overflow-x: hidden;
+    position: relative;
+}
+
+.user__credit--type__tabbox--items__wrapper {
+    transform: translateX(0px);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    transition: transform .24s cubic-bezier(.22, 0, .08, 1);
+}
+
+.user__credit--type__tabbox--items {
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    color: #212121;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    padding: 0 24px;
+
+}
+
+.user__credit--item__active {
+    border-bottom: 2px solid #ff5b00;
+    color: #ff5b00;
+    font-weight: 600;
+
+}
+
+
+.user__credit--type__tabbox--items :hover {
+    color: #ff5b00;
+    cursor: pointer;
+}
+
+.user__credit--transactions__banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 712px;
+    padding: 32px 20px;
+    text-align: center;
+
+}
+
+.user__credit--transactions__banner img {
+    width: 200px;
+    height: 200px;
+}
+
+.user__credit--transactions__empty--banner {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 8px;
+}
