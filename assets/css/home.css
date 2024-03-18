@@ -7,7 +7,7 @@
 ============================================== */
 
 .home{
-    margin-top: 11px;
+    margin-top: 61px;
    
 }
 .header__content--bottom{
@@ -645,16 +645,9 @@
         display: flex;
     }
     
-    .home{
-        margin-top: 31px;
-    
-    }
+
  }
  @media only screen and (max-width: 627px) {
-    .home{
-        margin-top: 11px;
-    
-    }
  }
  @media only screen and (max-width: 450px) {
     .home__slider{
@@ -689,11 +682,7 @@
         margin-bottom: 10px;
         font-weight: 600;
     }
-    
-    .home{
-        margin-top: 11px;
-    
-    }
+
  }
 
 

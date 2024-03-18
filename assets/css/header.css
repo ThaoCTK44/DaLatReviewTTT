@@ -139,7 +139,7 @@ header{
     position: absolute;
     width: 100%;
     height: 1000vh;
-    top: 61px;
+    top: 0px;
     left: 0;
     background: var(--color-background-1);
     z-index: 888;
@@ -166,6 +166,9 @@ header{
 }
 .header__box--chatcall p:hover{
     background: var(--color-background-17);
+}
+.header__box--chatcall p ion-icon{
+    color: var(--color-text-6) !important;
 }
 .header__box--chatcall p{
     width: 47px;
@@ -213,6 +216,7 @@ body.chatBox .header__container--chat{
     font-size: var(--size-text-7);
     padding: 5px;
     border-radius: var(--border-radius-size-6);
+    color: var(--color-text-1) !important;
 }
 .header__container--chat__box--body{
     background-color: var(--color-background-22);
@@ -724,6 +728,9 @@ body.checker .login__mobile{
 
  }
  @media only screen and (max-width: 850px) {
+    .header__container--chatcall{
+        bottom: 150px;
+    }
     .login__signup--box__container--main__note_3::before{
         content: '';
         position: absolute;
