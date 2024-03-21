@@ -558,7 +558,8 @@ input[type="number"] {
 .detail__tour--content__left--contact__btn ion-icon{
     font-size: var(--size-text-6);
 }
-.detail__tour--content__left--contact__btn span,ion-icon{
+.detail__tour--content__left--contact__btn span,
+.detail__tour--content__left--contact__btn ion-icon{
     color: var(--color-text-7);
 }
 
