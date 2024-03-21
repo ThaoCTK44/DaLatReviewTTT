@@ -1,9 +1,6 @@
-
-.tour {
-}
 /* banner */
 .tour__banner {
-  background-image: url("../../assets/img/tourbanner.jpg");
+  background-image: url("../../assets/img/tourbanner.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,65 +36,28 @@
 .tour__banner--search__icon ion-icon {
   width: 24px;
   height: 24px;
-  
 }
 .tour__banner--search__input input {
-    font-size: var(--size-text-5);
+  font-size: var(--size-text-5);
 }
-/* filter */
-.quick__filter--entry__content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.quick__filter--entry__content--right{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0;
-}
-.fliter__category{
-  display: flex;
-  flex-direction: column;
-}
-.fliter__category--content{
-  display: flex;
-  align-items: center;
-}
-.fliter__category--content__box{
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
-.fliter__category--content__box--item{
-  
-  border-radius: var(--border-radius-size-5);
-  background-color: var(--color-background-12);
-  padding: 8px 13px;
-  font-size: var(--size-text-4);
-  margin: 0 10px;
-}
-.fliter__category--content__box--item a{
-  color: var(--color-text-10);
-}
-.fliter__category--content__box--item:hover {
-  cursor: pointer;
-}
-.filter__date{
-  margin-left: 10px;
-}
-.filter__price{
-  margin: 0 10px 0 20px;
-}
-/*! filter mobile */
 .tourMobile__category {
   display: none;
 }
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1100px) {
+  .tour__banner--wrap,
+  .search__filter--wrap,
+  .firstProduct,
+  .breakCrumb,
+  .firstReview,
+  .hightlightProduct {
+    max-width: 1000px !important;
+  }
+}
+@media only screen and (max-width: 1060px) {
   .tour__banner {
     display: none;
   }
+  
   .tourMobile__category {
     display: block;
   }
@@ -105,7 +65,7 @@
     display: block;
     margin-top: 80px;
   }
-  .tourMobile__category--list{
+  .tourMobile__category--list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +74,7 @@
     padding-bottom: 20px;
     white-space: nowrap;
   }
-  .tourMobile__categoryTop--list__item{
+  .tourMobile__categoryTop--list__item {
     height: 36px;
     padding: 0 16px 0 12px;
     display: flex;
@@ -124,17 +84,17 @@
     border-radius: var(--border-radius-size-5);
     margin-right: 8px;
   }
-  .tourMobile__categoryTop--list__item img{
+  .tourMobile__categoryTop--list__item img {
     width: 20px;
     height: 20px;
     margin-right: 4px;
   }
-  .tourMobile__categoryTop--list__item span{
+  .tourMobile__categoryTop--list__item span {
     font-size: var(--size-text-4);
     display: inline;
     text-align: center;
-  } 
-  .tourMobile__categoryBot--list__item{
+  }
+  .tourMobile__categoryBot--list__item {
     border-radius: var(--border-radius-size-5);
     padding: 8px 12px;
     background-color: var(--color-background-12);
