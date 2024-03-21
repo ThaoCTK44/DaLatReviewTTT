@@ -302,7 +302,7 @@
 
 /* mobile from here  */
 .user__mb--gift__card {
-    padding-top: 46spx;
+    padding-top: 46px;
 }
 .user__mb--gift__card--banner__container {
     background-repeat: no-repeat;
@@ -315,6 +315,16 @@
     background-size: cover;
     z-index: 0;
     background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg);
+}
+.user__mb--gift__card--banner__container ::after{    
+    background: linear-gradient(180deg, hsla(0, 0%, 96%, 0), #f5f5f5);
+    bottom: 0;
+    content: "";
+    height: 29px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
 
 }
 .user__mb--gift__card--banner__container .title{
@@ -329,4 +339,61 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-shadow: 0 4px 8px rgba(0,0,0,.25);
+}
+.user__mb--gift__card--banner__container .button{
+    background-color: #fff;
+    margin: 4px 0 0 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    font-weight:600;
+    color: #ff5b00;
+}
+
+/*  banner advantages */
+.user__mb--gift__card--banner__advantages{
+    
+    background-color: #fff;
+    border-radius: 16px;
+    margin: -51px 16px 12px;
+    padding: 20px 12px;
+    position: relative;
+    width: calc(100% - 32px);
+    z-index: 1;
+}
+
+.user__mb--gift__card--banner__advantages--items{
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 16px;
+    width: 100%;
+}
+.user__mb--gift__card--banner__advantages--items .icon{
+    background-size: cover;
+    height: 56px;
+    width: 56px;
+}
+.user__mb--gift__card--banner__advantages--items .content{
+    height: 100%;
+    margin-left: 8px;
+    padding: 0;
+    width: calc(100% - 64px);
+}
+.user__mb--gift__card--banner__advantages--items .title{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+}
+.user__mb--gift__card--banner__advantages--items .description{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 4px;
+    text-align: left;
 }
