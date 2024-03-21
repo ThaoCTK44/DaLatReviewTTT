@@ -495,7 +495,7 @@
 }
 .user__mb--gift__card--explore{
     background-color: #fff;
-    padding: 20px 16px;
+    padding: 20px 30px;
 }
 
 .user__mb--gift__card--explore .title{
@@ -605,6 +605,75 @@
     background-color: #fff;
     margin: 12px 0;
     overflow: hidden;
-    padding: 25px 16px;
+    padding: 25px 16px 60px 16px;
 
+}
+.user__mb--gift__card--corporate .title
+{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+}
+
+.user__mb--gift__card--corporate .description
+{    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+
+.user__mb--gift__card--corporate .toolbar
+{
+    float: right;
+    margin-top: 16px;
+
+}
+
+.user__mb--gift__card--corporate .toolbar button
+{
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    color: #212121;
+}
+
+/* button */
+.user__mb--gift__card--btn__fixed{
+    background: #fff;
+    bottom: 0;
+    box-shadow: 0 -1px 8px 0 rgba(0,0,0,.11);
+    padding: 8px;
+    position: fixed;
+    transition: bottom .2s;
+    width: 100%;
+    z-index: 2;
+}
+.user__btn--block{
+    display: block;
+    width: 100%;
+    background-color: #ff5b00;
+    border: 1px solid #ff5b00;
+    color: #fff;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    min-width: 86px;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;border-radius: 12px;
 }
