@@ -199,6 +199,59 @@
                 </div>
             </div>
         </div>
+        <div class="header__container--chatcall">
+            <div class="header__box--chatcall">
+                
+                <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
+            </div>
+            <div class="header__container--chat  shadow">
+                <div class="header__container--chat__box">
+                    <div class="header__container--chat__box--title">
+                        <div>                        
+                            <img src="/assets/img/logo_Congty.png" alt="">
+                            <span>Đà Lạt Review Tất Tần Tật</span>
+                        </div>
+                        <ion-icon class="header__container--chat__close" onclick="closeChat()" name="close-outline"></ion-icon>
+                    </div>
+                    <div class="header__container--chat__box--body">
+                        <div class="header__container--chat__box--list">
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__container--chat__box--input">
+                        <textarea rows="1" cols="50" placeholder="Nhập câu hỏi..."></textarea>
+                        <input type="submit" value="Gửi">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="slide__img--box">
         <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
@@ -356,102 +409,7 @@
             </div>
         </div>
     
-        <div class="hotelMobile__fitter">
-            <div class="hotelMobile__fitter--wraper">
-                <div class="hotelMobile__fitter--date">
-                    Chọn ngày
-                </div>
-                <div class="hotelMobile__fitter--date__wrap">
-                    <div class="hotel__fitter--search">
-                        <p>Ngày nhận / trả phòng</p>
-                        <input type="date" placeholder="Chọn ngày" class="hotel__search">
-                    </div>
-                    <div class="hotel__fitter--search roomMobile">
-                        <p>Số khách & phòng</p>
-                        <input type="search" placeholder="Chọn phòng" class="hotel__search">
-                        <div class="hotel__fitter--room">
-                            <div class="hotel__fitter--room__inner">
-                                <div class="hotel__fitter--room__header">
-                                    <span>Số khách & phòng</span>
-                                </div>
-                                <div class="hotel__fitter--room__content">
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Phòng</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Người lớn</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Trẻ em</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="hotel__fitter--room__fotter">
-                                    <button class="firstBtn">
-                                        Xác nhận
-                                      </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="hotel__fitter--btn firstBtn">
-                            Tìm kiếm
-                        </div>
-                    </a>
-                </div>
-                <span>|</span>
-                <div class="hotelMobile__fitter--location">
-                    <ion-icon name="search-outline"></ion-icon>
-                    Khám phá những điểm gần đây
-                    <div class="hotelMobile__fitter--location__wrap">
-                        <div class="hotel__fitter--location__header">
-                            <span>Điểm đến</span>
-                        </div>
-                        <div class="hotel__fitter--search">                      
-                            <p>Địa điểm</p>
-                            <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
-                            <div class="hotel__fitter--location">
-                                <div>
-                                    <section class="hotel__destination--wrapper">
-                                        <span>Vị trí của tôi</span>
-                                        <div class="hotel__destination--group">
-                                            <span class="hotel__destination--group__item">
-                                                Khám phá những điểm gần đây
-                                            </span>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__destination--wrapper">
-                                        <span>Tên điểm đến hot</span>
-                                        <div class="hotel__destination--group">
-                                            <span class="hotel__destination--group__item">Hồng Kông</span>
-                                            <span class="hotel__destination--group__item">Tân Gia Ba</span>
-                                            <span class="hotel__destination--group__item">Tokyo</span>
-                                            <span class="hotel__destination--group__item">Đài Bắc</span>
-                                        </div>
-                                    </section>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="hotel__fitter--blur"></div>
         <div class="hotel__fitter--blur__2"></div>
         </div>
@@ -467,6 +425,19 @@
                     <img src="/assets/img/hotel3.jpg" alt="">
                     <img src="/assets/img/hotel5.jpg" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail__car--map">
+        <div class="detail__car--map__header">
+            <ion-icon class="detail__car--map__header--icon" name="close-outline" onclick="closeMapCarFormBtn()">
+            </ion-icon> <span>CHỌN ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span>
+        </div>
+        <div class="detail__car--map__body">
+            <iframe class="detail__car--map__body--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="detail__car--map__body--input">
+                <input type="text" placeholder="Xem địa chỉ">
+                <input type="submit" value="XÁC NHẬN" onclick="closeMapCarFormBtn()">
             </div>
         </div>
     </div>
@@ -499,19 +470,6 @@
                     </p>
                     <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
                     <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
-                </div>
-                <div class="detail__car--map">
-                    <div class="detail__car--map__header">
-                        <ion-icon class="detail__car--map__header--icon" name="close-outline" onclick="closeMapCarFormBtn()">
-                        </ion-icon> <span>CHỌN ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span>
-                    </div>
-                    <div class="detail__car--map__body">
-                        <iframe class="detail__car--map__body--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="detail__car--map__body--input">
-                            <input type="text" placeholder="Xem địa chỉ">
-                            <input type="submit" value="XÁC NHẬN" onclick="closeMapCarFormBtn()">
-                        </div>
-                    </div>
                 </div>
                 <div class="fourProductList__wrapper--info__review list__wrapper">
                     <div class="fourProductList__wrapper--info__score">
