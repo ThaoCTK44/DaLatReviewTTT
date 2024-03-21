@@ -1,3 +1,6 @@
+.user__mb--gift__card--introduction{
+    margin-bottom: 20px;
+}
 .user__gift--card__panel{
     margin-bottom: 20px;
 }
@@ -396,4 +399,212 @@
     line-height: 20px;
     margin-top: 4px;
     text-align: left;
+}
+.user__mb--gift__card--banner__container .giftcard_btn{
+    background-color: #fff;
+    margin: 4px 0 0 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    color: #ff5b00;
+}
+
+.user__mb--gift__card--propositions{
+    background-color: #fff;
+    border-radius: 16px;
+    margin: -51px 16px 12px;
+    padding: 20px 12px;
+    position: relative;
+    width: calc(100% - 32px);
+    z-index: 1;
+}
+
+
+.user__mb--gift__card--propositions .propositions__items .item {
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.user__mb--gift__card--propositions .propositions__items .item .icon img{
+    background-size: cover;
+    height: 56px;
+    width: 56px;
+}
+.user__mb--gift__card--propositions .propositions__items .item .content{
+    height: 100%;
+    margin-left: 8px;
+    padding: 0;
+    width: calc(100% - 64px);
+}
+.user__mb--gift__card--propositions .propositions__items .item .content .title{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+}
+
+.user__mb--gift__card--propositions .propositions__items .item .content .desc{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 4px;
+    text-align: left;
+}
+.user__mb--gift__card--audience{
+    background-color: #fff;
+    margin: 12px 0;
+    padding: 20px 16px;
+
+}
+.user__mb--gift__card--audience .title{
+    color: #212121;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 12px;
+    text-align: left;
+
+}
+.image__container{
+    display: flex;
+    justify-content: space-between;
+}
+.image__item img{
+    background-size: cover;
+    max-height: 69px;
+    max-width: 109px;
+
+}
+.image__item .desc{
+    color: #212121;
+    font-size: 12px;
+    font-weight: 400;
+    height: 20px;
+    line-height: 7px;
+    margin-top: 8px;
+    text-align: center;
+
+}
+.user__mb--gift__card--explore{
+    background-color: #fff;
+    padding: 20px 16px;
+}
+
+.user__mb--gift__card--explore .title{
+    color: #212121;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.user__mb--gift__card--explore .image__container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33.3333%);
+    justify-content: space-between;
+}
+
+.user__mb--gift__card--explore .image__container .image__items{
+    width: 104px;
+}
+.user__mb--gift__card--explore .image__container .image__items img{
+    background-size: cover;
+    max-height: 40px;
+    margin: 0 auto;
+    max-width: 40px;
+}
+.user__mb--gift__card--explore .image__container .image__items .description{
+    color: #212121;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* banner 2 */
+
+.user__mb--gift__card--buynow{
+    margin-bottom: 0;
+    background-color: #fff;
+    padding: 16px;
+    width: 100%;
+}
+
+.user__mb--gift__card--buynow .card__buynow--container{
+    align-items: center;
+    border: 0.5px solid #e6e6e6;
+    border-radius: 8px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative;
+}
+
+
+.user__mb--gift__card--buynow .card__buynow--container .left .buy_title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.user__mb--gift__card--buynow .card__buynow--container .buy_btn{
+    background: #ff5b00;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    line-height: 20px;
+    margin-top: 12px;
+    padding: 8px 16px;
+}
+.right__banner img{
+    background-size: cover;
+    height: 78px;
+    min-width: 94px;
+    width: 94px;
+}
+
+/* banner use now */
+.user__mb--gift__card--redeem__module{
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: 73px;
+    justify-content: space-between;
+    padding: 0 16px;
+    width: 100%;
+}
+.user__mb--gift__card--redeem__module .banner{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.user__mb--gift__card--redeem__module .button{
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    color: #212121;
+}
+
+/* MUA NHÓM */
+.user__mb--gift__card--corporate{
+    background-color: #fff;
+    margin: 12px 0;
+    overflow: hidden;
+    padding: 25px 16px;
+
 }
