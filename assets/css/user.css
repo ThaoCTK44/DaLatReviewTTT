@@ -8,7 +8,7 @@
 
 .user__center--container__desktop {
   display: block;
-  background-color: rgb(250, 250, 250);
+  background-color:var(--color-background-6);
   width: 100%;
 }
 
@@ -27,9 +27,9 @@
 
 .fill__more--info {
   align-items: center;
-  background-color: #ecf3fc;
+background-color: var(--color-text-14);
   border: 1px solid rgba(67, 125, 255, .3);
-  border-radius: 6px;
+   border-radius: var(--border-radius-size-0);
   display: flex;
   margin-bottom: 16px;
   padding: 12px 16px;
@@ -85,26 +85,26 @@
   margin-left: 30px;
   width: 40%;
   height: 30px;
-  border: 1px solid #12B7DA;
-  background: rgb(18, 183, 218);
+  border: 1px solid var();
+  background: var( --color-background-25);
   background: linear-gradient(75deg, rgba(18, 183, 218, 1) 0%, rgba(58, 202, 233, 1) 43%, rgba(108, 230, 255, 1) 48%, rgba(173, 241, 255, 1) 50%, rgba(255, 255, 255, 1) 54%);
   border-radius: var(--border-radius-size-2);
 }
 
 .user__center--rewardsUser__ranked--level {
   text-transform: uppercase;
-  color: white;
+  color: var(--color-text-6);
 }
 
 .user__center--rewardsUser__ranked--name {
-  color: #12B7DA;
+  color: var(--color-text-23);
 }
 
 .user__center--rewardsUser__seeMore {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #12B7DA;
+  color:  var(--color-text-23);
   font-weight: 600;
   line-height: 1.5;
 }
@@ -114,7 +114,7 @@
 }
 
 .user__center--sidebar__box {
-  background: rgb(18, 183, 218);
+  background: var( --color-background-25);
   background: linear-gradient(180deg, rgba(18, 183, 218, 1) 0%, rgba(58, 202, 233, 1) 28%, rgba(108, 230, 255, 1) 30%, rgba(173, 241, 255, 1) 31%, rgba(255, 255, 255, 1) 32%);
   border-radius: var(--border-radius-size-2);
   transition: opacity 0.3s ease;
@@ -181,7 +181,7 @@
 }
 
 .user__contentlink:active {
-  color: orange;
+  color: var(  --color-text-7);
   /* Màu nền khi hover */
 }
 
@@ -206,7 +206,7 @@
 }
 
 .user__focus {
-  color: #ff5b00 !important;
+  color: var(--color-text-7) !important;
   font-weight: 400;
 }
 
@@ -274,10 +274,10 @@
 
 .user__invite--btn {
   border: 1px solid var(--color-background-6);
-  border-radius: 6px;
+   border-radius: var(--border-radius-size-0);
   color: var(--color-background-6);
   display: inline-block;
-  font-size: var(--color-background-12);
+  font-size: var(--size-text-3);
   margin-top: 9px;
   padding: 5px 16px;
 
@@ -301,12 +301,12 @@
 
 .input__button--input {
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-background-6);
   border: 1px solid #e6e6e6;
-  border-radius: 12px;
-  color: #212121;
+  border-radius: var( --border-radius-size-2);
+  color: var(--color-text-1);
   display: inline-flex;
-  font-size: var(--font-size-text-5);
+  font-size: var(--size-text-5);
   min-height: 44px;
   position: relative;
   transition: border .24s cubic-bezier(.22, 0, .08, 1);
@@ -322,7 +322,6 @@
 .input__button--input input {
   background: hsla(0, 0%, 100%, 0);
   border: none;
-  caret-color: #ff5b00;
   color: currentColor;
   line-height: 1.5;
   outline: none;
@@ -332,15 +331,15 @@
 
 .user__btn--wrap {
   align-items: center;
-  color: #212121;
+  color: var(--color-text-1);
   display: flex;
   flex-shrink: 0;
 }
 
 .user__btn {
-  background-color: #ff5b00;
-  border: 1px solid #ff5b00;
-  color: #fff;
+  background-color: var(--color-background-7);
+  border: 1px solid var(--color-background-7);
+  color: var(--color-text-6);
   border-radius: 0 12px 12px 0;
   width: 150px;
   padding: 10px 16px;
@@ -367,13 +366,13 @@
 
 .user__option--active {
   border-bottom: 2px solid var(--color-background-7);
-  color: var(--color-background-7);
+  color: var(--color-text-7);
   font-weight: 600;
 }
 
 .user__content--option__btn:hover {
   border-bottom: 2px solid var(--color-background-7);
-  color: var(--color-background-7);
+  color: var(--color-text-7);
   font-weight: 600;
   transition: 0.3s;
 }
@@ -397,7 +396,7 @@
 
 .user__content--items {
   border: 1px solid #e6e6e6;
-  border-radius: 6px;
+   border-radius: var(--border-radius-size-0);
   display: flex;
   flex-direction: column;
   margin-top: 24px;
@@ -406,11 +405,11 @@
 
 /* banner top  */
 .user__content--items__top {
-  color: #fff;
+  color: var(--color-text-6);
   flex: 1;
   min-height: 135px;
   padding: 20px 20px 14px;
-  background-color: #08b371;
+  background-color: var(--color-background-4);
 }
 
 /* // tiêu đề banner  */
@@ -441,7 +440,7 @@
 }
 
 .user__link--banner {
-  color: #fff !important;
+  color: var(--color-text-6) !important;
   cursor: pointer;
   text-decoration: underline !important;
 }
@@ -455,8 +454,8 @@
 }
 
 .user__content--items__bottom {
-  color: #757575;
-  font-size: 12px;
+  color: var(--color-text-2);
+  font-size: var(--size-text-3);
   padding: 12px 10px 12px 20px;
   display: flex;
   flex-direction: column;
@@ -477,7 +476,7 @@
 
 .user__empty--banner__background {
   width: 200px;
-  aspect-ratio: auto 200 / 200;
+  
   height: 200px;
 }
 
@@ -490,8 +489,8 @@
 }
 
 .user__empty--banner__content {
-  color: #757575;
-  font-size: 14px;
+  color: var( --color-text-2);
+  font-size: var(--size-text-4);
   font-weight: 400;
   line-height: 1.5;
   margin-top: 8px;
@@ -516,7 +515,7 @@
 }
 
 .user__btn--custom a {
-  color: #fff !important;
+  color: var(--color-text-6) !important;
 }
 
 
@@ -540,10 +539,10 @@
 
 .user__checkbox--normal {
   align-items: flex-start;
-  color: #212121;
+  color: var(--color-text-1);
   cursor: pointer;
   display: inline-flex;
-  font-size: 14px;
+  font-size: var(--size-text-4);
   font-weight: 400;
   line-height: 1.5;
   margin: 4px 0 !important;
@@ -567,9 +566,9 @@
 }
 
 .user__checkbox--base {
-  background-color: #fff;
+  background-color: var(--color-text-6);
   border: 1px solid #a8a8a8;
-  border-radius: 6px;
+   border-radius: var(--border-radius-size-0);
   flex-shrink: 0;
   height: 20px;
   position: relative;
@@ -586,7 +585,7 @@
 
 /* phần header _ tag cam */
 .user__section--title__header {
-  font-size: 20px;
+  font-size: var(--size-text-6);
   font-weight: 500;
   margin-bottom: 12px;
   position: relative;
@@ -604,7 +603,7 @@
 .user__section--title__header h3::before,
 .user__section--title__header::before {
   margin-top: 3px;
-  background-color: #ff5b00;
+  background-color: var(--color-text-7);
   border-radius: 99rem;
   content: "";
   display: inline-block;
@@ -637,7 +636,7 @@
 .user__mb--above__header {
   box-shadow: 0 -1px 8px 0 rgba(0,0,0,.11);
   align-items: center;
-  background: #fff;
+  background: var(--color-text-6);
   display: flex;
   height: 44px;
   justify-content: center;
@@ -650,7 +649,7 @@
 }
 
 .user__mb--above__header {
-  font-size: 16px;
+  font-size: var(--size-text-5);
   font-weight: 600;
   line-height: 1.5;
 
@@ -713,7 +712,7 @@
 .user__mb--profile__edit {
   align-items: center;
   display: flex;
-  font-size: var(--color-text-3);
+  font-size: var(--size-text-3);
   font-weight: 500;
   line-height: 1.5;
   margin-top: 4px;
@@ -727,7 +726,7 @@
 
 .user__mb--box__coupon {
   align-items: flex-start;
-  background: #fff;
+  background: var(--color-text-6);
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
@@ -775,7 +774,7 @@
 }
 
 .user__mb--box__menu {
-  background: #fff;
+  background: var(--color-text-6);
   border-radius: var(---border-radius-size-4);
   margin: 12px 20px 0;
   padding: 4px 16px;
@@ -834,13 +833,13 @@
 
 .user__mb--box__banner--title {
 
-  font-size: var(--font-size-text-4);
+  font-size: var(--size-text-4);
   font-weight: 600;
 }
 
 .user__mb--box__banner--inf {
   margin-top: 4px;
-  font-size: var(--font-size-text-3);
+  font-size: var(--size-text-3);
   color: var(--color-text-2);
 }
 
@@ -853,7 +852,7 @@
 
 .user__mb--box__invite--title {
   color: var(--color-background-7);
-  font-size: var(--font-size-text-5);
+  font-size: var(--size-text-5);
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -879,11 +878,11 @@
 }
 
 .user__add--btn {
-  background: #437dff;
+  background: var(--color-background-23);
   border-radius: var(--border-radius-size-1);
-  color: #fff;
+  color: var(--color-text-6);
   display: inline-block;
-  font-size: 12px;
+  font-size: var(--size-text-3);
   font-weight: 500;
   margin-top: 8px;
   padding: 6px 12px;

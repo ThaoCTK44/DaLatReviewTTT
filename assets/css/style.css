@@ -88,6 +88,9 @@ p,span{
   --color-background-20: #4d40cc;
   --color-background-21: #8a8a8a;
   --color-background-22: #ebebeb;
+  --color-background-23:#437dff;
+  --color-background-24:#a8a8a8;
+  --color-background-25: #12B7DA;
 
 
   /* List color text */
@@ -114,6 +117,8 @@ p,span{
   --color-text-20: #4d40cc;  
   --color-text-21: #8a8a8a;
   --color-text-22: #ebebeb;
+  --color-text-23:  #12B7DA;
+  --color-text-24: rgb(255, 151, 53);
 
   /* List text size */
   --size-text-0: 6px;
@@ -129,7 +134,10 @@ p,span{
   --size-text-10: 28px;
   --size-text-11: 29px;
   --size-text-12: 18px;
-
+  --size-text-13:60px;
+  --size-text-14:44px;
+  --size-text-15:32px;
+  --size-text-16:50px
   /* List border radius */
   --border-radius-size-0: 6px;
   --border-radius-size-1: 8px;
@@ -138,6 +146,8 @@ p,span{
   --border-radius-size-4: 16px;
   --border-radius-size-5: 20px;
   --border-radius-size-6: 999px;
+  --border-radius-size-7: 2px;
+  --border-radius-size-8: 3px;
 }
 
 /*! component */
