@@ -216,7 +216,7 @@ p,span{
   position: sticky;
   top: 51px;
   background-color: var(--color-background-6);
-  z-index: 1000;
+  z-index: 999;
   transition: all .5s ease-in-out;
 }
 .search__filter--wrap{
@@ -366,6 +366,7 @@ body.active .primary__dropdown--content{
   font-size: var(--size-text-4);
   font-weight: 400;
   color: var(--color-text-0);
+  cursor: pointer;
 }
 .total__filter--btn__icon {
   font-size: var(--size-text-5);
