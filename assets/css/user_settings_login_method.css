@@ -1,5 +1,6 @@
-.user__login--method__panel{background: #fff;
-    border-radius: 20px;
+.user__login--method__panel{
+    background: var(--color-background-6);
+    border-radius: var(--border-radius-size-5);
     padding: 32px;
 }
 
@@ -18,7 +19,7 @@
     padding: 4px;
 }
 .user__section--title__header--icon ion-icon{
-    font-size: 20px;
+    font-size: var(  --size-text-6);
 
 }
 .user__login--method__section--title{
@@ -34,7 +35,7 @@
 }
 .user__login--method__bind--cart__item{
     border: 1px solid #e6e6e6;
-    border-radius: 16px;
+    border-radius: var(--border-radius-size-4);
     flex-shrink: 0;
     margin-bottom: 20px;
     width: 390px;
@@ -47,7 +48,7 @@
 .user__login--method__bind--cart__logo{
     background-position: 50%;
     background-size: 100% 100%;
-    border-radius: 50%;
+    border-radius: var(--border-radius-size-6);
     height: 24px;
     margin-right: 12px;
     width: 24px;
@@ -56,18 +57,18 @@
 .user__login--method__bind--cart__logo ion-icon{
    font-size: larger;
    padding-top: 1px;
-   color: #a9a9a9;
+   color: var(--color-text-21);
 }
 .user__login--method__bind--cart__name{
-    color: #212121;
-    font-size: 16px;
+    color: var(--color-text-1);
+    font-size: var(  --size-text-5);
     font-weight: 400;
     line-height: 1.5;
 }
 .user__login--method__bind--control__group{
-    color: #212121;
+    color: var(--color-text-1);
     display: flex;
-    font-size: 14px;
+    font-size: var(  --size-text-4);
     font-weight: 400;
     line-height: 1.5;
     margin-left: auto;
@@ -80,8 +81,8 @@
     text-decoration: underline;
 }
 .user__login--method__bind--cart__desc{
-    color: #757575;
-    font-size: 14px;
+    color: var(--color-text-2);
+    font-size: var(  --size-text-4);
     font-weight: 400;
     line-height: 1.5;
     margin: 4px 0 0 36px;
@@ -90,13 +91,13 @@
 
 /* Thong tin da được gán */
 .user__bound--data ion-icon{
-    color: tomato !important;
+    color: var(--color-text-7) !important;
 }
 
 /* mobile from here */
 
 .user__mb--box__method{
-    background: #eee;
+    background: var(--color-background-3);
     padding: 44px 20px 20px;
 }
 
@@ -109,7 +110,7 @@
 
 }
 .user__mb--login__method--title__body{
-    color: #212121;
+    color: var(--color-text-1);
     flex-grow: 1;
     margin: 0;
     padding: 0;
@@ -117,8 +118,8 @@
 }
 
 .user__mb--login__method--bind__card--box{
-    background: #fff;
-    border-radius: 16px;
+    background: var(--color-background-6);
+    border-radius: var(--border-radius-size-4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -134,21 +135,21 @@
 .user__mb--login__method--bind__card__logo{
     background-position: 50%;
     background-size: 100% 100%;
-    border-radius: 50%;
+    border-radius: var(--border-radius-size-6);
     height: 24px;
     margin-right: 12px;
     width: 24px;
 }
 .user__mb--login__method--bind__card__name{
-    color: #212121;
-    font-size: 16px;
+    color: var(--color-text-1);
+    font-size: var(  --size-text-5);
     font-weight: 400;
     line-height: 1.5;
 }
 .user__mb--login__method--bind--control__group{
-    color: #212121;
+    color: var(--color-text-1);
     display: flex;
-    font-size: 14px;
+    font-size: var(  --size-text-4);
     font-weight: 400;
     line-height: 1.5;
     margin-left: auto;
@@ -161,7 +162,7 @@
 }
 
 .user__mb--login__method--bind__card--items::after{
-    background: #eee;
+    background: var(--color-background-3);
     bottom: 0;
     content: "";
     display: block;
