@@ -131,12 +131,9 @@
     border-right: none;
 }
 .hotel__right--fitter__tag:hover{
-    background-color: var(--color-background-22);
-}
-.hotel__right--fitter__title:target {
     background-color: var(--color-background-18);
     color: var(--color-text-17);
-    font-weight: 500;
+
 }
 .hotel__right--fitter__title{
     padding: 12px;
@@ -328,21 +325,22 @@
     Creact at: 11AM 30/1/2024
 ============================================== */
 body.listHotelMobileLocation .hotelMobile__fitter--box{
-    top: 15%;
+    display: block;
 }
 body.listHotelMobileFitter .hotelMobile__fitter--box__1{
-    top: 15%;
+    display: block;
 }
 body.hotelBlur .hotel__backgroup--blur {
     display: block;
 }
 .hotelMobile__fitter--box,.hotelMobile__fitter--box__1{
     position: fixed;
-    top: 100vh;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
     max-height: 700px;
     z-index: 1002;
-    display: block;
+    display: none;
     overflow: hidden;
     background-color: var(--color-background-6);
 }
@@ -629,20 +627,21 @@ body.hotelBlur .hotel__backgroup--blur {
     Creact at: 11AM 31/1/2024
 ============================================== */
     body.listHotelMobileLocation .hotelMobile__fitter--box{
-        top: 0;
+        top: 50%;
     }
     body.listHotelMobileFitter .hotelMobile__fitter--box__1{
-        top: 0;
+        top: 50%;
     }
     .hotelMobile__fitter--box, .hotelMobile__fitter--box__1{
         position: fixed;
         width: 100%;
         height: 100vh;
         max-height: none;
-        top: 100vh;
+        top: 200vh;
         display: block;
-        left: 0;
+        left: 50%;
         transition: all ease-in-out .3s;
+        z-index: 1005;
     }
     /* dropdown */
     body.listHotelMobileRange .hotel__right--fitter {
@@ -670,9 +669,6 @@ body.hotelBlur .hotel__backgroup--blur {
         border-right: none;
         width: 100%;
         text-align: start;
-    }
-    .hotel__right--fitter__title:target{
-        background-color: var(--color-background-6); 
     }
     .hotelMobile__fitter--box__body,.hotelMobile__fitter--box__body--right{
         height: calc(100vh - 115px);

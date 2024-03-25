@@ -272,7 +272,7 @@ body.hotelFitterBlur .hotel__fitter--blur {
     }
     .hotelMobile__fitter--date__wrap{
         position: absolute;
-        top: -250px;
+        top: -350px;
         left: 0;
         right: 0;
         width: 100%;
@@ -353,6 +353,7 @@ body.hotelFitterBlur .hotel__fitter--blur {
         height: calc(100vh - 60px);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        z-index: 1010;
     }
     .hotel__fitter--location{
         display: block;

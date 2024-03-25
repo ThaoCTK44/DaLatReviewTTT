@@ -558,21 +558,11 @@ input[type="number"] {
 .detail__tour--content__left--contact__btn ion-icon{
     font-size: var(--size-text-6);
 }
-.detail__tour--content__left--contact__btn span,ion-icon{
+.detail__tour--content__left--contact__btn span,
+.detail__tour--content__left--contact__btn ion-icon{
     color: var(--color-text-7);
 }
-.container__slides {
-    display: none;
-    overflow: hidden;
-    position: fixed;
-    height: auto;
-    width: 800px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: var(--color-background-6);
-    z-index: 1111;
-  }
+
 
 
 .detail__tour--content__left--option__item--info{
@@ -663,6 +653,7 @@ input[type="number"] {
 .detail__tour--content__left--sale__info--header{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: var(--size-text-6);
     font-weight: 700;
@@ -733,24 +724,13 @@ input[type="number"] {
     padding: 5px 0 10px 0;
 }
 .detail__tour--content__left--sale__info--close{
+    position: absolute;
+    left: 20px;
     font-size: var(--size-text-6);
     color: var(--color-text-1) !important;
     cursor: pointer;
     display: none;
 }
-
-
-
-body.slider__detail--tour .header__background--blur__fullview{
-    display: block;
-}
-body.slider__detail--tour .container__slides{
-    display: block;
-}
-body.slider__detail--tour{
-   overflow: hidden;
-}
-
 
 
 body.option__detail--tour .header__background--blur__fullview{
@@ -805,6 +785,9 @@ body.sale__detail--tour{
     }
 }
 @media only screen and (max-width: 650px) {
+    .detail__tour--content__left--sale__info--close{
+        display: block;
+    }
     .detail__tour--content__left--sale__left,
     .detail__tour--content__left--sale__right{
         width: 100%;
@@ -943,5 +926,60 @@ body.sale__detail--tour{
     }
     .detail__tour--content__left--option__item--info__list{
         height:75vh;
+    }
+    .detail__tour--img{
+        height: 370px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 0;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        z-index: 1;
+    }
+    .detail__tour--img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .detail__tour--img__right,
+    .detail__tour--img__left{
+        width: 100%;
+        height: 370px;
+    }
+    .detail__tour--img__left{
+        display: none;
+    }
+    .detail__tour--img__right{
+        flex-direction: row;
+        gap: 0px;
+    }
+    .detail__tour--container{
+        position: relative;
+        padding-top: 370px;
+
+    }
+    .detail__tour--container::before{
+        position: absolute;
+        content: '';
+        top: 351px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background: var(--color-background-6);
+        z-index: 2;
+        border-top-left-radius: var(--border-radius-size-5);
+        border-top-right-radius: var(--border-radius-size-5);
+    }
+    .detail__tour--header__info,
+    .detail__tour--header__link{
+        display: none;
+    }
+    .detail__tour--header__title{
+        font-size: var(--size-text-5);
+        font-weight: 600;
+        padding: 0 10px 10px 10px;
     }
 }

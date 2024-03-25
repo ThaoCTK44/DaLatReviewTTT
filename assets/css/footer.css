@@ -51,7 +51,6 @@ footer {}
 }
 
 footer{
-    margin-top: 100px;
 }
 /* dành cho màn <=900px */
 @media only screen and (max-width: 900px) {
@@ -66,6 +65,7 @@ footer{
     }
 
     .footer__layout--mobile {
+        margin-top: 50px !important;
         display: block;
         bottom: 0;
         width: 100%;

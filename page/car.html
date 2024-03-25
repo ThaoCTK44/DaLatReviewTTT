@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/tour_style.css">
     <link rel="stylesheet" href="/assets/css/liveshow.css">
     <link rel="stylesheet" href="/assets/css/motorbike.css">
+    <link rel="stylesheet" href="/assets/css/fourProductList.css">
 </head>
 <body>
     <div class="header__compoment">
@@ -39,7 +39,6 @@
                     </div>
                     <div class="header__top--right">
                         <ul>
-    
                             <li>
                                 <a href="#" class="header__top--right__item">
                                     Trợ giúp
@@ -67,7 +66,7 @@
                             </li>
                             <li>
                                 <div class="header__top--right__item--checker">
-                                    <a href="user.html">
+                                    <a href="user_booking.html">
                                         <img src="/assets/img/user_avatar.png" alt="">
                                     </a>
                                 </div>
@@ -85,7 +84,7 @@
                             <ion-icon name="person-outline"></ion-icon>
                         </div>
                         <div class="header__top--right__item--checker">
-                            <a href="user.html">
+                            <a href="user_booking.html">
                                 <img src="/assets/img/user_avatar.png" alt="">
                             </a>
                         </div>
@@ -197,6 +196,59 @@
                 </div>
             </div>
         </div>
+        <div class="header__container--chatcall">
+            <div class="header__box--chatcall">
+                
+                <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
+            </div>
+            <div class="header__container--chat  shadow">
+                <div class="header__container--chat__box">
+                    <div class="header__container--chat__box--title">
+                        <div>                        
+                            <img src="/assets/img/logo_Congty.png" alt="">
+                            <span>Đà Lạt Review Tất Tần Tật</span>
+                        </div>
+                        <ion-icon class="header__container--chat__close" onclick="closeChat()" name="close-outline"></ion-icon>
+                    </div>
+                    <div class="header__container--chat__box--body">
+                        <div class="header__container--chat__box--list">
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__container--chat__box--input">
+                        <textarea rows="1" cols="50" placeholder="Nhập câu hỏi..."></textarea>
+                        <input type="submit" value="Gửi">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <section class="motorbike">
         <div class="motorbike__container">
@@ -240,7 +292,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="#">Trải Nghiệm Canyoning
+                                                <a href="detail_car.html">Trải Nghiệm Canyoning
                                                     Vượt Thác Datanla</a>
                                             </div>
                                             <div
@@ -331,7 +383,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="#">Đi Xe Trượt Thác Datanla
+                                                <a href="detail_car.html">Đi Xe Trượt Thác Datanla
                                                     New Alpine Tại Đà Lạt</a>
                                             </div>
                                             <div
@@ -411,7 +463,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="#">Da Lat Conquer Langbiang
+                                                <a href="detail_car.html">Da Lat Conquer Langbiang
                                                     Mountain, Datanla Waterfall Day
                                                     Tour with Optional Lumiere
                                                     Visit</a>
@@ -500,7 +552,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="#">Tour Săn Mây và Ngắm
+                                                <a href="detail_car.html">Tour Săn Mây và Ngắm
                                                     Bình Minh Tại Đà Lạt</a>
                                             </div>
                                             <div
@@ -575,7 +627,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="#">Trải Nghiệm Đu Dây High
+                                                <a href="detail_car.html">Trải Nghiệm Đu Dây High
                                                     Rope Course Đà Lạt</a>
                                             </div>
                                             <div

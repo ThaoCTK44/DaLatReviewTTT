@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/slide_img.css" />
     <link rel="stylesheet" href="/assets/css/secondDropdown.css">
+    <link rel="stylesheet" href="/assets/css/detail-car.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -198,103 +199,138 @@
                 </div>
             </div>
         </div>
+        <div class="header__container--chatcall">
+            <div class="header__box--chatcall">
+                
+                <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
+            </div>
+            <div class="header__container--chat  shadow">
+                <div class="header__container--chat__box">
+                    <div class="header__container--chat__box--title">
+                        <div>                        
+                            <img src="/assets/img/logo_Congty.png" alt="">
+                            <span>Đà Lạt Review Tất Tần Tật</span>
+                        </div>
+                        <ion-icon class="header__container--chat__close" onclick="closeChat()" name="close-outline"></ion-icon>
+                    </div>
+                    <div class="header__container--chat__box--body">
+                        <div class="header__container--chat__box--list">
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__left">
+                                <img src="/assets/img/logo_Congty.png" alt="" >
+                                <div class="header__container--chat__box--item__text">
+                                    <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
+                                    <span>20:00 - 29/2/2024</span>
+                                </div>
+                            </div>
+                            <div class="header__container--chat__box--item chatbox__right">
+                                <img src="/assets/img/user_avatar.png" alt="">
+                                <div class="header__container--chat__box--item__text ">
+                                    <p>Dự báo xa hơn, từ 28-29/2, miền Bắc tiếp tục rét nhưng nền nhiệt tăng 2-3 độ C mỗi ngày, trời nhiều mây, có sương mù, mưa phùn. Sau đó khoảng 1-2/3, miền Bắc đón một đợt không khí lạnh có cường độ mạnh khiến rét đậm, rét hại trở lại, trời mưa nhỏ nhiều ngày..</p>
+                                    <span>20:30 - 1/3/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__container--chat__box--input">
+                        <textarea rows="1" cols="50" placeholder="Nhập câu hỏi..."></textarea>
+                        <input type="submit" value="Gửi">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container__slides">
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-          <img src="/assets/img/slide1.jpg" style="width: 100%" />
-        </div>
-  
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-          <img src="/assets/img/slide2.jpg" style="width: 100%" />
-        </div>
-  
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-          <img src="/assets/img/slide3.jpg" style="width: 100%" />
-        </div>
-  
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="/assets/img/slide4.jpg" style="width: 100%" />
-        </div>
-  
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="/assets/img/slide5.jpg" style="width: 100%" />
-        </div>
-  
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="/assets/img/slide6.jpg" style="width: 100%" />
-        </div>
-  
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-  
-        <!-- Thumbnail images -->
-        <div class="row">
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide1.jpg"
-              style="width: 100%"
-              onclick="currentSlide(1)"
-              alt="Camping Activity"
-            />
+    <div class="slide__img--box">
+        <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
+        <div class="container__slides">
+    
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="../assets/img/slide1.jpg" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide2.jpg"
-              style="width: 100%"
-              onclick="currentSlide(2)"
-              alt="Camping Activity"
-            />
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="../assets/img/slide2.jpg" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide3.jpg"
-              style="width: 100%"
-              onclick="currentSlide(3)"
-              alt="Camping Activity"
-            />
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="../assets/img/slide3.jpg" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide4.jpg"
-              style="width: 100%"
-              onclick="currentSlide(4)"
-              alt="Camping Activity"
-            />
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="../assets/img/slide4.jpg" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide5.jpg"
-              style="width: 100%"
-              onclick="currentSlide(5)"
-              alt="Camping Activity"
-            />
+      
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="../assets/img/slide5.jpg" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="/assets/img/slide6.jpg"
-              style="width: 100%"
-              onclick="currentSlide(6)"
-              alt="Camping Activity"
-            />
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="../assets/img/slide6.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail images -->
+          <div class="container__slide--number">
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide1.jpg" style="width:100%" onclick="currentSlide(1)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide2.jpg" style="width:100%" onclick="currentSlide(2)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide3.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide4.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide5.jpg" style="width:100%" onclick="currentSlide(5)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../assets/img/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="Đà Lạt Review Tất Tần Tật">
+            </div>
           </div>
         </div>
       </div>
@@ -373,102 +409,7 @@
             </div>
         </div>
     
-        <div class="hotelMobile__fitter">
-            <div class="hotelMobile__fitter--wraper">
-                <div class="hotelMobile__fitter--date">
-                    Chọn ngày
-                </div>
-                <div class="hotelMobile__fitter--date__wrap">
-                    <div class="hotel__fitter--search">
-                        <p>Ngày nhận / trả phòng</p>
-                        <input type="date" placeholder="Chọn ngày" class="hotel__search">
-                    </div>
-                    <div class="hotel__fitter--search roomMobile">
-                        <p>Số khách & phòng</p>
-                        <input type="search" placeholder="Chọn phòng" class="hotel__search">
-                        <div class="hotel__fitter--room">
-                            <div class="hotel__fitter--room__inner">
-                                <div class="hotel__fitter--room__header">
-                                    <span>Số khách & phòng</span>
-                                </div>
-                                <div class="hotel__fitter--room__content">
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Phòng</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Người lớn</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__fitter--room__item">
-                                        <b>Trẻ em</b>
-                                        <div class="number-input">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="hotel__fitter--room__fotter">
-                                    <button class="firstBtn">
-                                        Xác nhận
-                                      </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="hotel__fitter--btn firstBtn">
-                            Tìm kiếm
-                        </div>
-                    </a>
-                </div>
-                <span>|</span>
-                <div class="hotelMobile__fitter--location">
-                    <ion-icon name="search-outline"></ion-icon>
-                    Khám phá những điểm gần đây
-                    <div class="hotelMobile__fitter--location__wrap">
-                        <div class="hotel__fitter--location__header">
-                            <span>Điểm đến</span>
-                        </div>
-                        <div class="hotel__fitter--search">                      
-                            <p>Địa điểm</p>
-                            <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
-                            <div class="hotel__fitter--location">
-                                <div>
-                                    <section class="hotel__destination--wrapper">
-                                        <span>Vị trí của tôi</span>
-                                        <div class="hotel__destination--group">
-                                            <span class="hotel__destination--group__item">
-                                                Khám phá những điểm gần đây
-                                            </span>
-                                        </div>
-                                    </section>
-                                    <section class="hotel__destination--wrapper">
-                                        <span>Tên điểm đến hot</span>
-                                        <div class="hotel__destination--group">
-                                            <span class="hotel__destination--group__item">Hồng Kông</span>
-                                            <span class="hotel__destination--group__item">Tân Gia Ba</span>
-                                            <span class="hotel__destination--group__item">Tokyo</span>
-                                            <span class="hotel__destination--group__item">Đài Bắc</span>
-                                        </div>
-                                    </section>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="hotel__fitter--blur"></div>
         <div class="hotel__fitter--blur__2"></div>
         </div>
@@ -479,7 +420,7 @@
         </div>
         <div class="detailHotelMobile__slides">
             <div class="detailHotelMobile__slides--show">
-                <div class="detailHotelMobile__slides--show__item">
+                <div class="detailHotelMobile__slides--show__item" onclick="btnDetailHotelSlides(   )">
                     <img src="/assets/img/hotel2.jpg" alt="">
                     <img src="/assets/img/hotel3.jpg" alt="">
                     <img src="/assets/img/hotel5.jpg" alt="">
@@ -487,9 +428,22 @@
             </div>
         </div>
     </div>
+    <div class="detail__car--map">
+        <div class="detail__car--map__header">
+            <ion-icon class="detail__car--map__header--icon" name="close-outline" onclick="closeMapCarFormBtn()">
+            </ion-icon> <span>CHỌN ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span>
+        </div>
+        <div class="detail__car--map__body">
+            <iframe class="detail__car--map__body--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="detail__car--map__body--input">
+                <input type="text" placeholder="Xem địa chỉ">
+                <input type="submit" value="XÁC NHẬN" onclick="closeMapCarFormBtn()">
+            </div>
+        </div>
+    </div>
     <section class="detailHotel">
         
-        <div class="detailHotel__img slides">
+        <div class="detailHotel__img" onclick="btnDetailHotelSlides()">
             <div class="detailHotel__img--left">
                 <img src="/assets/img/hotel1.jpg" alt="">
             </div>
@@ -524,7 +478,7 @@
                         <span>5</span>
                     </div>
                     <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
+                    <div class="fourProductList__wrapper--info__count" onclick="btnDetailHotelRate()">47 Bình luận</div>
                 </div>
             </div>
             <div class="detailHotel__info--summary">
@@ -539,7 +493,7 @@
                     </div>
                     <div><ion-icon name="chevron-forward-outline"></ion-icon></div>
                 </div>
-                <div class="detailHotel__info--summary__left rate">
+                <div class="detailHotel__info--summary__left" onclick="btnDetailHotelRate()">
                     <div class="detailHotel__info--summary__left--top">
                         <div class="detailHotel__info--summary__left--top__rating">
                             <span>4.3</span>
@@ -563,7 +517,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="detailHotel__info--summary__right">
+                <div class="detailHotel__info--summary__right" onclick="openMapsCarFormBtn()">
                     <div class="detailHotel__info--summary__right--address">
                         <span>16 Trạng Trình(P.9)</span>
                         <div class="detailHotel__info--summary__right--location">
@@ -730,7 +684,7 @@
                             </div>
                         </div>
 
-                        <footer class="detailHotel__footer">
+                        <div class="detailHotel__footer">
                             <div class="detailHotel__footer--price">
                                 <div class="detailHotel__footer--price__info">
                                     <div class="detailHotel__footer--price__info--desc">đ <b>20XXXXX</b></div>
@@ -739,13 +693,172 @@
                                 </div>
                                 <a class="firstBtn">Đặt</a>
                             </div>
-                        </footer>
+                        </div>
                     </div>
                     <div class="detailHotel__list--body__list">
                         <div class="detailHotel__list--body__list--wrap">
                             <div class="detailHotel__list--body__list--wrap__name">Phòng Deluxe</div>
                             <div class="detailHotel__list--body__list--wrap__item">
-                                <div class="detailHotel__list--body__list--wrap__item--left room">
+                                <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
+                                    <div class="detailHotel__list--body__list--wrap__item--left__img" onclick="btnDetailHotelSlides()">
+                                        <div class="detailHotel__list--body__list--wrap__item--left__img--main">
+                                            <div class="detailHotel__list--body__list--wrap__item--left__img--main__1">
+                                                <img src="/assets/img/detailHotel1.avif" alt="">
+                                            </div>
+                                            <div class="detailHotel__list--body__list--wrap__item--left__img--main__2">
+                                                <img src="/assets/img/detailHotel.avif" alt="">
+                                            </div>
+                                            <div class="detailHotel__list--body__list--wrap__item--left__img--main__3">
+                                                <img src="/assets/img/hotel2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="detailHotel__list--body__list--wrap__item--left__img--count">
+                                            <span> <ion-icon name="images-outline"></ion-icon> </span> 36
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detailHotel__list--body__list--wrap__item--left__popular">
+                                        <div class="detailHotel__list--body__list--wrap__item--left__popular--name">
+                                            <p>Phòng Deluxe</p>
+                                        </div>
+                                        <div class="detailHotel__list--body__list--wrap__item--left__popular--platform__wrap">
+                                            <div class="detailHotel__list--body__list--wrap__item--left__popular--platform">
+                                                <ion-icon name="bar-chart-outline"></ion-icon>
+                                                <p>25.0 m²</p>
+                                            </div>
+                                            <div class="detailHotel__list--body__list--wrap__item--left__popular--platform">
+                                                <ion-icon name="albums-outline"></ion-icon>
+                                                <p>Tầm nhìn hướng sân trong</p>
+                                            </div>
+                                        </div>
+                                        <div class="detailHotel__list--body__list--wrap__item--left__popular--price">
+                                            <div class="detailHotel__list--body__list--wrap__item--left__popular--price__amount">
+                                                Từ <div class="detailHotel__list--body__list--wrap__item--left__popular--price__format">
+                                                    đ <b>20XXXX</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detailHotel__list--body__list--wrap__item--left__action">
+                                        <div class="detailHotel__list--body__list--wrap__item--left__action--arrow__down">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </div>
+                                    </div>
+
+                                    <div class="detailHotel__list--body__list--wrap__item--left__facility">
+                                        <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
+                                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                            <p>Không hút thuốc</p>
+                                        </div> 
+                                        <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
+                                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                            <p>Quạt trần</p>
+                                        </div> 
+                                        <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
+                                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                            <p>TV</p>
+                                        </div> 
+                                        <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
+                                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                            <p>Dịch vụ dọn phòng</p>
+                                        </div> 
+                                    </div>
+                                    <div class="detailHotel__list--body__list--wrap__item--left__poptip">
+                                        <p>Xem thêm tiện nghi</p>
+                                    </div>
+                                </div>
+                                <div class="detailHotel__list--body__list--wrap__item--right">
+                                    <div class="detailHotel__list--body__list--wrap__item--right__header">
+                                        <div>Đề xuất cho bạn</div>
+                                        <div>Giá</div>
+                                    </div>
+                                    <div class="detailHotel__list--body__list--wrap__item--right__body" onclick="btnDetailHotelPrice()">
+                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info">
+                                            <div class="detailHotel__list--body__list--wrap__item--right__body--info__left">
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
+                                                    <span>1 giường queen</span>
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </div>
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate">
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-primary">
+                                                        <ion-icon name="car-sport-outline"></ion-icon>
+                                                        <span>Đỗ xe miễn phí</span>
+                                                    </div>
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-info">
+                                                        <ion-icon name="cafe-outline"></ion-icon>
+                                                        <span>Bữa sáng miễn phí</span>
+                                                    </div>
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
+                                                        <ion-icon name="ban-outline"></ion-icon>
+                                                        <span>Không hoàn tiền</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="detailHotel__list--body__list--wrap__item--right__body--info__right">
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price">
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part">
+                                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
+                                                            đ <b>20XXXXX</b>
+                                                        </div>
+                                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
+                                                            Giá 1 đêm đã bao gồm thuế
+                                                        </div>
+                                                    </div>
+                                                    <a href="/page/checkout-tour.html" class="firstBtn">Đặt</a>
+                                                </div>
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
+                                                    Đăng nhập để hưởng giá thành viên Klook
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detailHotel__list--body__list--wrap__item--right__body" onclick="btnDetailHotelPrice2()">
+                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info">
+                                            <div class="detailHotel__list--body__list--wrap__item--right__body--info__left">
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
+                                                    <span>1 giường queen</span>
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </div>
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate">
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-primary">
+                                                        <ion-icon name="car-sport-outline"></ion-icon>
+                                                        <span>Đỗ xe miễn phí</span>
+                                                    </div>
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-info">
+                                                        <ion-icon name="cafe-outline"></ion-icon>
+                                                        <span>Bữa sáng miễn phí</span>
+                                                    </div>
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
+                                                        <ion-icon name="ban-outline"></ion-icon>
+                                                        <span>Không hoàn tiền</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="detailHotel__list--body__list--wrap__item--right__body--info__right">
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price">
+                                                    <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part">
+                                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
+                                                            đ <b>20XXXXX</b>
+                                                        </div>
+                                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
+                                                            Giá 1 đêm đã bao gồm thuế
+                                                        </div>
+                                                    </div>
+                                                    <a href="/page/checkout-tour.html" class="firstBtn">Đặt</a>
+                                                </div>
+                                                <div class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
+                                                    Đăng nhập để hưởng giá thành viên Klook
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailHotel__list--body__list--wrap">
+                            <div class="detailHotel__list--body__list--wrap__name">Phòng Deluxe</div>
+                            <div class="detailHotel__list--body__list--wrap__item">
+                                <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
                                     <div class="detailHotel__list--body__list--wrap__item--left__img slides">
                                         <div class="detailHotel__list--body__list--wrap__item--left__img--main">
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__1">
@@ -818,7 +931,7 @@
                                         <div>Đề xuất cho bạn</div>
                                         <div>Giá</div>
                                     </div>
-                                    <div class="detailHotel__list--body__list--wrap__item--right__body price">
+                                    <div class="detailHotel__list--body__list--wrap__item--right__body" onclick="btnDetailHotelPrice()">
                                         <div class="detailHotel__list--body__list--wrap__item--right__body--info">
                                             <div class="detailHotel__list--body__list--wrap__item--right__body--info__left">
                                                 <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
@@ -858,7 +971,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="detailHotel__list--body__list--wrap__item--right__body prices">
+                                    <div class="detailHotel__list--body__list--wrap__item--right__body" onclick="btnDetailHotelPrice2()">
                                         <div class="detailHotel__list--body__list--wrap__item--right__body--info">
                                             <div class="detailHotel__list--body__list--wrap__item--right__body--info__left">
                                                 <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
@@ -1038,7 +1151,7 @@
                         </div>
                         <div class="detailHotel__list--body__reviews--content">
                             <div class="detailHotel__list--body__reviews--content__overview">
-                                <a class="detailHotel__list--body__reviews--content__overview--link rate">Đọc tất cả đánh giá</a>
+                                <a class="detailHotel__list--body__reviews--content__overview--link" onclick="btnDetailHotelRate()">Đọc tất cả đánh giá</a>
                                 <div class="detailHotel__list--body__reviews--content__overview--info">
                                     <div class="detailHotel__list--body__reviews--content__overview--info__score">
                                         <span>5.0</span>
@@ -1101,7 +1214,7 @@
                                     <div class="detailHotel__list--body__reviews--content__swiper--items">3.0+</div>
                                 </div>
                             </div>
-                            <div class="detailHotel__list--body__reviews--content__item rate">
+                            <div class="detailHotel__list--body__reviews--content__item" onclick="btnDetailHotelRate()">
                                 <div class="detailHotel__list--body__reviews--content__item--content">
                                     <div class="detailHotel__list--body__reviews--content__item--content__header">
                                         <div class="detailHotel__list--body__reviews--content__item--content__header--user">
@@ -1168,7 +1281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detailHotel__list--body__detail--content__footer">
+                        <div class="detailHotel__list--body__detail--content__footer" onclick="openMapsCarFormBtn()">
                             <span>Xem bản đồ</span>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </div>
@@ -1421,9 +1534,9 @@
                             </div>
                             
                         </div>
-                        <footer class="detailHotelMobie__footer">
+                        <div class="detailHotelMobie__footer">
                                 <div class="firstBtn">Chọn phòng</div>
-                        </footer>
+                        </div>
                     </div>
                     <div class="detailHotel__list--body__description">
                         <div class="detailHotel__list--header">
@@ -1957,6 +2070,7 @@
     </footer>
 </body>
 <script src="/assets//js/detailHotel.js"></script>
+<script src="/assets/js/detail_car.js"></script>
 <script src="/assets/js/slide_img.js"></script>
 <script src="/assets/js/header.js"></script>
 <script src="/assets/js/secondDropdown.js"></script>

@@ -9,7 +9,7 @@ const option_detail_tour_open = document.querySelector('.detail__tour--content__
 
 slider_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('slider__detail--tour');
-})
+  })
 option_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('option__detail--tour');
 })
@@ -33,3 +33,4 @@ mobile_detail_tour_lost_option.addEventListener('click',()=>{
 mobile_detail_tour_lost_sale.addEventListener('click',()=>{
     headerBody.classList.remove('sale__detail--tour');
 })
+

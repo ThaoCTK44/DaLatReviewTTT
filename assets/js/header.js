@@ -19,6 +19,12 @@ window.onload=function(){
 function mobileMenu() {
     headerBody.classList.toggle('active');
 }
+function openChat() {
+    headerBody.classList.toggle('chatBox');
+}
+function closeChat() {
+    headerBody.classList.remove('chatBox');
+}
 // mobileMenuBtn.addEventListener('click',()=>{
 //     headerBody.classList.toggle('active');
 // })

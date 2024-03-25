@@ -7,6 +7,12 @@ const btnRight = document.querySelector('.user__right--btn');
 const lenght = imgs.length;
 let current = 0;
 
+const userBookingBody = document.querySelector('body');
+
+function btnUserBookingDropDown(){
+    userBookingBody.classList.toggle('listUserBookingDropDown')
+}
+
 
 const handleChangeSlide = () =>{
     if(current == lenght - 1){
@@ -16,7 +22,7 @@ const handleChangeSlide = () =>{
     }else{
         current ++;
         let width = imgs[0].offsetWidth;
-        ListImage.style.transform = `translateX(${300 * -current}px)`;
+        ListImage.style.transform = `translateX(${width * -1 * current}px)`;
     }
 }
 
@@ -29,10 +35,10 @@ btnLeft.addEventListener('click',()=>{
     if(current == 0){
         current = lenght - 1;
         let width = imgs[0].offsetWidth;
-        ListImage.style.transform = `translateX(${300 * -current}px)`;
+        ListImage.style.transform = `translateX(${width * -1 * current}px)`;
     }else{
         current --;
         let width = imgs[0].offsetWidth;
-        ListImage.style.transform = `translateX(${300 * -current}px)`;
+        ListImage.style.transform = `translateX(${width * -1 * current}px)`;
     }
 })

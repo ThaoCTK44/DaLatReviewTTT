@@ -258,7 +258,26 @@
     border-radius: 10px;
     color: var(--color-text-6) !important;
 }
-
+.detail__car--container__top{
+    width: 100%;
+}
+.detail__car--container__top--contact span:nth-child(1),
+.detail__car--container__top--address span:nth-child(1){
+    font-weight: 500;
+}
+.detail__car--container__top--des img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-size-3);
+}
+.detail__car--container__top--des img,
+.detail__car--container__top--des p,
+.detail__car--container__top--contact ,
+.detail__car--container__top--address {
+    font-size: var(--size-text-5);
+    color: var(--color-text-1);
+    padding-bottom: 5px;
+}
 
 body.InfoCarForm .detail__car--info{
     display: block;
@@ -297,13 +316,12 @@ body.InfoCarForm{
     }
     .detail__car--info{
         position: fixed;
-        min-width: 60vw;
+        width: 100vw;
         max-width: 100vw;
-        min-height: 90vh;
-        max-height: 100vh;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        height: 100vh;
+        top: 0;
+        left:0;
+        transform: none;
         background: var(--color-background-6);
         z-index: 1111;
         padding: 15px 20px;
@@ -331,11 +349,6 @@ body.InfoCarForm{
         margin-left: 20px;
     }
     .detail__car--container__list{
-        /* padding: 20px 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        gap: 20px; */
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;

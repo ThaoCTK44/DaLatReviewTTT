@@ -98,12 +98,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // xử lý open pop up
 document.addEventListener('DOMContentLoaded', function() {
-    const openPopup = document.querySelector('.user__open--popup');
+    const openPopup = document.querySelector('.user__settings--deleteaccount');
     const popup = document.querySelector('.user__popup');
     const codeContainer = document.querySelector('.user__verify--sms__code--container');
     openPopup.addEventListener('click', function() {
         popup.style.display = 'block';
         codeContainer.style.display = 'block';
+        userBody.style.overflow = 'hidden';
     });
 });
 
